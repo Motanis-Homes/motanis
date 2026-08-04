@@ -38,7 +38,7 @@ const Hero = () => {
               }}
             >
               {[
-                'https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=200&q=80',
+                'https://drive.google.com/thumbnail?id=1Pfbf7hAumH_w_Jf0slsI0AZk0qomisK3&sz=w800',
               ].map((src, i) => (
                 <div
                   key={i}
@@ -65,7 +65,7 @@ const Hero = () => {
               }}
             >
               <img
-                src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=200&q=80"
+                src="https://images.pexels.com/photos/6817003/pexels-photo-6817003.jpeg"
                 alt="Featured Car"
                 className="object-cover flex-shrink-0"
                 style={{ width: '52px', height: '40px', borderRadius: '8px' }}
@@ -98,7 +98,7 @@ const Hero = () => {
                   className="font-black leading-none"
                   style={{ fontSize: '18px', color: '#000', margin: 0 }}
                 >
-                  95K+
+                  100+
                 </p>
               </div>
             </div>
