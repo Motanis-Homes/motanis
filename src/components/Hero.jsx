@@ -38,12 +38,12 @@ const Hero = () => {
               }}
             >
               {[
-                'https://drive.google.com/thumbnail?id=1Pfbf7hAumH_w_Jf0slsI0AZk0qomisK3&sz=w800',
+                'https://drive.google.com/thumbnail?id=1ESMQcpoYr8mr1HlVMjTxaIkCaej9NHGL',
               ].map((src, i) => (
                 <div
                   key={i}
                     className="flex-1 overflow-hidden"
-                style={{ height: '60px', borderRadius: '8px', border: '1px solid rgba(255,255,255,0.08)' }}
+                style={{ height: '60px', width: '120px', borderRadius: '8px', border: '1px solid rgba(255,255,255,0.08)' }}
                 >
                   <img
                     src={src}
