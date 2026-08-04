@@ -37,7 +37,7 @@ const HeroCard = () => {
         style={{
           width: `${carImages.length * 100}%`,
           transform: `translateX(-${(currentIndex * 100) / carImages.length}%)`,
-          transition: 'transform 0.7s ease-in-out cubic-bezier(0.77, 0, 0.18, 1)',
+          transition: 'transform 0.7s cubic-bezier(0.77, 0, 0.18, 1)',
         }}
       >
         {carImages.map((src, i) => (
