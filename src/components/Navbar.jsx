@@ -18,11 +18,9 @@ const Navbar = ({ activePage, setActivePage }) => {
     { label: 'Blog', page: 'blog' },
   ];
 
-  const handleNavClick = (page) => {
-    if (page === 'autos') {
-      setActivePage('autos');
-    }
-  };
+const handleNavClick = (page) => {
+    setActivePage(page);
+};
 
   return (
     <nav
