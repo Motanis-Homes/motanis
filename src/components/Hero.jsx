@@ -19,7 +19,7 @@ const Hero = () => {
         // border: '1px solid #2A6FDB',
         }}
       >
-        <HeroCard /  >
+        <HeroCard />
       </div>
 
 

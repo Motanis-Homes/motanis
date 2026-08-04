@@ -27,7 +27,7 @@ function App() {
 
         {activePage === 'autos' && (
           <>
-            <Hero />
+            <Hero/>
           </>
         )}
 
