@@ -8,7 +8,7 @@ const Hero = () => {
       id="home"
       className="relative flex flex-col justify-evenly bg-motanis-muted top-14 px-2 rounded-2xl"
       style={{ 
-        height: '85svh', 
+        height: '70svh', 
         overflow: 'hidden' 
       }}
     >
@@ -33,7 +33,7 @@ const Hero = () => {
 
             {/* Thumbnail Strip */}
             <div
-              className="relative z-10 flex w-2/4"
+              className="relative z-10 flex"
               style={{
               }}
             >
@@ -43,7 +43,7 @@ const Hero = () => {
                 <div
                   key={i}
                     className="flex-1 overflow-hidden"
-                style={{ height:'160px', borderRadius: '8px', border: '1px solid rgba(255,255,255,0.08)' }}
+                style={{ height:'60px', width: '120px', borderRadius: '8px', border: '1px solid rgba(255,255,255,0.08)' }}
                 >
                   <img
                     src={src}
@@ -57,10 +57,10 @@ const Hero = () => {
             {/* Floating White Card + Happy Customers */}
 
             <div
-              className="absolute right-0 z-10 bg-white flex justify-between  gap-2"
+              className="relative right-0 z-10 bg-white flex justify-between  gap-2"
               style={{
                 borderRadius: '14px',
-                padding: '25px',
+                padding: '7px',
                 // minWidth: '35px',
               }}
             >
