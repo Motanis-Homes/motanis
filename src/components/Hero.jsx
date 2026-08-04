@@ -8,7 +8,7 @@ const Hero = () => {
       id="home"
       className="relative flex flex-col justify-evenly bg-motanis-muted top-14 px-2 rounded-2xl"
       style={{ 
-        height: '70svh', 
+        height: '85svh', 
         overflow: 'hidden' 
       }}
     >
@@ -26,15 +26,15 @@ const Hero = () => {
       {/* Floating White Card — 95K+ + Thumbnail Strip Parent Div*/}
       <div className="relative flex flex-row justify-between"
         style={{
+            alignItems: 'center',
           // border: '1px solid #2A6FDB',
         }}
       >
 
             {/* Thumbnail Strip */}
             <div
-              className="relative z-10 flex"
+              className="relative z-10 flex w-2/4"
               style={{
-
               }}
             >
               {[
@@ -43,7 +43,7 @@ const Hero = () => {
                 <div
                   key={i}
                     className="flex-1 overflow-hidden"
-                style={{ height: '60px', width: '120px', borderRadius: '8px', border: '1px solid rgba(255,255,255,0.08)' }}
+                style={{ height:'160px', borderRadius: '8px', border: '1px solid rgba(255,255,255,0.08)' }}
                 >
                   <img
                     src={src}
@@ -57,10 +57,10 @@ const Hero = () => {
             {/* Floating White Card + Happy Customers */}
 
             <div
-              className="relative z-10 bg-white flex justify-between  gap-2"
+              className="absolute right-0 z-10 bg-white flex justify-between  gap-2"
               style={{
                 borderRadius: '14px',
-                padding: '7px',
+                padding: '25px',
                 // minWidth: '35px',
               }}
             >
@@ -68,7 +68,7 @@ const Hero = () => {
                 src="https://images.pexels.com/photos/6817003/pexels-photo-6817003.jpeg"
                 alt="Featured Car"
                 className="object-cover flex-shrink-0"
-                style={{ width: '52px', height: '40px', borderRadius: '8px' }}
+                style={{ width: '72px', height: '50px', borderRadius: '8px' }}
               />
               <div className="flex flex-col">
                 <div className="flex items-center gap-1 mb-0.5">
