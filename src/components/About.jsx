@@ -1,5 +1,13 @@
 import React from 'react';
-import CounterNumber from './CounterNumber';
+import CTAButton from './CTAButton';
+import ImageCarousel from './ImageCarousel';
+
+const aboutImages = [
+  'https://drive.google.com/thumbnail?id=1f8MACpiqsavlGS0MEJ0EyWTZtACfcB_0',
+  'https://drive.google.com/thumbnail?id=1kviNUYWqzjZZ4pUlqBKzeA5QOTtZINTE',
+  'https://drive.google.com/thumbnail?id=1WblP55yEuODkdP6jG7SranfepQKi-oMs',
+  'https://drive.google.com/thumbnail?id=11Qd3FcPK-FCGBjZbbXzDsblVa88UOK0r&sz=w800',
+];
 
 const About = () => {
   return (
@@ -22,12 +30,63 @@ const About = () => {
             background: '#111111',
           }}
         >
-          {/* Motanis Theme Gradient Background */}
+          {/* ── Background Image Carousel — bottom half ── */}
+          <div
+            className="absolute bottom-0 left-0 right-0"
+            style={{ height: '44%', zIndex: 2 }}
+          >
+            <ImageCarousel
+              images={aboutImages}
+              height="100%"
+              borderRadius="0"
+              interval={4000}
+              showDots={false}
+            />
+          </div>
+
+          {/* ── Dark Wave Overlay ── */}
+          <div
+            className="absolute left-0 right-0"
+            style={{
+              bottom: '0',
+              height: '62%',
+              zIndex: 3,
+              opacity: "0.65"
+            }}
+          >
+            <svg
+              viewBox="0 0 400 300"
+              preserveAspectRatio="none"
+              xmlns="http://www.w3.org/2000/svg"
+              style={{ width: '100%', height: '100%' }}
+            >
+              <path
+                d="M0 80 Q100 20 200 60 Q300 100 400 40 L400 300 L0 300 Z"
+                fill="#111111"
+              />
+            </svg>
+          </div>
+
+          ── Gradient blend between text and carousel ──
+          <div
+            className="absolute left-0 right-0"
+            style={{
+              top: '56%',
+              height: '25%',
+              background:
+                'linear-gradient(to bottom, #111111 0%, transparent 100%)',
+              zIndex: 2,
+            }}
+          />
+
+          {/* Motanis Theme Gradient Background — top half */}
           <div
             className="absolute inset-0"
             style={{
               background:
                 'linear-gradient(135deg, #0A0A0F 0%, #13131A 40%, #0d1a2e 70%, #0A0A0F 100%)',
+              zIndex: 1,
+              height: '55%',
             }}
           />
 
@@ -40,6 +99,7 @@ const About = () => {
               background: 'rgba(42,111,219,0.15)',
               top: '-40px',
               right: '-40px',
+              zIndex: 1,
             }}
           />
           <div
@@ -50,12 +110,14 @@ const About = () => {
               background: 'rgba(42,111,219,0.08)',
               bottom: '-20px',
               left: '-20px',
+              zIndex: 1,
             }}
           />
 
-          {/* Card Content */}
+          {/* ── Card Content ── */}
           <div
-            className="relative z-10 flex flex-col h-full px-5 py-5"
+            className="relative flex flex-col px-5 py-5"
+            style={{ zIndex: 4 }}
           >
             {/* About Us Label */}
             <div className="flex items-center gap-2 mb-4">
@@ -88,9 +150,9 @@ const About = () => {
             <h2
               className="text-white font-black uppercase leading-none mb-4"
               style={{
-                fontSize: '1.5rem',
+                fontSize: '1.8rem',
                 letterSpacing: '-0.5px',
-                maxWidth: '260px',
+                maxWidth: '280px',
               }}
             >
               Built For Those <br />
@@ -111,88 +173,12 @@ const About = () => {
               One Promise: Excellence Without Compromise.
             </p>
 
-            {/* Stats Row */}
-            <div className="flex items-center gap-3 mt-auto">
-
-              {/* Stat 1 — Happy Clients */}
-              <div
-                className="flex flex-col flex-1 items-start px-4 py-3"
-                style={{
-                  background: 'rgba(255,255,255,0.04)',
-                  border: '1px solid rgba(255,255,255,0.08)',
-                  borderRadius: '14px',
-                }}
-              >
-                <div className="flex items-end gap-0.5">
-                  <CounterNumber
-                    target={500}
-                    duration={2500}
-                    suffix="+"
-                    fontSize="1.4rem"
-                    color="#ffffff"
-                  />
-                </div>
-                <p
-                  className="text-motanis-muted uppercase tracking-widest"
-                  style={{ fontSize: '7px', marginTop: '2px' }}
-                >
-                  Happy Clients
-                </p>
-              </div>
-
-              {/* Divider */}
-              <div
-                style={{
-                  width: '1px',
-                  height: '40px',
-                  background: 'rgba(255,255,255,0.08)',
-                  flexShrink: 0,
-                }}
-              />
-
-              {/* Stat 2 — Service Rating */}
-              <div
-                className="flex flex-col flex-1 items-start px-4 py-3"
-                style={{
-                  background: 'rgba(255,255,255,0.04)',
-                  border: '1px solid rgba(255,255,255,0.08)',
-                  borderRadius: '14px',
-                }}
-              >
-                <div className="flex items-end gap-0.5">
-                  <p
-                    className="font-black leading-none"
-                    style={{
-                      fontSize: '1.4rem',
-                      color: '#ffffff',
-                      margin: 0,
-                    }}
-                  >
-                    5.0
-                  </p>
-                </div>
-                <div className="flex items-center gap-1 mt-1">
-                  {[1,2,3,4,5].map((i) => (
-                    <span
-                      key={i}
-                      style={{
-                        fontSize: '8px',
-                        color: '#2A6FDB',
-                      }}
-                    >
-                      ★
-                    </span>
-                  ))}
-                </div>
-                <p
-                  className="text-motanis-muted uppercase tracking-widest"
-                  style={{ fontSize: '7px', marginTop: '2px' }}
-                >
-                  Service Rating
-                </p>
-              </div>
+            {/* CTA Button */}
+            <div className="flex items-center -mt-3">
+              <CTAButton label="Learn More" href="#inventory" />
             </div>
           </div>
+
         </div>
       </div>
     </section>
