@@ -3,9 +3,9 @@ import CTAButton from './CTAButton';
 import ImageCarousel from './ImageCarousel';
 
 const aboutImages = [
-  'https://drive.google.com/thumbnail?id=1f8MACpiqsavlGS0MEJ0EyWTZtACfcB_0',
-  'https://drive.google.com/thumbnail?id=1kviNUYWqzjZZ4pUlqBKzeA5QOTtZINTE',
-  'https://drive.google.com/thumbnail?id=1WblP55yEuODkdP6jG7SranfepQKi-oMs',
+  'https://lh3.googleusercontent.com/d/1f8MACpiqsavlGS0MEJ0EyWTZtACfcB_0=w800',
+  'https://lh3.googleusercontent.com/d/1kviNUYWqzjZZ4pUlqBKzeA5QOTtZINTE=w800',
+  'https://lh3.googleusercontent.com/d/1WblP55yEuODkdP6jG7SranfepQKi-oMs=w800',
   'https://drive.google.com/thumbnail?id=11Qd3FcPK-FCGBjZbbXzDsblVa88UOK0r&sz=w800',
 ];
 
