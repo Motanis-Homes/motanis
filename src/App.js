@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
+import About from './components/About';
 import ComingSoon from './components/ComingSoon';
 
 function App() {
@@ -26,7 +27,12 @@ function App() {
       <div className="md:hidden bg-motanis-black min-h-screen text-white">
         <Navbar activePage={activePage} setActivePage={setActivePage} />
 
-        {activePage === 'autos' && <Hero />}
+        {activePage === 'autos' && (
+          <>
+          <Hero />
+          <About />
+          </>
+        )}
 
         {(activePage === 'homes' || activePage === 'blog') && (
           <ComingSoon
