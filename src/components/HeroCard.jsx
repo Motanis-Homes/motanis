@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
+import ImageCarousel from './ImageCarousel';
 import CTAButton from './CTAButton';
 import HeroForeground from './HeroForeground';
 import { ChevronDown } from 'lucide-react';
@@ -13,14 +14,6 @@ const carImages = [
 ];
 
 const HeroCard = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex((prev) => (prev + 1) % carImages.length);
-    }, 4000);
-    return () => clearInterval(interval);
-  }, []);
 
   return (
     <div
@@ -31,29 +24,16 @@ const HeroCard = () => {
         background: '#111111',
       }}
     >
-      {/* ── Background Slide Carousel ── */}
-      <div
-        className="absolute inset-0 flex"
-        style={{
-          width: `${carImages.length * 100}%`,
-          transform: `translateX(-${(currentIndex * 100) / carImages.length}%)`,
-          transition: 'transform 0.7s cubic-bezier(0.77, 0, 0.18, 1)',
-        }}
-      >
-        {carImages.map((src, i) => (
-          <div
-            key={i}
-            className="relative h-full"
-            style={{ width: `${100 / carImages.length}%`, flexShrink: 0 }}
-          >
-            <img
-              src={src}
-              alt={`Car ${i + 1}`}
-              className="w-full h-full object-cover object-center"
-              style={{ opacity: 0.75 }}
-            />
-          </div>
-        ))}
+{/* ── Background Slide Carousel ── */}
+      <div className="absolute inset-0" flex 
+      style={{ opacity: 0.75 }}>
+        <ImageCarousel
+          images={carImages}
+          height="100%"
+          borderRadius="0"
+          interval={4000}
+          showDots={false}
+        />
       </div>
 
       {/* Carousel Dot Indicators */}
