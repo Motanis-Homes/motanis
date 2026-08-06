@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import CTAButton from './CTAButton';
 import ImageCarousel from './ImageCarousel';
 
@@ -9,9 +9,57 @@ const aboutImages = [
   'https://drive.google.com/thumbnail?id=11Qd3FcPK-FCGBjZbbXzDsblVa88UOK0r&sz=w800',
 ];
 
+const fullText = "Built For Those Who Want The Best";
+
 const About = () => {
+
+  const [displayed, setDisplayed] = useState('');
+  const [charIndex, setCharIndex] = useState(0);
+  const [started, setStarted] = useState(false);
+  const sectionRef = useRef(null);
+
+  // Reset and restart typewriter when section comes into view
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting) {
+          // Reset everything and restart
+          setDisplayed('');
+          setCharIndex(0);
+          setStarted(false);
+          setTimeout(() => setStarted(true), 400);
+        }
+      },
+      { threshold: 0.3 }
+    );
+    if (sectionRef.current) observer.observe(sectionRef.current);
+    return () => observer.disconnect();
+  }, []);
+
+  // Typewriter effect
+  useEffect(() => {
+    if (!started) return;
+    if (charIndex >= fullText.length) return;
+
+    const timeout = setTimeout(() => {
+      setDisplayed((prev) => prev + fullText[charIndex]);
+      setCharIndex((prev) => prev + 1);
+    }, 75);
+
+    return () => clearTimeout(timeout);
+  }, [charIndex, started]);
+
+  // Split into lines
+  const words = displayed.split(' ');
+  const line1 = words.slice(0, 3).join(' ');  // "Built For Those"
+  const line2 = words.slice(3, 5).join(' ');  // "Who Want"
+  const line3 = words.slice(5, 7).join(' ');  // "The Best"
+
+  const isDone = displayed.length === fullText.length;
+
   return (
     <section
+      ref={sectionRef}
       id="about"
       className="relative flex flex-col justify-evenly bg-motanis-muted top-14 px-2 rounded-2xl"
       style={{
@@ -146,26 +194,55 @@ const About = () => {
               </div>
             </div>
 
-            {/* Headline */}
+{/* Headline — Typewriter */}
             <h2
               className="text-white font-black uppercase leading-none mb-4"
               style={{
                 fontSize: '1.8rem',
                 letterSpacing: '-0.5px',
                 maxWidth: '280px',
+                minHeight: '6rem',
               }}
             >
-              Built For Those <br />
-              Who Want <br />
-              <span className="text-motanis-blue">The Best</span>
+              <span className="block">{line1}</span>
+              <span className="block">{line2}</span>
+              <span
+                className="block"
+                style={{ color: line3.length > 0 ? '#2A6FDB' : 'transparent' }}
+              >
+                {line3}
+              </span>
+
+              {/* Blinking Cursor */}
+              {!isDone && (
+                <span
+                  className="inline-block w-[2px] bg-motanis-blue ml-0.5"
+                  style={{
+                    height: '1.6rem',
+                    verticalAlign: 'middle',
+                    animation: 'blink 0.8s step-end infinite',
+                  }}
+                />
+              )}
             </h2>
 
-            {/* Body Text */}
+            {/* Blink keyframe */}
+            <style>{`
+              @keyframes blink {
+                0%, 100% { opacity: 1; }
+                50% { opacity: 0; }
+              }
+            `}</style>
+
+        {/* Body Text — fades in after typing completes */}
             <p
               className="text-motanis-muted leading-relaxed mb-6"
               style={{
                 fontSize: '11px',
                 maxWidth: '280px',
+                opacity: isDone ? 1 : 0,
+                transform: isDone ? 'translateY(0)' : 'translateY(10px)',
+                transition: 'opacity 0.6s ease 0.1s, transform 0.6s ease 0.1s',
               }}
             >
               At Motanis Autos, We Don't Just Sell cars — We Deliver Excellence.
@@ -173,8 +250,15 @@ const About = () => {
               One Promise: Excellence Without Compromise.
             </p>
 
-            {/* CTA Button */}
-            <div className="flex items-center -mt-3">
+            {/* CTA Button — fades in after body text */}
+            <div
+              className="flex items-center -mt-3"
+              style={{
+                opacity: isDone ? 1 : 0,
+                transform: isDone ? 'translateY(0)' : 'translateY(10px)',
+                transition: 'opacity 0.6s ease 0.4s, transform 0.6s ease 0.4s',
+              }}
+            >
               <CTAButton label="Learn More" href="#inventory" />
             </div>
           </div>

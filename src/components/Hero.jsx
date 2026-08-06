@@ -93,13 +93,13 @@ const Hero = () => {
             </p>
 
             <CounterNumber
-              target={100}
+              target={500}
               duration={2000}
               suffix="+"
               fontSize="18px"
               color="#000"
             />
-            
+
           </div>
         </div>
       </div>

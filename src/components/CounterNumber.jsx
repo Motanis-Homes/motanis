@@ -10,26 +10,30 @@ const CounterNumber = ({
   fontWeight = 'black',
 }) => {
   const [count, setCount] = useState(0);
-  const [hasStarted, setHasStarted] = useState(false);
+  const [isAnimating, setIsAnimating] = useState(false);
   const ref = useRef(null);
 
-  // Start counter when element enters viewport
+  // Reset and replay every time element enters viewport
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
-        if (entries[0].isIntersecting && !hasStarted) {
-          setHasStarted(true);
+        if (entries[0].isIntersecting) {
+          // Reset counter
+          setCount(0);
+          setIsAnimating(false);
+          // Small delay before starting
+          setTimeout(() => setIsAnimating(true), 300);
         }
       },
       { threshold: 0.5 }
     );
     if (ref.current) observer.observe(ref.current);
     return () => observer.disconnect();
-  }, [hasStarted]);
+  }, []);
 
   // Count up animation
   useEffect(() => {
-    if (!hasStarted) return;
+    if (!isAnimating) return;
 
     const startTime = performance.now();
 
@@ -47,11 +51,12 @@ const CounterNumber = ({
         requestAnimationFrame(animate);
       } else {
         setCount(target);
+        setIsAnimating(false);
       }
     };
 
     requestAnimationFrame(animate);
-  }, [hasStarted, target, duration]);
+  }, [isAnimating, target, duration]);
 
   return (
     <p

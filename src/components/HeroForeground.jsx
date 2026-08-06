@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import CTAButton from './CTAButton';
 
 const fullText = "Drive Your Dream Today";
@@ -7,11 +7,23 @@ const HeroForeground = () => {
   const [displayed, setDisplayed] = useState('');
   const [charIndex, setCharIndex] = useState(0);
   const [started, setStarted] = useState(false);
+  const sectionRef = useRef(null);
 
-  // Small delay before typing starts
+  // Reset and restart typewriter when component comes into view
   useEffect(() => {
-    const delay = setTimeout(() => setStarted(true), 600);
-    return () => clearTimeout(delay);
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting) {
+          setDisplayed('');
+          setCharIndex(0);
+          setStarted(false);
+          setTimeout(() => setStarted(true), 600);
+        }
+      },
+      { threshold: 0.3 }
+    );
+    if (sectionRef.current) observer.observe(sectionRef.current);
+    return () => observer.disconnect();
   }, []);
 
   // Typewriter effect
@@ -22,7 +34,7 @@ const HeroForeground = () => {
     const timeout = setTimeout(() => {
       setDisplayed((prev) => prev + fullText[charIndex]);
       setCharIndex((prev) => prev + 1);
-    }, 80); // Speed — lower = faster typing
+    }, 80);
 
     return () => clearTimeout(timeout);
   }, [charIndex, started]);
@@ -37,6 +49,7 @@ const HeroForeground = () => {
 
   return (
     <div
+      ref={sectionRef}
       className="relative z-10"
       style={{ borderRadius: '20px' }}
     >
