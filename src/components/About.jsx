@@ -165,7 +165,7 @@ const About = () => {
           {/* ── Card Content ── */}
           <div
             className="relative flex flex-col px-5 py-0"
-            style={{ zIndex: 4 }}
+            style={{ zIndex: 4, marginTop: '-0.5rem' }}
           >
             {/* About Us Label */}
             <div className="flex items-center gap-2 mb-4">
