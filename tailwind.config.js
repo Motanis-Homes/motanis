@@ -14,8 +14,9 @@ module.exports = {
         'motanis-muted': '#8A9BB0',
       },
       fontFamily: {
-        sans: ['Inter', 'sans-serif'],
-      },
+  sans: ['Inter', 'sans-serif'],
+  cormorant: ['Cormorant Garamond', 'serif'],
+},
     },
   },
   plugins: [],

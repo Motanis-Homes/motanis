@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
+import FindCar from './components/FindCar';
 import ComingSoon from './components/ComingSoon';
 
 function App() {
@@ -29,8 +30,9 @@ function App() {
 
         {activePage === 'autos' && (
           <>
-          <Hero />
-          <About />
+          <Hero/>
+          <About/>
+          <FindCar/>
           </>
         )}
 

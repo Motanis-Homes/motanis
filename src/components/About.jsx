@@ -236,9 +236,11 @@ const About = () => {
 
         {/* Body Text — fades in after typing completes */}
             <p
-              className="text-motanis-muted leading-relaxed mb-6"
+              className="font-cormorant leading-relaxed mb-6"
               style={{
-                fontSize: '11px',
+                fontSize: '14px',
+                fontWeight:'700',
+                fontStyle: 'italic',
                 maxWidth: '280px',
                 opacity: isDone ? 1 : 0,
                 transform: isDone ? 'translateY(0)' : 'translateY(10px)',
