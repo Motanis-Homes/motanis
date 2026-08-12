@@ -47,7 +47,7 @@ const FindCar = () => {
       <div
         className="absolute"
         style={{
-          top: '30px',
+          top: '25px',
           right: '3px',
           width: '88px',
           height: '88px',
