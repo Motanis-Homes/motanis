@@ -238,7 +238,7 @@ const FindCar = () => {
 
           {/* ── Layer 6: Content ── */}
           <div
-            className="relative flex flex-col px-5 py-5"
+            className="relative flex flex-col px-5 py-0"
             style={{ zIndex: 4 }}
           >
             {/* Headline */}

@@ -164,7 +164,7 @@ const About = () => {
 
           {/* ── Card Content ── */}
           <div
-            className="relative flex flex-col px-5 py-5"
+            className="relative flex flex-col px-5 py-0"
             style={{ zIndex: 4 }}
           >
             {/* About Us Label */}
@@ -196,7 +196,7 @@ const About = () => {
 
 {/* Headline — Typewriter */}
             <h2
-              className="text-white font-black uppercase leading-none mb-4"
+              className="text-white font-black uppercase leading-none mb-2"
               style={{
                 fontSize: '1.8rem',
                 letterSpacing: '-0.5px',
