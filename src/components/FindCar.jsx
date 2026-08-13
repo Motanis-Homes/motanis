@@ -83,7 +83,7 @@ const FindCar = () => {
           </defs>
           <text
             style={{
-              fontSize: '7.5px',
+              fontSize: '7px',
               fontWeight: '800',
               letterSpacing: '1.5px',
               textTransform: 'uppercase',

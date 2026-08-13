@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
 import FindCar from './components/FindCar';
+import Inventory from './components/Inventory';
 import ComingSoon from './components/ComingSoon';
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
           <Hero/>
           <About/>
           <FindCar/>
+          <Inventory/>
           </>
         )}
 
