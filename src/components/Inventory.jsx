@@ -78,7 +78,7 @@ const Inventory = () => {
       id="inventory"
       className="relative flex flex-col justify-evenly bg-motanis-muted top-14 px-2 rounded-2xl"
       style={{
-        height: '90svh',
+        height: '100svh',
         overflow: 'hidden',
         marginTop: '12px',
         paddingBottom: '16px',
@@ -86,7 +86,7 @@ const Inventory = () => {
     >
       {/* Big Card */}
       <div
-        className="relative flex flex-col w-full h-[80svh]"
+        className="relative flex flex-col w-full h-[90svh]"
         style={{
           borderRadius: '24px',
           overflow: 'hidden',
