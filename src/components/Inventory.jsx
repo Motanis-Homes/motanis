@@ -195,7 +195,7 @@ const Inventory = () => {
               className="font-cormorant text-motanis-muted leading-relaxed mb-5"
               style={{
                 fontSize: '15px',
-                fontWeight: '500',
+                fontWeight: '700',
                 fontStyle: 'italic',
                 letterSpacing: '0.3px',
               }}
