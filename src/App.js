@@ -5,6 +5,7 @@ import About from './components/About';
 import FindCar from './components/FindCar';
 import Inventory from './components/Inventory';
 import Testimonials from './components/Testimonials';
+import Brands from './components/Brands';
 import ComingSoon from './components/ComingSoon';
 
 function App() {
@@ -37,6 +38,7 @@ function App() {
           <FindCar/>
           <Inventory/>
           <Testimonials/>
+          <Brands/>
           </>
         )}
 
