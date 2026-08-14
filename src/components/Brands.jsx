@@ -206,7 +206,7 @@ const Brands = () => {
 
           {/* Headline */}
           <h2
-            className="text-white font-black uppercase leading-none mb-3"
+            className="text-white font-black uppercase leading-tight mb-3"
             style={{
               fontSize: '1.6rem',
               letterSpacing: '-0.5px',
