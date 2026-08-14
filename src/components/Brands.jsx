@@ -286,8 +286,8 @@ const Brands = () => {
                     width: '68px',
                     height: '68px',
                     borderRadius: '50%',
-                    background: 'rgba(255,255,255,0.05)',
-                    border: '1px solid rgba(255,255,255,0.10)',
+                    // background: 'rgba(255,255,255,0.05)',
+                    // border: '1px solid rgba(255,255,255,0.10)',
                     backdropFilter: 'blur(8px)',
                     padding: '14px',
                     flexShrink: 0,
@@ -308,7 +308,7 @@ const Brands = () => {
 
                 {/* Brand Name */}
                 <span
-                  className="text-motanis-muted uppercase tracking-widest text-center"
+                  className="text-motanis-muted uppercase tracking-widest text-center mb-4"
                   style={{ fontSize: '7px', fontWeight: '700' }}
                 >
                   {brand.name}
