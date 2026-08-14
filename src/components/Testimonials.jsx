@@ -375,6 +375,7 @@ const Testimonials = () => {
                 {/* Car Image */}
                 <div
                   style={{
+                    borderRadius: '10px',
                     width: '100%',
                     height: '140px',
                     overflow: 'hidden',
@@ -403,7 +404,7 @@ const Testimonials = () => {
                       className="text-motanis-muted font-black"
                       style={{ fontSize: '28px', lineHeight: 1, opacity: 0.4 }}
                     >
-                      "
+                      ❞
                     </span>
                   </div>
                 </div>
