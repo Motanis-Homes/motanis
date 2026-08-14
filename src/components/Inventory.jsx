@@ -200,7 +200,7 @@ const Inventory = () => {
                 letterSpacing: '0.3px',
               }}
             >
-              New cars added every single day. Don't miss out.
+              New Cars Added Every Single Day. Don't Miss Out.
             </p>
 
             {/* CTA */}
@@ -364,7 +364,7 @@ const Inventory = () => {
                       className="font-cormorant text-motanis-muted leading-relaxed"
                       style={{
                         fontSize: '14px',
-                        fontWeight: '500',
+                        fontWeight: '700',
                         fontStyle: 'italic',
                         letterSpacing: '0.3px',
                       }}

@@ -4,6 +4,7 @@ import Hero from './components/Hero';
 import About from './components/About';
 import FindCar from './components/FindCar';
 import Inventory from './components/Inventory';
+import Testimonials from './components/Testimonials';
 import ComingSoon from './components/ComingSoon';
 
 function App() {
@@ -35,6 +36,7 @@ function App() {
           <About/>
           <FindCar/>
           <Inventory/>
+          <Testimonials/>
           </>
         )}
 
