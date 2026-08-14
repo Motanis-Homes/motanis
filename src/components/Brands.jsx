@@ -105,7 +105,7 @@ const Brands = () => {
       id="brands"
       className="relative flex flex-col justify-evenly bg-motanis-muted top-14 px-2 rounded-2xl"
       style={{
-        height: '70svh',
+        height: '90svh',
         overflow: 'hidden',
         marginTop: '12px',
         paddingBottom: '16px',
@@ -113,7 +113,7 @@ const Brands = () => {
     >
       {/* Big Card */}
       <div
-        className="relative flex flex-col w-full h-[60svh]"
+        className="relative flex flex-col w-full h-[80svh]"
         style={{
           borderRadius: '24px',
           overflow: 'hidden',
