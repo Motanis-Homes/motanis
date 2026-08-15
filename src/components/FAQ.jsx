@@ -70,7 +70,7 @@ const FAQ = () => {
       id="faq"
       className="relative flex flex-col justify-evenly bg-motanis-muted top-14 px-2 rounded-2xl"
       style={{
-        height: '90svh',
+        height: '110svh',
         overflow: 'hidden',
         marginTop: '12px',
         paddingBottom: '16px',
@@ -78,7 +78,7 @@ const FAQ = () => {
     >
       {/* Big Card */}
       <div
-        className="relative flex flex-col w-full h-[80svh]"
+        className="relative flex flex-col w-full h-[100svh]"
         style={{
           borderRadius: '24px',
           overflow: 'hidden',
