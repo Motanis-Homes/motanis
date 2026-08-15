@@ -241,7 +241,7 @@ const Footer = () => {
                 {col.links.map((link) => (
                   <a
                     key={link}
-                    href="#"
+                    href="www.google.com"
                     className="text-motanis-muted uppercase tracking-widest transition-colors duration-200"
                     style={{ fontSize: '7px' }}
                   >
@@ -388,7 +388,7 @@ const Footer = () => {
               {['Privacy Policy', 'Terms & Conditions', 'Cookies', 'FAQ'].map((item) => (
                 <a
                   key={item}
-                  href="#"
+                  href="www.google.com"
                   className="text-motanis-muted uppercase tracking-widest"
                   style={{ fontSize: '7px' }}
                 >
