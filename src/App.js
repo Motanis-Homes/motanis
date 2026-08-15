@@ -7,6 +7,7 @@ import Inventory from './components/Inventory';
 import Testimonials from './components/Testimonials';
 import Brands from './components/Brands';
 import FAQ from './components/FAQ';
+import Footer from './components/Footer';
 import ComingSoon from './components/ComingSoon';
 
 function App() {
@@ -41,6 +42,7 @@ function App() {
           <Testimonials/>
           <Brands/>
           <FAQ/>
+          <Footer/>
           </>
         )}
 
