@@ -211,7 +211,7 @@ const Inventory = () => {
 
             {/* ── Accordion List ── */}
           <div
-            className="flex flex-col accordiion-list"
+            className="flex flex-col accordion-list"
             style={{
               gap: '0px',
               opacity: isVisible ? 1 : 0,

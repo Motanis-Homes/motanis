@@ -118,7 +118,7 @@ const Brands = () => {
           borderRadius: '24px',
           overflow: 'hidden',
           background: '#111111',
-          marginTop: '8px',
+        //   marginTop: '8px',
         }}
       >
         {/* ── Motanis Theme Gradient Background ── */}
