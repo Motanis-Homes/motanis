@@ -70,7 +70,7 @@ const FAQ = () => {
       id="faq"
       className="relative flex flex-col justify-evenly bg-motanis-muted top-14 px-2 rounded-2xl"
       style={{
-        height: '130svh',
+        height: '125svh',
         overflow: 'hidden',
         marginTop: '12px',
         paddingBottom: '16px',
@@ -78,12 +78,11 @@ const FAQ = () => {
     >
       {/* Big Card */}
       <div
-        className="relative flex flex-col w-full h-[120svh]"
+        className="relative flex flex-col w-full h-[115svh]"
         style={{
           borderRadius: '24px',
           overflow: 'hidden',
           background: '#111111',
-          // marginTop: '35px',
         }}
       >
         {/* ── Motanis Theme Gradient Background ── */}
@@ -138,7 +137,7 @@ const FAQ = () => {
 
           {/* ── Header ── */}
           <div
-            className="flex flex-col items-center text-center mb-6"
+            className="flex flex-col items-start text-left mb-6"
             style={{
               opacity: isVisible ? 1 : 0,
               transform: isVisible ? 'translateY(0)' : 'translateY(16px)',
@@ -372,15 +371,50 @@ const FAQ = () => {
             </p>
 
             {/* Email + CTA Row */}
-            <div className="flex items-center justify-end">
+            <div
+              className="flex justify-end"
+              style={{ margin: '0 -16px -16px -16px', position: 'relative' }}
+            >
+              {/* Email Link */}
               {/* <a
-                href="mailto:motanishomes@gmail.com"
+                href="mailto:hello@motanis.com"
                 className="text-motanis-blue font-bold uppercase tracking-widest"
-                style={{ fontSize: '8px' }}
+                style={{ fontSize: '8px', paddingLeft: '16px', zIndex: 2 }}
               >
                 hello@motanis.com —
               </a> */}
-              <CTAButton label="Contact Us" href="#contact" />
+
+{/* Dark Notch — left slanted, right straight */}
+              <div
+                style={{
+                  position: 'relative',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'flex-end',
+                  padding: '12px 16px 12px 36px',
+                  borderRadius: '0 0 20px 0',
+                  marginLeft: '-24px',
+                  overflow: 'hidden',
+                }}
+              >
+                {/* Dark background — only left edge skewed */}
+                <div
+                  style={{
+                    position: 'absolute',
+                    top: 0,
+                    left: 0,
+                    right: 0,
+                    bottom: 0,
+                    background: 'rgba(0,0,0,0.40)',
+                    borderRadius: '0 0 20px 0',
+                    clipPath: 'polygon(18px 0%, 100% 0%, 100% 100%, 0% 100%)',
+                  }}
+                />
+                {/* CTA Button — sits normally, no skew */}
+                <div style={{ position: 'relative', zIndex: 2 }}>
+                  <CTAButton label="Contact Us" href="#contact" />
+                </div>
+              </div>
             </div>
           </div>
 
