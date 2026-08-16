@@ -1,19 +1,46 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import ImageCarousel from './ImageCarousel';
 import CTAButton from './CTAButton';
 import HeroForeground from './HeroForeground';
 import { ChevronDown } from 'lucide-react';
 
-const carImages = [
-  'https://drive.google.com/thumbnail?id=1Gl-mN7cbf2WYbZrN7SnJRWguo7LG59iQ&sz=w800',
-  'https://drive.google.com/thumbnail?id=1qSnctzX97NxHA9SNriiethf--D7sawgQ&sz=w800',
-  'https://drive.google.com/thumbnail?id=1Pfbf7hAumH_w_Jf0slsI0AZk0qomisK3&sz=w800',
-  'https://drive.google.com/thumbnail?id=11Qd3FcPK-FCGBjZbbXzDsblVa88UOK0r&sz=w800',
-  // https://lh3.googleusercontent.com/d/FILE_ID=w800 alt Google's Official Image Serve CDN
-
+const carData = [
+  {
+    image: 'https://drive.google.com/thumbnail?id=1Gl-mN7cbf2WYbZrN7SnJRWguo7LG59iQ&sz=w800',
+    hp: '640 HP',
+    range: '300 mi',
+  },
+  {
+    image: 'https://drive.google.com/thumbnail?id=1qSnctzX97NxHA9SNriiethf--D7sawgQ&sz=w800',
+    hp: '523 HP',
+    range: '280 mi',
+  },
+  {
+    image: 'https://drive.google.com/thumbnail?id=1Pfbf7hAumH_w_Jf0slsI0AZk0qomisK3&sz=w800',
+    hp: '710 HP',
+    range: '320 mi',
+  },
+  {
+    image: 'https://drive.google.com/thumbnail?id=11Qd3FcPK-FCGBjZbbXzDsblVa88UOK0r&sz=w800',
+    hp: '620 HP',
+    range: '310 mi',
+  },
 ];
 
+const carImages = carData.map((car) => car.image);
+
 const HeroCard = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [statsVisible, setStatsVisible] = useState(true);
+
+  // Listen to carousel changes and fade stats accordingly
+  useEffect(() => {
+    setStatsVisible(false);
+    const timer = setTimeout(() => {
+      setStatsVisible(true);
+    }, 400);
+    return () => clearTimeout(timer);
+  }, [currentIndex]);
 
   return (
     <div
@@ -24,38 +51,17 @@ const HeroCard = () => {
         background: '#111111',
       }}
     >
-{/* ── Background Slide Carousel ── */}
-      <div className="absolute inset-0" flex 
-      style={{ opacity: 0.75 }}>
+      {/* ── Background Slide Carousel ── */}
+      <div className="absolute inset-0" style={{ opacity: 0.75 }}>
         <ImageCarousel
           images={carImages}
           height="100%"
           borderRadius="0"
           interval={4000}
           showDots={false}
+          onIndexChange={setCurrentIndex}
         />
       </div>
-
-      {/* Carousel Dot Indicators */}
-      {/* <div
-        className="absolute bottom-3 left-1/2 flex gap-1.5 z-20"
-        style={{ transform: 'translateX(-50%)' }}
-      >
-        {carImages.map((_, i) => (
-          <div
-            key={i}
-            onClick={() => setCurrentIndex(i)}
-            style={{
-              width: i === currentIndex ? '16px' : '5px',
-              height: '5px',
-              borderRadius: '99px',
-              background: i === currentIndex ? '#2A6FDB' : 'rgba(255,255,255,0.3)',
-              transition: 'all 0.3s ease',
-              cursor: 'pointer',
-            }}
-          />
-        ))}
-      </div> */}
 
       {/* Dark Overlay */}
       <div
@@ -66,16 +72,12 @@ const HeroCard = () => {
         }}
       />
 
-          {/* Right — CTA Button */}
-
+      {/* Right — CTA Button */}
       <div className="relative my-4 pr-1 w-full justify-end flex z-10 items-center rounded-2xl">
         <CTAButton
           label="Chat With Us"
           href="https://wa.link/rqzyad"
-          onClick={() => window.open(
-            'https://wa.link/rqzyad',
-            '_blank'
-          )}
+          onClick={() => window.open('https://wa.link/rqzyad', '_blank')}
         />
       </div>
 
@@ -87,7 +89,7 @@ const HeroCard = () => {
           <HeroForeground />
         </div>
 
-        {/* Stats - Mid Right */}
+        {/* Stats - Mid Right — fade on slide change */}
         <div
           className="relative text-right z-10"
           style={{
@@ -95,12 +97,35 @@ const HeroCard = () => {
             flexDirection: 'column',
             alignItems: 'flex-end',
             gap: '2px',
+            opacity: statsVisible ? 1 : 0,
+            transform: statsVisible ? 'translateY(0)' : 'translateY(-6px)',
+            transition: 'opacity 0.4s ease, transform 0.4s ease',
           }}
         >
-          <p className="text-white font-black leading-none" style={{ fontSize: '1.2rem' }}>640 HP</p>
-          <p className="text-white/40 uppercase tracking-widest" style={{ fontSize: '7px', marginBottom: '10px' }}>Horsepower</p>
-          <p className="text-white font-black leading-none" style={{ fontSize: '1.2rem' }}>300 mi</p>
-          <p className="text-white/40 uppercase tracking-widest" style={{ fontSize: '7px' }}>Range</p>
+          <p
+            className="text-white font-black leading-none"
+            style={{ fontSize: '1.2rem' }}
+          >
+            {carData[currentIndex].hp}
+          </p>
+          <p
+            className="text-white/40 uppercase tracking-widest"
+            style={{ fontSize: '7px', marginBottom: '10px' }}
+          >
+            Horsepower
+          </p>
+          <p
+            className="text-white font-black leading-none"
+            style={{ fontSize: '1.2rem' }}
+          >
+            {carData[currentIndex].range}
+          </p>
+          <p
+            className="text-white/40 uppercase tracking-widest"
+            style={{ fontSize: '7px' }}
+          >
+            Range
+          </p>
         </div>
       </div>
 

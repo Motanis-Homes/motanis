@@ -7,16 +7,21 @@ const ImageCarousel = ({
   interval = 4000,
   showDots = false,
   objectPosition = 'center',
+  onIndexChange,
 }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  useEffect(() => {
+useEffect(() => {
     if (images.length <= 1) return;
     const timer = setInterval(() => {
-      setCurrentIndex((prev) => (prev + 1) % images.length);
+      setCurrentIndex((prev) => {
+        const next = (prev + 1) % images.length;
+        if (onIndexChange) onIndexChange(next);
+        return next;
+      });
     }, interval);
     return () => clearInterval(timer);
-  }, [images.length, interval]);
+  }, [images.length, interval, onIndexChange]);
 
   if (!images.length) return null;
 
