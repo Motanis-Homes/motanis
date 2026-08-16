@@ -38,13 +38,27 @@ const handleNavClick = (page) => {
 
           {/* Logo */}
           <a href="#home" className="flex flex-col leading-[0.5px] flex-shrink-0">
-            <span className="text-sm font-black tracking-tight">
-              <span className="text-white">MOT</span>
-              <span className="text-motanis-blue">ANIS.</span>
-            </span>
-            <span className="text-[6px] mx-[0.5px] text-motanis-muted font-medium tracking-widest uppercase">
-              Homes & Autos
-            </span>
+
+            <img
+              src="https://drive.google.com/thumbnail?id=1eZA9bhkmUgRf6mJwXPtQ3mOn_kyuJzcZ&sz=w200"
+              alt="Motanis Logo"
+              style={{
+                height: '36px',
+                width: 'auto',
+                objectFit: 'contain',
+              }}
+            />
+
+            {/*Previous Navbar Text Logo Format:*/}
+
+            {/* <span className="text-sm font-black tracking-tight">
+               <span className="text-white">MOT</span>
+               <span className="text-motanis-blue">ANIS.</span>
+               </span>
+               <span className="text-[6px] mx-[0.5px] text-motanis-muted font-medium tracking-widest uppercase">
+                 Homes & Autos
+               </span> */}
+            
           </a>
 
           {/* Nav Links */}

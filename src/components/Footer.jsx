@@ -92,16 +92,17 @@ const Footer = () => {
     <footer
       ref={sectionRef}
       id="footer"
-      className="relative flex flex-col bg-motanis-muted top-14 px-2 rounded-2xl"
+      className="relative flex flex-col justify-evenly bg-motanis-muted top-14 px-2 rounded-2xl"
       style={{
         marginTop: '12px',
+        height: '100svh',
         paddingBottom: '0px',
         overflow: 'hidden',
       }}
     >
       {/* Big Card */}
       <div
-        className="relative flex flex-col w-full"
+        className="relative flex flex-col w-full h-[90svh]"
         style={{
           borderRadius: '24px 24px 0 0',
           overflow: 'hidden',
@@ -157,11 +158,24 @@ const Footer = () => {
             }}
           >
             {/* Logo + Tagline */}
-            <div className="flex flex-col gap-2">
-              <span className="font-black tracking-tight" style={{ fontSize: '18px' }}>
+            <div className="flex flex-col items-start gap-2">
+
+              <img
+                src="https://drive.google.com/thumbnail?id=1q-u02VX-IqEORCYzgjJWPzGNhLzsqMkm&sz=w400"
+                alt="Motanis Logo"
+                style={{
+                  height: '40px',
+                  width: 'auto',
+                  objectFit: 'contain',
+                }}
+              />
+
+              {/* Previous Footer Text Logo Below: */}
+
+              {/* <span className="font-black tracking-tight" style={{ fontSize: '18px' }}>
                 <span className="text-white">MOT</span>
                 <span className="text-motanis-blue">ANIS.</span>
-              </span>
+              </span> */}
               <span
                 className="text-motanis-muted font-medium uppercase"
                 style={{ fontSize: '6px', letterSpacing: '2px' }}

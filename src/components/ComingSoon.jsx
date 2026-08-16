@@ -38,10 +38,21 @@ const ComingSoon = ({ page, onBack }) => {
 
       {/* Logo */}
       <div className="relative z-10 mb-10">
-        <span className="text-2xl font-black tracking-tight">
+
+        <img
+          alt="Motanis Logo"
+          style={{
+            height: '70px',
+            width: 'auto',
+            objectFit: 'contain',
+          }}
+        />
+
+        {/* Previous Coming Soon Text Logo: */}
+        {/* <span className="text-2xl font-black tracking-tight">
           <span className="text-white">MOT</span>
           <span className="text-motanis-blue">ANIS.</span>
-        </span>
+        </span> */}
         <p
           className="text-motanis-muted font-medium uppercase tracking-widest"
           style={{ fontSize: '7px', marginTop: '2px' }}
