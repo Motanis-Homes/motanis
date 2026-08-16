@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import CTAButton from './CTAButton';
 
 const footerLinks = [
   {
@@ -322,7 +323,17 @@ const Footer = () => {
                 </p>
               </div>
             ) : (
-              <div className="flex items-center gap-0">
+              <div
+                className="flex items-center"
+                style={{
+                  border: '1px solid rgba(255,255,255,0.10)',
+                  borderRight: 'none',
+                  borderRadius: '10px 0 0 10px',
+                  overflow: 'hidden',
+                  transform: 'skewX(-12deg)',
+
+                }}
+              >
                 {/* Email Input */}
                 <input
                   type="email"
@@ -332,47 +343,19 @@ const Footer = () => {
                   className="flex-1 bg-transparent text-white outline-none"
                   style={{
                     fontSize: '10px',
-                    padding: '12px 14px',
-                    borderRadius: '10px 0 0 10px',
-                    border: '1px solid rgba(255,255,255,0.10)',
-                    borderRight: 'none',
+                    padding: '11px 14px',
                     color: '#fff',
+                    minWidth: 0,
                   }}
                 />
 
-                {/* Subscribe Button */}
-                <div className="flex items-center">
-                  <div
-                    style={{
-                      background: '#fff',
-                      padding: '12px 14px',
-                      borderTop: '1px solid rgba(255,255,255,0.10)',
-                      borderBottom: '1px solid rgba(255,255,255,0.10)',
-                    }}
-                  >
-                    <span
-                      className="text-black font-black uppercase tracking-widest whitespace-nowrap"
-                      style={{ fontSize: '8px' }}
-                    >
-                      Subscribe
-                    </span>
-                  </div>
-                  <div
-                    className="flex items-center justify-center cursor-pointer"
-                    onClick={handleSubscribe}
-                    style={{
-                      background: '#2A6FDB',
-                      padding: '12px 13px',
-                      borderRadius: '0 10px 10px 0',
-                    }}
-                  >
-                    <span
-                      className="text-white font-black"
-                      style={{ fontSize: '12px', letterSpacing: '-2px' }}
-                    >
-                      »
-                    </span>
-                  </div>
+                {/* CTAButton — Subscribe */}
+                <div
+                  className="flex-shrink-0"
+                  onClick={handleSubscribe}
+                  style={{ cursor: 'pointer' }}
+                >
+                  <CTAButton label="Subscribe" href="#" />
                 </div>
               </div>
             )}
@@ -417,7 +400,7 @@ const Footer = () => {
               className="text-motanis-muted uppercase tracking-widest"
               style={{ fontSize: '7px' }}
             >
-              2025 © Motanis. All Rights Reserved
+              2025 © Motanis. All Rights Reserved | OMMICANG.
             </p>
           </div>
 
