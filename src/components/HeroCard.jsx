@@ -129,12 +129,18 @@ const HeroCard = () => {
         </div>
       </div>
 
-      {/* Scroll Down — right edge */}
+{/* Scroll Down — right edge */}
       <div
-        className="relative flex justify-center z-10 w-5/12 gap-2"
+        className="relative flex justify-center z-10 w-5/12 gap-2 cursor-pointer"
         style={{
           left: '45%',
           transform: 'translateY(-50%) rotate(90deg)',
+        }}
+        onClick={() => {
+          document.getElementById('inventory')?.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start',
+          });
         }}
       >
         <span
