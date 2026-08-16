@@ -11,7 +11,7 @@ const footerLinks = [
   },
   {
     heading: 'Services',
-    links: ['Home Delivery', 'Car Financing', 'EMI Calculator', 'FAQ'],
+    links: ['Delivery', 'Car Financing', 'EMI Calculator', 'FAQ'],
   },
 ];
 
@@ -95,16 +95,16 @@ const Footer = () => {
       className="relative flex flex-col justify-evenly bg-motanis-muted top-14 px-2 rounded-2xl"
       style={{
         marginTop: '12px',
-        height: '100svh',
+        height: '110svh',
         paddingBottom: '0px',
         overflow: 'hidden',
       }}
     >
       {/* Big Card */}
       <div
-        className="relative flex flex-col w-full h-[90svh]"
+        className="relative flex flex-col w-full h-[100svh]"
         style={{
-          borderRadius: '24px 24px 0 0',
+          borderRadius: '24px',
           overflow: 'hidden',
           background: '#0A0A0F',
         }}
@@ -186,12 +186,13 @@ const Footer = () => {
                 className="font-cormorant text-motanis-muted leading-relaxed"
                 style={{
                   fontSize: '12px',
+                  fontWeight: '700',
                   fontStyle: 'italic',
                   maxWidth: '160px',
                   marginTop: '4px',
                 }}
               >
-                Every week we share the latest arrivals, best deals and exclusive offers.
+                Every Week We Share The Latest Arrivals, Best Deals And Exclusive Offers.
               </p>
             </div>
 
@@ -297,11 +298,11 @@ const Footer = () => {
               style={{
                 fontSize: '13px',
                 fontStyle: 'italic',
-                fontWeight: '500',
+                fontWeight: '700',
                 maxWidth: '280px',
               }}
             >
-              Get the latest arrivals, updates and exclusive offers delivered straight to your inbox.
+              Get The Latest Arrivals, Updates And Exclusive Offers Delivered Straight To Your Inbox.
             </p>
 
             {/* Email Input Row */}
