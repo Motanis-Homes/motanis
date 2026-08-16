@@ -66,9 +66,17 @@ const HeroCard = () => {
         }}
       />
 
-      {/* Right — CTA Button */}
+          {/* Right — CTA Button */}
+
       <div className="relative my-4 pr-1 w-full justify-end flex z-10 items-center rounded-2xl">
-        <CTAButton label="Chat With Us" href="#contact" />
+        <CTAButton
+          label="Chat With Us"
+          href="https://wa.me/2347084355630?text=Hello%20Motanis%20Autos🚘!%20I%20am%20interested%20in%20one%20of%20your%20vehicles.%20Kindly%20assist%20me%3F"
+          onClick={() => window.open(
+            'https://wa.me/2347084355630?text=Hello%20Motanis%20Autos🚘!%20I%20am%20interested%20in%20one%20of%20your%20vehicles.%20Kindly%20assist%20me%3F',
+            '_blank'
+          )}
+        />
       </div>
 
       {/* Stats — Mid Right + HeroForeground Parent */}
