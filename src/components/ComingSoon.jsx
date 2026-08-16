@@ -40,6 +40,7 @@ const ComingSoon = ({ page, onBack }) => {
       <div className="relative z-10 mb-10">
 
         <img
+          src="https://lh3.googleusercontent.com/d/1HG9YMpVUX9zGiUoFeR5fdEfHn4FtclAH"
           alt="Motanis Logo"
           style={{
             height: '70px',

@@ -164,7 +164,7 @@ const Footer = () => {
                 src="https://drive.google.com/thumbnail?id=1q-u02VX-IqEORCYzgjJWPzGNhLzsqMkm&sz=w400"
                 alt="Motanis Logo"
                 style={{
-                  height: '40px',
+                  height: '60px',
                   width: 'auto',
                   objectFit: 'contain',
                 }}
@@ -176,12 +176,12 @@ const Footer = () => {
                 <span className="text-white">MOT</span>
                 <span className="text-motanis-blue">ANIS.</span>
               </span> */}
-              <span
+              {/* <span
                 className="text-motanis-muted font-medium uppercase"
                 style={{ fontSize: '6px', letterSpacing: '2px' }}
               >
                 Homes & Autos
-              </span>
+              </span> */}
               <p
                 className="font-cormorant text-motanis-muted leading-relaxed"
                 style={{

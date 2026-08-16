@@ -19,7 +19,7 @@ function App() {
       <div className="hidden md:flex fixed inset-0 z-[9999] bg-motanis-black flex-col items-center justify-center text-center px-8">
 
         <img
-          src="https://drive.google.com/thumbnail?id=1HG9YMpVUX9zGiUoFeR5fdEfHn4FtclAH"
+          src="https://lh3.googleusercontent.com/d/1HG9YMpVUX9zGiUoFeR5fdEfHn4FtclAH"
           alt="Motanis Logo"
           style={{
             height: '80px',
