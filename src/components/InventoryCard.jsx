@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import CTAButton from './CTAButton';
 
-const InventoryCard = ({ car }) => {
+const InventoryCard = ({ car, flatMode = false }) => {
   const [currentImage, setCurrentImage] = useState(0);
   const [tapped, setTapped] = useState(false);
 
@@ -18,10 +18,10 @@ const InventoryCard = ({ car }) => {
   return (
     <div
       onClick={handleTap}
-      className="flex-shrink-0 flex flex-col"
+      className="flex flex-col"
       style={{
-        width: '72vw',
-        maxWidth: '280px',
+        width: flatMode ? '100%' : '72vw',
+        maxWidth: flatMode ? '420px' : '280px',
         borderRadius: '20px',
         overflow: 'hidden',
         background: 'linear-gradient(160deg, #0d1a2e 0%, #111111 100%)',
@@ -106,8 +106,8 @@ const InventoryCard = ({ car }) => {
       {/* ── Card Body ── */}
       <div className="flex flex-col px-3 py-3 gap-2">
 
-        {/* Verified + Condition Row */}
-        <div className="flex items-center gap-2 flex-wrap">
+        {/* Verified + Registration Row */}
+        <div className="flex items-center justify-between flex-wrap">
           {/* Motanis Verified */}
           <div
             className="flex items-center gap-1 px-2 py-0.5 rounded-full"
@@ -144,7 +144,12 @@ const InventoryCard = ({ car }) => {
             </span>
           </div>
 
+          </div>
+
           {/* Condition */}
+
+          <div className="flex items-center justify-start mb-2">
+
           <div
             className="flex items-center gap-1 px-2 py-0.5 rounded-full"
             style={{
@@ -180,22 +185,22 @@ const InventoryCard = ({ car }) => {
         {/* Car Name + Year */}
         <h3
           className="text-white font-black leading-tight"
-          style={{ fontSize: '13px', letterSpacing: '-0.3px' }}
+          style={{ fontSize: '14px', letterSpacing: '-0.3px' }}
         >
           {car.name}{' '}
-          <span className="text-motanis-muted" style={{ fontWeight: '500' }}>
-            ({car.year})
+          <span className="text-motanis-muted" style={{ fontWeight: '900' }}>
+            [{car.year}]
           </span>
         </h3>
 
         {/* Fields Grid */}
         <div
-          className="grid grid-cols-2 gap-x-3 gap-y-1.5"
+          className="grid grid-cols-2 gap-x-28 gap-y-1.5"
           style={{ marginTop: '2px' }}
         >
           {[
             { label: 'Color', value: car.color },
-            { label: 'Mileage', value: car.mileage },
+            { label: 'Type', value: car.type },
             { label: 'Transmission', value: car.transmission },
             { label: 'Y.O.E', value: car.yoe },
           ].map((field) => (
@@ -227,17 +232,14 @@ const InventoryCard = ({ car }) => {
           >
             {car.price}
           </span>
-          <span
-            className="font-cormorant text-motanis-muted"
-            style={{ fontSize: '11px', fontStyle: 'italic' }}
-          >
-            asking price
-          </span>
         </div>
 
+          {/* Divider */}
+        <div style={{ height: '1px', background: 'rgba(255,255,255,0.06)' }} />
+
         {/* CTA Row */}
-        <div className="flex items-center gap-2 mt-1">
-          {/* View Details */}
+        <div className="flex items-center gap-2 mt-2">
+          {/* View Details
           <button
             className="flex-1 flex items-center justify-center font-black uppercase tracking-widest"
             style={{
@@ -250,14 +252,36 @@ const InventoryCard = ({ car }) => {
             }}
           >
             View Details
-          </button>
+          </button> */}
 
           {/* Chat To Buy */}
           <div className="flex-shrink-0">
             <CTAButton
               label="Chat To Buy"
-              href="https://wa.link/rqzyad"
-              onClick={() => window.open('https://wa.link/rqzyad', '_blank')}
+              href="#"
+              onClick={(e) => {
+                e.preventDefault();
+                const message = 
+`Hello Motanis! I'm interested in purchasing the following vehicle:
+
+- Name: ${car.name}
+- Year: ${car.year}
+- Color: ${car.color}
+- Type: ${car.type}
+- Transmission: ${car.transmission}
+- Y.O.E: ${car.yoe}
+- Registration: ${car.registration}
+- Condition: ${car.condition}
+- Price: ${car.price}
+
+Kindly assist me with the next steps. Thank you!`;
+
+                const encoded = encodeURIComponent(message);
+                window.open(
+                  `https://wa.me/2347084355630?text=${encoded}`,
+                  '_blank'
+                );
+              }}
             />
           </div>
         </div>

@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
-import { LayoutGrid, List, ChevronDown } from 'lucide-react';
+import { ChevronDown } from 'lucide-react';
 
-const filterOptions = ['All', 'Sedan', 'SUV', 'Coupe', 'Convertible'];
-const sortOptions = ['Latest', 'Price: Low to High', 'Price: High to Low', 'Mileage'];
+const filterOptions = ['All', 'Sedan', 'SUV', 'Coupe'];
+const sortOptions = ['Latest', 'Price: Low to High', 'Price: High to Low'];
 
 const InventoryFilter = ({ activeFilter, setActiveFilter, sortBy, setSortBy, viewMode, setViewMode, totalCount }) => {
   const [sortOpen, setSortOpen] = useState(false);
 
   return (
     <div
-      className="sticky z-40 flex flex-col gap-2 px-3 py-3"
+      className="sticky z-40 flex flex-col gap-4 px-3 py-3"
       style={{
         top: '52px',
         background: 'rgba(13,13,26,0.95)',
@@ -17,7 +17,7 @@ const InventoryFilter = ({ activeFilter, setActiveFilter, sortBy, setSortBy, vie
         borderBottom: '1px solid rgba(255,255,255,0.06)',
       }}
     >
-      {/* Top Row — Count + Sort + Toggle */}
+      {/* Top Row — Count + Sort*/}
       <div className="flex items-center justify-between">
 
         {/* Vehicle Count */}
@@ -25,13 +25,55 @@ const InventoryFilter = ({ activeFilter, setActiveFilter, sortBy, setSortBy, vie
           className="text-white font-black"
           style={{ fontSize: '13px' }}
         >
-          {totalCount}{' '}
-          <span className="text-motanis-muted font-medium" style={{ fontSize: '11px' }}>
-            Vehicles
+          <span className="text-motanis-muted font-medium uppercase" style={{ fontSize: '8px', fontWeight: '900', }}>
+            [ Total Inventory Count_ ] =
           </span>
-        </p>
 
-        {/* Right — Sort + View Toggle */}
+          {' '}{totalCount}
+
+        </p>
+      </div>
+
+      {/* Filter Pills Row */}
+      <div
+        className="flex gap-2 pb-0.5"
+        style={{ scrollbarWidth: 'none' }}
+      >
+        <style>{`.filter-row::-webkit-scrollbar { display: none; }`}</style>
+        {filterOptions.map((option) => (
+          <button
+            key={option}
+            onClick={() => setActiveFilter(option)}
+            className="flex-shrink-0 flex items-center gap-1.5 px-3 py-1.5 rounded-full transition-all duration-200"
+            style={{
+              background: activeFilter === option
+                ? 'rgba(42,111,219,0.20)'
+                : 'rgba(255,255,255,0.05)',
+              border: activeFilter === option
+                ? '1px solid rgba(42,111,219,0.4)'
+                : '1px solid rgba(255,255,255,0.08)',
+            }}
+          >
+            {activeFilter === option && (
+              <div
+                className="rounded-full"
+                style={{ width: '4px', height: '4px', background: '#2A6FDB', flexShrink: 0 }}
+              />
+            )}
+            <span
+              className="uppercase tracking-widest font-black"
+              style={{
+                fontSize: '7px',
+                color: activeFilter === option ? '#2A6FDB' : '#8A9BB0',
+              }}
+            >
+              {option}
+            </span>
+          </button>
+        ))}
+
+                {/* Right — Sort + View Toggle */}
+
         <div className="flex items-center gap-2">
 
           {/* Sort Dropdown */}
@@ -91,73 +133,7 @@ const InventoryFilter = ({ activeFilter, setActiveFilter, sortBy, setSortBy, vie
               </div>
             )}
           </div>
-
-          {/* View Mode Toggle */}
-          <div
-            className="flex items-center rounded-full overflow-hidden"
-            style={{ border: '1px solid rgba(255,255,255,0.10)' }}
-          >
-            <button
-              onClick={() => setViewMode('grid')}
-              className="flex items-center justify-center p-2"
-              style={{
-                background: viewMode === 'grid' ? '#2A6FDB' : 'transparent',
-                transition: 'background 0.2s ease',
-              }}
-            >
-              <LayoutGrid size={12} color="#fff" />
-            </button>
-            <button
-              onClick={() => setViewMode('list')}
-              className="flex items-center justify-center p-2"
-              style={{
-                background: viewMode === 'list' ? '#2A6FDB' : 'transparent',
-                transition: 'background 0.2s ease',
-              }}
-            >
-              <List size={12} color="#fff" />
-            </button>
-          </div>
         </div>
-      </div>
-
-      {/* Filter Pills Row */}
-      <div
-        className="flex gap-2 overflow-x-auto pb-0.5"
-        style={{ scrollbarWidth: 'none' }}
-      >
-        <style>{`.filter-row::-webkit-scrollbar { display: none; }`}</style>
-        {filterOptions.map((option) => (
-          <button
-            key={option}
-            onClick={() => setActiveFilter(option)}
-            className="flex-shrink-0 flex items-center gap-1.5 px-3 py-1.5 rounded-full transition-all duration-200"
-            style={{
-              background: activeFilter === option
-                ? 'rgba(42,111,219,0.20)'
-                : 'rgba(255,255,255,0.05)',
-              border: activeFilter === option
-                ? '1px solid rgba(42,111,219,0.4)'
-                : '1px solid rgba(255,255,255,0.08)',
-            }}
-          >
-            {activeFilter === option && (
-              <div
-                className="rounded-full"
-                style={{ width: '4px', height: '4px', background: '#2A6FDB', flexShrink: 0 }}
-              />
-            )}
-            <span
-              className="uppercase tracking-widest font-black"
-              style={{
-                fontSize: '7px',
-                color: activeFilter === option ? '#2A6FDB' : '#8A9BB0',
-              }}
-            >
-              {option}
-            </span>
-          </button>
-        ))}
       </div>
     </div>
   );
