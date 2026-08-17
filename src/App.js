@@ -4,6 +4,7 @@ import Hero from './components/Hero';
 import About from './components/About';
 import FindCar from './components/FindCar';
 import Inventory from './components/Inventory';
+import InventoryPage from './components/InventoryPage';
 import Testimonials from './components/Testimonials';
 import Brands from './components/Brands';
 import FAQ from './components/FAQ';
@@ -50,12 +51,19 @@ function App() {
           <Hero/>
           <About/>
           <FindCar/>
-          <Inventory/>
+          <Inventory setActivePage={setActivePage} />
           <Testimonials/>
           <Brands/>
           <FAQ/>
           <Footer/>
           </>
+        )}
+
+        {activePage === 'inventory-page' && (
+          <InventoryPage
+            activePage={activePage}
+            setActivePage={setActivePage}
+          />
         )}
 
         {(activePage === 'homes' || activePage === 'blog') && (

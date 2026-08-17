@@ -47,7 +47,7 @@ const inventoryItems = [
   },
 ];
 
-const Inventory = () => {
+const Inventory = ({ setActivePage }) => {
   const [activeIndex, setActiveIndex] = useState(1);
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef(null);
@@ -203,9 +203,17 @@ const Inventory = () => {
               New Cars Added Every Single Day. Don't Miss Out.
             </p>
 
-            {/* CTA */}
+                {/* CTA */}
             <div className="mb-6">
-              <CTAButton label="Browse More" href="#full-inventory" />
+              <CTAButton
+                label="Browse More"
+                href="#"
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                  setTimeout(() => setActivePage('inventory-page'), 300);
+                }}
+              />
             </div>
           </div>
 
