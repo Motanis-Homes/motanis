@@ -262,16 +262,26 @@ const InventoryCard = ({ car, flatMode = false }) => {
               onClick={(e) => {
                 e.preventDefault();
                 const message = 
-`Hello Motanis! I'm interested in purchasing the following vehicle:
+`Hello Motanis👋! I'm interested in purchasing the following vehicle:
+
+- Id: ${car.id}
 
 - Name: ${car.name}
+
 - Year: ${car.year}
+
 - Color: ${car.color}
+
 - Type: ${car.type}
+
 - Transmission: ${car.transmission}
+
 - Y.O.E: ${car.yoe}
+
 - Registration: ${car.registration}
+
 - Condition: ${car.condition}
+
 - Price: ${car.price}
 
 Kindly assist me with the next steps. Thank you!`;
