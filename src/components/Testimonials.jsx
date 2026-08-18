@@ -316,7 +316,7 @@ const Testimonials = () => {
                 letterSpacing: '0.3px',
               }}
             >
-              Live Reviews From Customers Who Chose Motanis.
+              Live Reviews From Customers Who Choose Motanis.
             </p>
           </div>
 

@@ -412,7 +412,11 @@ const FAQ = () => {
                 />
                 {/* CTA Button — sits normally, no skew */}
                 <div style={{ position: 'relative', zIndex: 2 }}>
-                  <CTAButton label="Contact Us" href="#contact" />
+                  <CTAButton 
+                    label="Contact Us" 
+                    href="https://wa.link/rqzyad"
+                    onClick={() => window.open('https://wa.link/rqzyad', '_blank')} 
+                  />
                 </div>
               </div>
             </div>

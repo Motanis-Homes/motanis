@@ -233,7 +233,7 @@ const Brands = () => {
               transition: 'opacity 0.6s ease 0.3s, transform 0.6s ease 0.3s',
             }}
           >
-            Every Marquee. Every Legend. Every Dream Machine — Right Here at Motanis.
+            Every Brand. Every Legend. Every Dream Machine — Right Here at Motanis Autos.
           </p>
         </div>
 

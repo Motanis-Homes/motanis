@@ -247,8 +247,8 @@ const About = () => {
                 transition: 'opacity 0.6s ease 0.1s, transform 0.6s ease 0.1s',
               }}
             >
-              At Motanis Autos, We Don't Just Sell cars — We Deliver Excellence.
-              Every listing, Every vehicle, Every Interaction Is Built Around
+              At Motanis Autos, We Don't Just Sell Cars — We Deliver Excellence.
+              Every Listing, Every Vehicle, Every Interaction Is Built Around
               One Promise: Excellence Without Compromise.
             </p>
 

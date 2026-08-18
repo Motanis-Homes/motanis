@@ -183,7 +183,7 @@ const Footer = () => {
               >
                 Homes & Autos
               </span> */}
-              <p
+              {/* <p
                 className="font-cormorant text-motanis-muted leading-relaxed"
                 style={{
                   fontSize: '12px',
@@ -194,7 +194,7 @@ const Footer = () => {
                 }}
               >
                 Every Week We Share The Latest Arrivals, Best Deals And Exclusive Offers.
-              </p>
+              </p> */}
             </div>
 
             {/* Social Icons */}

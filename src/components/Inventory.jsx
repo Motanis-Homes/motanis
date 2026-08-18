@@ -340,6 +340,12 @@ const Inventory = ({ setActivePage }) => {
                           border: '1px solid rgba(255,255,255,0.2)',
                           backdropFilter: 'blur(8px)',
                         }}
+
+                        onClick={(e) => {
+                          e.preventDefault();
+                          window.scrollTo({ top: 0, behavior: 'smooth' });
+                          setTimeout(() => setActivePage('inventory-page'), 300);
+                        }}
                       >
                         <ChevronRight size={12} />
                         <ChevronRight size={12} style={{ marginLeft: '-7px' }} />
