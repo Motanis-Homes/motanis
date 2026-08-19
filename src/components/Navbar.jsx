@@ -37,7 +37,7 @@ const handleNavClick = (page) => {
         <div className="flex items-center justify-between w-full px-2 py-2">
 
           {/* Logo */}
-          <a href="#home" className="flex flex-col leading-[0.5px] flex-shrink-0">
+          <a href="#" className="flex flex-col leading-[0.5px] flex-shrink-0">
 
             <img
               src="https://drive.google.com/thumbnail?id=1eZA9bhkmUgRf6mJwXPtQ3mOn_kyuJzcZ&sz=w200"
