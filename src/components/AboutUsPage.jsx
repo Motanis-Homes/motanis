@@ -101,7 +101,7 @@ const ThreeDCarousel = ({ images }) => {
     }, 3500);
     return () => clearInterval(timer);
   }, [total]);
-  
+
   return (
     <div
       className="relative flex items-center justify-center"
@@ -148,7 +148,7 @@ const ThreeDCarousel = ({ images }) => {
               height: position === 'center' ? '180px' : '160px',
               borderRadius: '16px',
               overflow: 'hidden',
-              transition: 'all 0.5s cubic-bezier(0.77, 0, 0.18, 1)',
+              transition: 'all 1.5s cubic-bezier(0.77, 0, 0.18, 1)',
               cursor: position !== 'center' ? 'pointer' : 'default',
             }}
             onClick={() => {
@@ -184,27 +184,6 @@ const ThreeDCarousel = ({ images }) => {
           </div>
         );
       })}
-
-      {/* Dot Indicators */}
-      <div
-        className="absolute bottom-0 left-1/2 flex gap-1.5"
-        style={{ transform: 'translateX(-50%)' }}
-      >
-        {images.map((_, i) => (
-          <div
-            key={i}
-            onClick={() => setActiveIndex(i)}
-            style={{
-              width: i === activeIndex ? '16px' : '5px',
-              height: '5px',
-              borderRadius: '99px',
-              background: i === activeIndex ? '#2A6FDB' : 'rgba(255,255,255,0.25)',
-              transition: 'all 0.3s ease',
-              cursor: 'pointer',
-            }}
-          />
-        ))}
-      </div>
     </div>
   );
 };
@@ -256,7 +235,7 @@ const AboutUsPage = ({ activePage, setActivePage }) => {
               maxWidth: '280px',
             }}
           >
-            Redefining the automotive and real estate experience — one client at a time.
+            Redefining The Automotive And Real Estate Experience — One Client At A Time.
           </p>
         </FadeSection>
 
@@ -364,9 +343,9 @@ const AboutUsPage = ({ activePage, setActivePage }) => {
                 Where It <span className="text-motanis-blue">All Began</span>
               </h3>
               <p className="font-cormorant text-motanis-muted leading-relaxed"
-                style={{ fontSize: '14px', fontStyle: 'italic', fontWeight: '500' }}
+                style={{ fontSize: '14px', fontStyle: 'italic', fontWeight: '700' }}
               >
-                Motanis was born from a simple but powerful belief — that every Nigerian deserves access to premium vehicles and properties without the hassle, uncertainty or compromise that often comes with it.
+                Motanis Was Born From A Simple But Powerful Belief — That Every Nigerian Deserves Access To Premium Vehicles And Properties Without The Hassle, Uncertainty Or Compromise That Often Comes With It.
               </p>
             </div>
           </div>
@@ -382,9 +361,9 @@ const AboutUsPage = ({ activePage, setActivePage }) => {
                 Our <span className="text-motanis-blue">Journey</span>
               </h3>
               <p className="font-cormorant text-motanis-muted leading-relaxed"
-                style={{ fontSize: '14px', fontStyle: 'italic', fontWeight: '500' }}
+                style={{ fontSize: '14px', fontStyle: 'italic', fontWeight: '700' }}
               >
-                From our first vehicle sale to hundreds of satisfied clients — every milestone has been built on trust, transparency and an unrelenting pursuit of excellence. We don't just sell cars and homes. We build relationships.
+                From Our First Vehicle Sale To Hundreds Of Satisfied Clients — Every Milestone Has Been Built On Trust, Transparency And An Unrelenting Pursuit Of Excellence. We Don't Just Sell Cars And Homes. We Build Relationships.
               </p>
             </div>
             <div style={{ height: '180px', overflow: 'hidden' }}>
@@ -406,9 +385,9 @@ const AboutUsPage = ({ activePage, setActivePage }) => {
                 Our <span className="text-motanis-blue">Vision</span>
               </h3>
               <p className="font-cormorant text-motanis-muted leading-relaxed"
-                style={{ fontSize: '14px', fontStyle: 'italic', fontWeight: '500' }}
+                style={{ fontSize: '14px', fontStyle: 'italic', fontWeight: '700' }}
               >
-                To become Africa's most trusted premium automotive and real estate platform — where every client walks away not just satisfied, but genuinely delighted.
+                To Become Africa's Most Trusted Premium Automotive And Real Estate Platform — Where Every Client Walks Away Not Just Satisfied, But Genuinely Delighted.
               </p>
             </div>
           </div>
