@@ -39,8 +39,8 @@ const footerLinks = [
       },
       {
         label: 'Our Team',
-        action: 'placeholder',
-        target: '#',
+        action: 'scroll',
+        target: 'about',
       },
       {
         label: 'Careers',
