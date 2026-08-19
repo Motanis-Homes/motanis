@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
+import AboutUsPage from './components/AboutUsPage';
 import FindCar from './components/FindCar';
 import Inventory from './components/Inventory';
 import InventoryPage from './components/InventoryPage';
@@ -49,9 +50,9 @@ function App() {
         {activePage === 'autos' && (
           <>
           <Hero/>
-          <About/>
+          <About setActivePage={setActivePage}/>
           <FindCar/>
-          <Inventory setActivePage={setActivePage} />
+          <Inventory setActivePage={setActivePage}/>
           <Testimonials/>
           <Brands/>
           <FAQ/>
@@ -61,6 +62,13 @@ function App() {
 
         {activePage === 'inventory-page' && (
           <InventoryPage
+            activePage={activePage}
+            setActivePage={setActivePage}
+          />
+        )}
+
+        {activePage === 'about-us' && (
+          <AboutUsPage
             activePage={activePage}
             setActivePage={setActivePage}
           />

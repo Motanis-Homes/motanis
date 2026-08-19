@@ -11,7 +11,7 @@ const aboutImages = [
 
 const fullText = "Built For Those Who Want The Best";
 
-const About = () => {
+const About = ({ setActivePage }) => {
 
   const [displayed, setDisplayed] = useState('');
   const [charIndex, setCharIndex] = useState(0);
@@ -260,8 +260,18 @@ const About = () => {
                 transform: isDone ? 'translateY(0)' : 'translateY(10px)',
                 transition: 'opacity 0.6s ease 0.4s, transform 0.6s ease 0.4s',
               }}
+
             >
-              <CTAButton label="Learn More" href="#inventory" />
+              <CTAButton label="Learn More" 
+              href="#"
+
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                  setTimeout(() => setActivePage('about-us'), 300);
+                }}
+              
+              />
             </div>
           </div>
 
