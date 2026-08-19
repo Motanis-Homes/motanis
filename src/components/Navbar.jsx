@@ -37,7 +37,15 @@ const handleNavClick = (page) => {
         <div className="flex items-center justify-between w-full px-2 py-2">
 
           {/* Logo */}
-          <a href="#" className="flex flex-col leading-[0.5px] flex-shrink-0">
+          <div 
+          className="flex flex-col leading-[0.5px] flex-shrink-0"
+          
+            onClick={(e) => {
+              e.preventDefault();
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+              setTimeout(() => setActivePage('autos'), 300);
+            }}
+          >
 
             <img
               src="https://drive.google.com/thumbnail?id=1eZA9bhkmUgRf6mJwXPtQ3mOn_kyuJzcZ&sz=w200"
@@ -59,7 +67,7 @@ const handleNavClick = (page) => {
                  Homes & Autos
                </span> */}
             
-          </a>
+          </div>
 
           {/* Nav Links */}
           <ul className="flex justify-start leading-tight gap-10 mx-10 ">

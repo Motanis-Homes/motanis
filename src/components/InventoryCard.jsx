@@ -20,7 +20,7 @@ const InventoryCard = ({ car, flatMode = false }) => {
       onClick={handleTap}
       className="flex flex-col"
       style={{
-        width: flatMode ? '100%' : '72vw',
+        width: flatMode ? '90%' : '80vw',
         maxWidth: flatMode ? '420px' : '280px',
         borderRadius: '20px',
         overflow: 'hidden',
