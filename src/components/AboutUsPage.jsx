@@ -94,12 +94,14 @@ const ThreeDCarousel = ({ images }) => {
   const handleNext = () => setActiveIndex((prev) => (prev + 1) % total);
   const handlePrev = () => setActiveIndex((prev) => (prev - 1 + total) % total);
 
-  // Auto advance
-  useEffect(() => {    
-    const timer = setInterval( handleNext,3500 );
+  // Auto advance — no dependency on handleNext function reference
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setActiveIndex((prev) => (prev + 1) % total);
+    }, 3500);
     return () => clearInterval(timer);
-  }, [activeIndex]);
-
+  }, [total]);
+  
   return (
     <div
       className="relative flex items-center justify-center"
