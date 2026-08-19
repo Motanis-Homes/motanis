@@ -55,7 +55,7 @@ function App() {
           <Testimonials/>
           <Brands/>
           <FAQ/>
-          <Footer/>
+          <Footer setActivePage={setActivePage}/>
           </>
         )}
 

@@ -1,18 +1,85 @@
 import React, { useState, useEffect, useRef } from 'react';
 import CTAButton from './CTAButton';
 
+const waBase = 'https://wa.me/2347084355630?text=';
+
 const footerLinks = [
   {
     heading: 'Explore',
-    links: ['Inventory', 'New Arrivals', 'Brands', 'Test Drive'],
+    links: [
+      {
+        label: 'Inventory',
+        action: 'page',
+        target: 'inventory-page',
+      },
+      {
+        label: 'New Arrivals',
+        action: 'page',
+        target: 'inventory-page',
+      },
+      {
+        label: 'Brands',
+        action: 'scroll',
+        target: 'brands',
+      },
+      {
+        label: 'Test Drive',
+        action: 'page',
+        target: 'inventory-page',
+      },
+    ],
   },
   {
     heading: 'About Us',
-    links: ['Our Story', 'Our Team', 'Careers', 'Contact'],
+    links: [
+      {
+        label: 'Our Story',
+        action: 'scroll',
+        target: 'about',
+      },
+      {
+        label: 'Our Team',
+        action: 'placeholder',
+        target: '#',
+      },
+      {
+        label: 'Careers',
+        action: 'placeholder',
+        target: '#',
+      },
+      {
+        label: 'Contact',
+        action: 'whatsapp',
+        target: encodeURIComponent(
+          'Hello Motanis Autos! I would like to get in touch with your team. Kindly assist me.'
+        ),
+      },
+    ],
   },
   {
     heading: 'Services',
-    links: ['Delivery', 'Car Financing', 'EMI Calculator', 'FAQ'],
+    links: [
+      {
+        label: 'Delivery',
+        action: 'placeholder',
+        target: '#',
+      },
+      {
+        label: 'Car Financing',
+        action: 'placeholder',
+        target: '#',
+      },
+      {
+        label: 'EMI Calculator',
+        action: 'placeholder',
+        target: '#',
+      },
+      {
+        label: 'FAQ',
+        action: 'scroll',
+        target: 'faq',
+      },
+    ],
   },
 ];
 
@@ -59,7 +126,7 @@ const socialIcons = [
   },
 ];
 
-const Footer = () => {
+const Footer = ({ setActivePage }) => {
   const [email, setEmail] = useState('');
   const [subscribed, setSubscribed] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
@@ -255,14 +322,36 @@ const Footer = () => {
                   {col.heading}
                 </p>
                 {col.links.map((link) => (
-                  <a
-                    key={link}
-                    href="www.google.com"
-                    className="text-motanis-muted uppercase tracking-widest transition-colors duration-200"
-                    style={{ fontSize: '7px' }}
+                  <button
+                    key={link.label}
+                    onClick={() => {
+                      if (link.action === 'page') {
+                        window.scrollTo({ top: 0, behavior: 'smooth' });
+                        setTimeout(() => setActivePage(link.target), 300);
+                      } else if (link.action === 'scroll') {
+                        setActivePage('autos');
+                        setTimeout(() => {
+                          document.getElementById(link.target)?.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start',
+                          });
+                        }, 400);
+                      } else if (link.action === 'whatsapp') {
+                        window.open(`${waBase}${link.target}`, '_blank');
+                      }
+                    }}
+                    className="text-left text-motanis-muted uppercase tracking-widest transition-colors duration-200"
+                    style={{
+                      fontSize: '7px',
+                      background: 'none',
+                      border: 'none',
+                      padding: 0,
+                      cursor: link.action === 'placeholder' ? 'default' : 'pointer',
+                      opacity: link.action === 'placeholder' ? 0.5 : 1,
+                    }}
                   >
-                    {link}
-                  </a>
+                    {link.label}
+                  </button>
                 ))}
               </div>
             ))}
