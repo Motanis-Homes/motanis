@@ -12,7 +12,7 @@ const carImages = [
 ];
 
 const teamMembers = [
-  { id: 1, name: 'TOBI SAMUEL', role: 'CEO & Founder', bio: 'Visionary leader with over a decade of experience in luxury automotive and real estate markets across Africa.', avatar: 'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg' },
+  { id: 1, name: 'TOBI SAMUEL', role: 'CEO & Founder', bio: 'Visionary leader with over two decades of experience in luxury automotive and real estate markets across Africa.', avatar: 'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg' },
   { id: 2, name: 'Segun Adekanye', role: 'Head of Operations', bio: 'Driving excellence in every process. Chidinma ensures every client interaction is seamless from start to finish.', avatar: 'https://images.pexels.com/photos/3785079/pexels-photo-3785079.jpeg' },
   { id: 3, name: 'Munachi Anuakpado', role: 'Lead Auto Specialist', bio: 'A passionate car enthusiast with deep expertise in performance vehicles and luxury fleet management.', avatar: 'https://images.pexels.com/photos/6817003/pexels-photo-6817003.jpeg' },
   { id: 4, name: 'OMMICANG', role: 'Real Estate Director', bio: 'Bridging the gap between premium property listings and discerning clients across Nigeria and beyond.', avatar: 'https://images.pexels.com/photos/3785079/pexels-photo-3785079.jpeg' },
@@ -50,7 +50,7 @@ const whyFeatures = [
   {
     icon: 'https://drive.google.com/thumbnail?id=1IcJxP6N2Y8MeGKcAoQEWrIhSHf9OTqgi',
     title: 'Instant WhatsApp Support',
-    description: 'We are always one message away. Reach us directly on WhatsApp and get real responses from real people — fast.'
+    description: 'We are always one message away. Reach us directly on WhatsApp and get fast responses from real people.'
 },
   {
     icon: 'https://drive.google.com/thumbnail?id=1Pfj-ZgEL4q26Sve642-QLuWvc7gNwWOF',
@@ -297,7 +297,7 @@ const AboutUsPage = ({ activePage, setActivePage }) => {
               maxWidth: '280px',
             }}
           >
-            Redefining The Automotive And Real Estate Experience — One Client At A Time.
+            Making Every Sale | Buy And Swap An Experience — One Client At A Time.
           </p>
         </FadeSection>
 
@@ -353,9 +353,9 @@ const AboutUsPage = ({ activePage, setActivePage }) => {
             }}
           >
             {[
-              { target: 100, suffix: '+', label: 'Happy Clients' },
-              { target: 3, suffix: '+', label: 'Years Exp.' },
-              { target: 50, suffix: '+', label: 'Cars Delivered' },
+              { target: 500, suffix: '+', label: 'Happy Clients' },
+              { target: 20, suffix: '+', label: 'Years Exp.' },
+              { target: 500, suffix: '+', label: 'Cars Delivered' },
               { target: 5, suffix: '.0★', label: 'Rating' },
             ].map((stat, i) => (
               <div
@@ -484,7 +484,7 @@ const AboutUsPage = ({ activePage, setActivePage }) => {
                 maxWidth: '280px',
               }}
             >
-              A team of passionate professionals dedicated to delivering your best experience.
+              A Team Of Passionate Professionals Dedicated To Delivering Your Best Experience.
             </p>
           </div>
         </FadeSection>
@@ -643,7 +643,7 @@ const AboutUsPage = ({ activePage, setActivePage }) => {
                       style={{
                         fontSize: '13px',
                         fontStyle: 'italic',
-                        fontWeight: '500',
+                        fontWeight: '700',
                       }}
                     >
                       {member.bio}
@@ -811,7 +811,7 @@ const AboutUsPage = ({ activePage, setActivePage }) => {
             <p className="font-cormorant text-motanis-muted leading-relaxed mb-6"
               style={{ fontSize: '14px', fontStyle: 'italic', fontWeight: '500', maxWidth: '260px' }}
             >
-              Let's make it happen. Chat with our team today and let us find the perfect vehicle for you.
+              Let's Make It Happen. Chat With Our Team Today And Let Us Find The Perfect Listing For You.
             </p>
             <div className="flex items-center">
               <CTAButton

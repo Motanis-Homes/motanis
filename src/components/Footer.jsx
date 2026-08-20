@@ -163,14 +163,14 @@ const Footer = ({ setActivePage }) => {
       className="relative flex flex-col justify-evenly bg-motanis-muted top-14 px-2 rounded-2xl"
       style={{
         marginTop: '12px',
-        height: '110svh',
+        height: '105svh',
         paddingBottom: '0px',
         overflow: 'hidden',
       }}
     >
       {/* Big Card */}
       <div
-        className="relative flex flex-col w-full h-[100svh]"
+        className="relative flex flex-col w-full h-[95svh]"
         style={{
           borderRadius: '24px',
           overflow: 'hidden',
