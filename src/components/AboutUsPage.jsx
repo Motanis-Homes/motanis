@@ -12,12 +12,10 @@ const carImages = [
 ];
 
 const teamMembers = [
-  { id: 1, name: 'Adebayo Okafor', role: 'CEO & Founder', bio: 'Visionary leader with over a decade of experience in luxury automotive and real estate markets across Africa.', avatar: 'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg' },
-  { id: 2, name: 'Chidinma Eze', role: 'Head of Operations', bio: 'Driving excellence in every process. Chidinma ensures every client interaction is seamless from start to finish.', avatar: 'https://images.pexels.com/photos/3785079/pexels-photo-3785079.jpeg' },
-  { id: 3, name: 'Emeka Nwosu', role: 'Lead Auto Specialist', bio: 'A passionate car enthusiast with deep expertise in performance vehicles and luxury fleet management.', avatar: 'https://images.pexels.com/photos/6817003/pexels-photo-6817003.jpeg' },
-  { id: 4, name: 'Fatima Aliyu', role: 'Real Estate Director', bio: 'Bridging the gap between premium property listings and discerning clients across Nigeria and beyond.', avatar: 'https://images.pexels.com/photos/3785079/pexels-photo-3785079.jpeg' },
-  { id: 5, name: 'Tunde Adeleke', role: 'Client Relations Manager', bio: 'Building lasting relationships one conversation at a time. Tunde is the heart of the Motanis client experience.', avatar: 'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg' },
-  { id: 6, name: 'Ngozi Obi', role: 'Finance & Logistics Lead', bio: 'Ensuring every deal is structured for maximum value. Ngozi manages financing, delivery and post-sale support.', avatar: 'https://images.pexels.com/photos/6817003/pexels-photo-6817003.jpeg' },
+  { id: 1, name: 'TOBI SAMUEL', role: 'CEO & Founder', bio: 'Visionary leader with over a decade of experience in luxury automotive and real estate markets across Africa.', avatar: 'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg' },
+  { id: 2, name: 'Segun Adekanye', role: 'Head of Operations', bio: 'Driving excellence in every process. Chidinma ensures every client interaction is seamless from start to finish.', avatar: 'https://images.pexels.com/photos/3785079/pexels-photo-3785079.jpeg' },
+  { id: 3, name: 'Munachi Anuakpado', role: 'Lead Auto Specialist', bio: 'A passionate car enthusiast with deep expertise in performance vehicles and luxury fleet management.', avatar: 'https://images.pexels.com/photos/6817003/pexels-photo-6817003.jpeg' },
+  { id: 4, name: 'OMMICANG', role: 'Real Estate Director', bio: 'Bridging the gap between premium property listings and discerning clients across Nigeria and beyond.', avatar: 'https://images.pexels.com/photos/3785079/pexels-photo-3785079.jpeg' },
 ];
 
 const coreValues = [
@@ -39,10 +37,26 @@ const coreValues = [
 ];
 
 const whyFeatures = [
-  { icon: '✅', title: 'Motanis Verified Listings', description: 'Every vehicle and property in our inventory is thoroughly inspected and verified before listing — zero compromise on quality.' },
-  { icon: '👨‍💼', title: 'Expert Team', description: 'Our specialists bring years of industry knowledge to guide you through every step of your purchase journey.' },
-  { icon: '💬', title: 'Instant WhatsApp Support', description: 'We are always one message away. Reach us directly on WhatsApp and get real responses from real people — fast.' },
-  { icon: '🚗', title: 'Doorstep Delivery', description: 'We bring your dream car directly to your door, fully inspected and ready to drive — anywhere in Nigeria.' },
+  { 
+    icon: 'https://drive.google.com/thumbnail?id=1R3wYKJ-sqQY8IaDszIliTGMzw_aGaVrO&sz=w200', 
+    title: 'Motanis Verified Listings', 
+    description: 'Every vehicle and property in our inventory is thoroughly inspected and verified before listing — zero compromise on quality.' 
+},
+  { 
+    icon: 'https://drive.google.com/thumbnail?id=1dq2FCUnNSwODYcy_fKx16GhX8H580Oou&sz=w200',
+    title: 'Expert Team',
+    description: 'Our specialists bring years of industry knowledge to guide you through every step of your purchase journey.'
+},
+  {
+    icon: 'https://drive.google.com/thumbnail?id=11DaiqTnj9A5sHc9iambEn4F063jkLmq8&sz=w200',
+    title: 'Instant WhatsApp Support',
+    description: 'We are always one message away. Reach us directly on WhatsApp and get real responses from real people — fast.'
+},
+  {
+    icon: 'https://drive.google.com/thumbnail?id=1R3wYKJ-sqQY8IaDszIliTGMzw_aGaVrO&sz=w200',
+    title: 'Doorstep Delivery',
+    description: 'We bring your dream car directly to your door, fully inspected and ready to drive — anywhere in Nigeria.'
+},
 ];
 
 // ── Reusable Section Wrapper with fade-in ──
@@ -680,17 +694,27 @@ const AboutUsPage = ({ activePage, setActivePage }) => {
                   border: '1px solid rgba(42,111,219,0.15)',
                 }}
               >
-                <img
-                  src={value.icon}
-                  alt={value.title}
+                <div
                   style={{
-                    width: '64px',
-                    height: '64px',
-                    objectFit: 'contain',
+                    width: '40px',
+                    height: '40px',
                     marginBottom: '10px',
+                    borderRadius: '12px',
+                    overflow: 'hidden',
+                    mixBlendMode: 'screen',
                   }}
-                />
-                
+                >
+                  <img
+                    src={value.icon}
+                    alt={value.title}
+                    style={{
+                      width: '100%',
+                      height: '100%',
+                      objectFit: 'contain',
+                    }}
+                  />
+                </div>
+
                 <p className="text-white font-black uppercase leading-none mb-2" style={{ fontSize: '1rem' }}>
                   {value.title}
                 </p>
@@ -724,11 +748,32 @@ const AboutUsPage = ({ activePage, setActivePage }) => {
               <div className="flex items-start gap-4 p-4 rounded-2xl"
                 style={{ background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.08)' }}
               >
-                <div className="flex-shrink-0 flex items-center justify-center rounded-xl"
+
+                                <div
+                  style={{
+                    width: '40px',
+                    height: '40px',
+                    marginBottom: '10px',
+                    borderRadius: '12px',
+                    overflow: 'hidden',
+                    mixBlendMode: 'screen',
+                  }}
+                >
+                  <img
+                    src={feature.icon}
+                    alt={feature.title}
+                    style={{
+                      width: '100%',
+                      height: '100%',
+                      objectFit: 'contain',
+                    }}
+                  />
+                </div>
+                {/* <div className="flex-shrink-0 flex items-center justify-center rounded-xl"
                   style={{ width: '40px', height: '40px', background: 'rgba(42,111,219,0.15)', border: '1px solid rgba(42,111,219,0.25)', fontSize: '1.2rem' }}
                 >
                   {feature.icon}
-                </div>
+                </div> */}
                 <div className="flex flex-col flex-1">
                   <p className="text-white font-black uppercase leading-tight mb-1" style={{ fontSize: '11px', letterSpacing: '0.3px' }}>
                     {feature.title}
