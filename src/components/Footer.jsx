@@ -472,7 +472,7 @@ const Footer = ({ setActivePage }) => {
           >
             {/* Legal Links */}
             <div className="flex items-center gap-1 flex-wrap">
-              {['Privacy Policy |', 'Terms & Conditions |', 'Cookies |', 'FAQ |', 'Credits |'].map((item) => (
+              {['Privacy Policy |', 'Terms & Conditions |', 'Cookies |', 'FAQ |', 'Credits'].map((item) => (
                 <button
                   key={item}
                   href="#"

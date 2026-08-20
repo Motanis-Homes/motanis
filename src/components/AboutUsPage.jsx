@@ -38,22 +38,22 @@ const coreValues = [
 
 const whyFeatures = [
   { 
-    icon: 'https://drive.google.com/thumbnail?id=1R3wYKJ-sqQY8IaDszIliTGMzw_aGaVrO&sz=w200', 
+    icon: 'https://drive.google.com/thumbnail?id=1JY07XYl9lTPw53hs7gueJ8ABqrK-363-', 
     title: 'Motanis Verified Listings', 
     description: 'Every vehicle and property in our inventory is thoroughly inspected and verified before listing — zero compromise on quality.' 
 },
   { 
-    icon: 'https://drive.google.com/thumbnail?id=1dq2FCUnNSwODYcy_fKx16GhX8H580Oou&sz=w200',
+    icon: 'https://drive.google.com/thumbnail?id=1CyRB8TiBd-xRtABP8gRTWq-KKc1Zjq-g',
     title: 'Expert Team',
     description: 'Our specialists bring years of industry knowledge to guide you through every step of your purchase journey.'
 },
   {
-    icon: 'https://drive.google.com/thumbnail?id=11DaiqTnj9A5sHc9iambEn4F063jkLmq8&sz=w200',
+    icon: 'https://drive.google.com/thumbnail?id=1IcJxP6N2Y8MeGKcAoQEWrIhSHf9OTqgi',
     title: 'Instant WhatsApp Support',
     description: 'We are always one message away. Reach us directly on WhatsApp and get real responses from real people — fast.'
 },
   {
-    icon: 'https://drive.google.com/thumbnail?id=1R3wYKJ-sqQY8IaDszIliTGMzw_aGaVrO&sz=w200',
+    icon: 'https://drive.google.com/thumbnail?id=1Pfj-ZgEL4q26Sve642-QLuWvc7gNwWOF',
     title: 'Doorstep Delivery',
     description: 'We bring your dream car directly to your door, fully inspected and ready to drive — anywhere in Nigeria.'
 },

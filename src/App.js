@@ -75,6 +75,14 @@ function App() {
           />
         )}
 
+        {activePage === 'credits' && (
+          <CreditsPage
+            activePage={activePage}
+            setActivePage={setActivePage}
+          />
+        )}
+        
+
         {(activePage === 'homes' || activePage === 'blog') && (
           <ComingSoon
             page={activePage}
@@ -82,13 +90,6 @@ function App() {
           />
         )}
 
-                {activePage === 'credits' && (
-          <CreditsPage
-            activePage={activePage}
-            setActivePage={setActivePage}
-          />
-        )}
-        
       </div>
     </>
   );
