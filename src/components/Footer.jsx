@@ -44,8 +44,8 @@ const footerLinks = [
       },
       {
         label: 'Careers',
-        action: 'placeholder',
-        target: '#',
+        action: 'scroll',
+        target: 'faq',
       },
       {
         label: 'Contact',
@@ -61,18 +61,18 @@ const footerLinks = [
     links: [
       {
         label: 'Delivery',
-        action: 'placeholder',
-        target: '#',
+        action: 'scroll',
+        target: 'faq',
       },
       {
         label: 'Car Financing',
-        action: 'placeholder',
-        target: '#',
+        action: 'scroll',
+        target: 'faq',
       },
       {
         label: 'EMI Calculator',
-        action: 'placeholder',
-        target: '#',
+        action: 'scroll',
+        target: 'faq',
       },
       {
         label: 'FAQ',
@@ -86,7 +86,7 @@ const footerLinks = [
 const socialIcons = [
   {
     name: 'Instagram',
-    href: '#',
+    href: 'https://www.instagram.com/motanisautos/',
     icon: (
       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
@@ -478,9 +478,9 @@ const Footer = ({ setActivePage }) => {
                   href="#"
                   onClick={(e) => {
                     e.preventDefault();
-                    if (item === 'Credits') {
+                    if (item === 'faq','Credits') {
                       window.scrollTo({ top: 0, behavior: 'smooth' });
-                      setTimeout(() => setActivePage('credits'), 300);
+                      setTimeout(() => setActivePage('faq','credits'), 300);
                     }
                   }}
                   className="text-motanis-muted uppercase tracking-widest"

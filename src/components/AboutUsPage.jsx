@@ -297,7 +297,7 @@ const AboutUsPage = ({ activePage, setActivePage }) => {
               maxWidth: '280px',
             }}
           >
-            Making Every Sale | Buy And Swap An Experience — One Client At A Time.
+            Making Every Sale, Buy And Swap An Experience — One Client At A Time.
           </p>
         </FadeSection>
 
