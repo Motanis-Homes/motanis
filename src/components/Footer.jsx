@@ -471,16 +471,27 @@ const Footer = ({ setActivePage }) => {
             }}
           >
             {/* Legal Links */}
-            <div className="flex items-center gap-4 flex-wrap">
-              {['Privacy Policy', 'Terms & Conditions', 'Cookies', 'FAQ'].map((item) => (
-                <a
+            <div className="flex items-center gap-1 flex-wrap">
+              {['Privacy Policy |', 'Terms & Conditions |', 'Cookies |', 'FAQ |', 'Credits |'].map((item) => (
+                <button
                   key={item}
-                  href="www.google.com"
+                  href="#"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    if (item === 'Credits') {
+                      window.scrollTo({ top: 0, behavior: 'smooth' });
+                      setTimeout(() => setActivePage('credits'), 300);
+                    }
+                  }}
                   className="text-motanis-muted uppercase tracking-widest"
-                  style={{ fontSize: '7px' }}
+                  style={{ 
+                    fontSize: '7px',
+                    cursor: item === 'Credits' ? 'pointer' : 'default',
+                    opacity: item === 'Credits' ? 1 : 0.6,
+                  }}
                 >
                   {item}
-                </a>
+                </button>
               ))}
             </div>
 

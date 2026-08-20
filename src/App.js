@@ -10,6 +10,7 @@ import Testimonials from './components/Testimonials';
 import Brands from './components/Brands';
 import FAQ from './components/FAQ';
 import Footer from './components/Footer';
+import CreditsPage from './components/CreditsPage';
 import ComingSoon from './components/ComingSoon';
 
 function App() {
@@ -80,6 +81,14 @@ function App() {
             onBack={() => setActivePage('autos')}
           />
         )}
+
+                {activePage === 'credits' && (
+          <CreditsPage
+            activePage={activePage}
+            setActivePage={setActivePage}
+          />
+        )}
+        
       </div>
     </>
   );

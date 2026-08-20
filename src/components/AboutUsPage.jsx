@@ -21,9 +21,21 @@ const teamMembers = [
 ];
 
 const coreValues = [
-  { icon: '💎', title: 'Excellence', description: 'We hold ourselves to the highest standard in every vehicle, every property and every interaction.' },
-  { icon: '🤝', title: 'Integrity', description: 'Transparency and honesty are the foundation of every deal we make at Motanis.' },
-  { icon: '🚀', title: 'Innovation', description: 'We continuously evolve our processes to deliver a smarter, faster and more premium experience.' },
+  {
+    icon: 'https://drive.google.com/thumbnail?id=1R3wYKJ-sqQY8IaDszIliTGMzw_aGaVrO&sz=w200',
+    title: 'Excellence',
+    description: 'We hold ourselves to the highest standard in every vehicle, every property and every interaction.',
+  },
+  {
+    icon: 'https://drive.google.com/thumbnail?id=1dq2FCUnNSwODYcy_fKx16GhX8H580Oou&sz=w200',
+    title: 'Integrity',
+    description: 'Transparency and honesty are the foundation of every deal we make at Motanis.',
+  },
+  {
+    icon: 'https://drive.google.com/thumbnail?id=11DaiqTnj9A5sHc9iambEn4F063jkLmq8&sz=w200',
+    title: 'Innovation',
+    description: 'We continuously evolve our processes to deliver a smarter, faster and more premium experience.',
+  },
 ];
 
 const whyFeatures = [
@@ -381,7 +393,7 @@ const AboutUsPage = ({ activePage, setActivePage }) => {
               <p className="font-cormorant text-motanis-muted leading-relaxed"
                 style={{ fontSize: '14px', fontStyle: 'italic', fontWeight: '700' }}
               >
-                Motanis Was Born From A Simple But Powerful Belief — That Every Nigerian Deserves Access To Premium Vehicles And Properties Without The Hassle, Uncertainty Or Compromise That Often Comes With It.
+                Motanis Was Birth From A Simple But Powerful Belief — That Every Nigerian Deserves Access To Premium Vehicles And Properties Without The Hassle, Uncertainty Or Compromise That Often Comes With It.
               </p>
             </div>
           </div>
@@ -668,7 +680,17 @@ const AboutUsPage = ({ activePage, setActivePage }) => {
                   border: '1px solid rgba(42,111,219,0.15)',
                 }}
               >
-                <span style={{ fontSize: '1.8rem', marginBottom: '10px' }}>{value.icon}</span>
+                <img
+                  src={value.icon}
+                  alt={value.title}
+                  style={{
+                    width: '64px',
+                    height: '64px',
+                    objectFit: 'contain',
+                    marginBottom: '10px',
+                  }}
+                />
+                
                 <p className="text-white font-black uppercase leading-none mb-2" style={{ fontSize: '1rem' }}>
                   {value.title}
                 </p>
