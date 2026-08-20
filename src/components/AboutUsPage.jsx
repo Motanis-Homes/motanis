@@ -188,6 +188,42 @@ const ThreeDCarousel = ({ images }) => {
   );
 };
 
+// ── Team Scroll Dots ──
+const TeamDots = ({ total }) => {
+  const [active, setActive] = useState(0);
+
+  useEffect(() => {
+    const row = document.querySelector('.team-dot-track');
+    if (!row) return;
+    const handleScroll = () => {
+      const cardWidth = row.offsetWidth * 0.72 + 16;
+      const index = Math.round(row.scrollLeft / cardWidth);
+      setActive(Math.min(index, total - 1));
+    };
+    row.addEventListener('scroll', handleScroll);
+    return () => row.removeEventListener('scroll', handleScroll);
+  }, [total]);
+
+  return (
+    <div className="flex justify-center gap-1.5 mt-2 px-5">
+      {Array.from({ length: total }).map((_, i) => (
+        <div
+          key={i}
+          style={{
+            width: i === active ? '16px' : '5px',
+            height: '5px',
+            borderRadius: '99px',
+            background: i === active
+              ? '#2A6FDB'
+              : 'rgba(255,255,255,0.20)',
+            transition: 'all 0.3s ease',
+          }}
+        />
+      ))}
+    </div>
+  );
+};
+
 const AboutUsPage = ({ activePage, setActivePage }) => {
   return (
     <div className="md:hidden flex flex-col min-h-screen" style={{ background: '#0A0A0F' }}>
@@ -395,54 +431,221 @@ const AboutUsPage = ({ activePage, setActivePage }) => {
       </section>
 
       {/* ── 5. MEET THE TEAM ── */}
-      <section className="flex flex-col px-4 py-8"
-        style={{ background: 'linear-gradient(135deg, #0A0A0F 0%, #13131A 50%, #0d1a2e 100%)' }}
+      <section
+        className="flex flex-col py-8 overflow-hidden"
+        style={{
+          background: 'linear-gradient(135deg, #0A0A0F 0%, #13131A 50%, #0d1a2e 100%)',
+        }}
       >
+        {/* Header */}
         <FadeSection>
-          <LabelPill text="[ Our Team_ ]" />
-          <h2 className="text-white font-black uppercase leading-none mb-2"
-            style={{ fontSize: '1.6rem', letterSpacing: '-0.5px' }}
-          >
-            Meet The <span className="text-motanis-blue">Motanis</span> People
-          </h2>
-          <p className="font-cormorant text-motanis-muted leading-relaxed mb-6"
-            style={{ fontSize: '14px', fontStyle: 'italic', fontWeight: '500' }}
-          >
-            A team of passionate professionals dedicated to delivering your best experience.
-          </p>
+          <div className="px-5 mb-6">
+            <LabelPill text="[ Our Team_ ]" />
+            <h2
+              className="text-white font-black uppercase leading-none mb-2"
+              style={{ fontSize: '1.6rem', letterSpacing: '-0.5px' }}
+            >
+              Meet The{' '}
+              <span className="text-motanis-blue">Motanis</span>{' '}
+              People
+            </h2>
+            <p
+              className="font-cormorant text-motanis-muted leading-relaxed"
+              style={{
+                fontSize: '14px',
+                fontStyle: 'italic',
+                fontWeight: '500',
+                maxWidth: '280px',
+              }}
+            >
+              A team of passionate professionals dedicated to delivering your best experience.
+            </p>
+          </div>
         </FadeSection>
 
-        <div className="flex flex-col gap-4">
-          {teamMembers.map((member, i) => (
-            <FadeSection key={member.id} delay={i * 80}>
-              <div className="flex items-center gap-4 p-4 rounded-2xl"
-                style={{ background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.08)' }}
-              >
-                {/* Avatar */}
-                <div className="flex-shrink-0 overflow-hidden rounded-full"
-                  style={{ width: '56px', height: '56px', border: '2px solid rgba(42,111,219,0.4)' }}
-                >
-                  <img src={member.avatar} alt={member.name} className="w-full h-full object-cover" />
-                </div>
+        {/* ── Horizontal Team Card Scroll ── */}
+        <FadeSection delay={150}>
+          <div className="relative">
 
-                {/* Info */}
-                <div className="flex flex-col flex-1">
-                  <p className="text-white font-black leading-tight" style={{ fontSize: '13px' }}>
-                    {member.name}
-                  </p>
-                  <p className="text-motanis-blue font-bold uppercase tracking-widest mb-1" style={{ fontSize: '7px' }}>
-                    {member.role}
-                  </p>
-                  <p className="font-cormorant text-motanis-muted leading-relaxed"
-                    style={{ fontSize: '12px', fontStyle: 'italic', fontWeight: '500' }}
+            {/* Left fade edge */}
+            <div
+              className="absolute left-0 top-0 bottom-0 z-10 pointer-events-none"
+              style={{
+                width: '32px',
+                background: 'linear-gradient(to right, #0d1219, transparent)',
+              }}
+            />
+
+            {/* Right fade edge */}
+            <div
+              className="absolute right-0 top-0 bottom-0 z-10 pointer-events-none"
+              style={{
+                width: '80px',
+                background: 'linear-gradient(to left, #0d1219, transparent)',
+              }}
+            />
+
+            {/* Scrollable Row */}
+            <div
+              className="flex gap-4 px-5 pb-4 team-dot-track"
+              style={{
+                overflowX: 'scroll',
+                scrollSnapType: 'x mandatory',
+                scrollbarWidth: 'none',
+                msOverflowStyle: 'none',
+              }}
+            >
+              <style>{`.team-scroll::-webkit-scrollbar { display: none; }`}</style>
+
+              {teamMembers.map((member, i) => (
+                <div
+                  key={member.id}
+                  className="flex-shrink-0 flex flex-col overflow-hidden"
+                  style={{
+                    width: '72vw',
+                    maxWidth: '260px',
+                    borderRadius: '24px',
+                    scrollSnapAlign: 'start',
+                    background: 'rgba(255,255,255,0.03)',
+                    border: '1px solid rgba(255,255,255,0.08)',
+                    position: 'relative',
+                  }}
+                >
+                  {/* Card Top — Avatar + Gradient */}
+                  <div
+                    className="relative flex items-end justify-start"
+                    style={{ height: '200px', overflow: 'hidden' }}
                   >
-                    {member.bio}
-                  </p>
+                    {/* Background gradient */}
+                    <div
+                      className="absolute inset-0"
+                      style={{
+                        background: `linear-gradient(160deg, #0d1a2e ${i % 2 === 0 ? '0%' : '30%'}, #111111 100%)`,
+                      }}
+                    />
+
+                    {/* Blue glow blob */}
+                    <div
+                      className="absolute rounded-full blur-2xl"
+                      style={{
+                        width: '120px',
+                        height: '120px',
+                        background: 'rgba(42,111,219,0.20)',
+                        top: '-20px',
+                        right: '-20px',
+                      }}
+                    />
+
+                    {/* Avatar — large, bottom aligned */}
+                    <div
+                      className="absolute bottom-0 right-4 overflow-hidden"
+                      style={{
+                        width: '110px',
+                        height: '140px',
+                        borderRadius: '16px 16px 0 0',
+                        border: '1px solid rgba(42,111,219,0.3)',
+                        borderBottom: 'none',
+                      }}
+                    >
+                      <img
+                        src={member.avatar}
+                        alt={member.name}
+                        className="w-full h-full object-cover object-top"
+                      />
+                      {/* Bottom gradient on avatar */}
+                      <div
+                        className="absolute bottom-0 left-0 right-0"
+                        style={{
+                          height: '40px',
+                          background: 'linear-gradient(to top, #111111, transparent)',
+                        }}
+                      />
+                    </div>
+
+                    {/* Name + Role — bottom left of image area */}
+                    <div
+                      className="relative z-10 px-4 pb-3 flex flex-col"
+                      style={{ maxWidth: '55%' }}
+                    >
+                      <p
+                        className="text-white font-black leading-tight"
+                        style={{ fontSize: '14px', letterSpacing: '-0.3px' }}
+                      >
+                        {member.name}
+                      </p>
+                      <div
+                        className="flex items-center gap-1 mt-1 px-2 py-0.5 rounded-full w-fit"
+                        style={{
+                          background: 'rgba(42,111,219,0.20)',
+                          border: '1px solid rgba(42,111,219,0.35)',
+                        }}
+                      >
+                        <div
+                          className="rounded-full flex-shrink-0"
+                          style={{
+                            width: '4px',
+                            height: '4px',
+                            background: '#2A6FDB',
+                          }}
+                        />
+                        <span
+                          className="text-motanis-blue font-black uppercase tracking-widest"
+                          style={{ fontSize: '6px' }}
+                        >
+                          {member.role}
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Card Bottom — Bio + Divider */}
+                  <div
+                    className="flex flex-col px-4 py-4"
+                    style={{
+                      borderTop: '1px solid rgba(255,255,255,0.06)',
+                    }}
+                  >
+                    {/* Quote mark */}
+                    <span
+                      className="text-motanis-blue font-black leading-none mb-1"
+                      style={{ fontSize: '2rem', opacity: 0.3, lineHeight: 1 }}
+                    >
+                      "
+                    </span>
+                    <p
+                      className="font-cormorant text-motanis-muted leading-relaxed"
+                      style={{
+                        fontSize: '13px',
+                        fontStyle: 'italic',
+                        fontWeight: '500',
+                      }}
+                    >
+                      {member.bio}
+                    </p>
+
+                    {/* Bottom accent line */}
+                    <div
+                      className="mt-4 rounded-full"
+                      style={{
+                        height: '2px',
+                        width: '32px',
+                        background: 'linear-gradient(to right, #2A6FDB, transparent)',
+                      }}
+                    />
+                  </div>
                 </div>
-              </div>
-            </FadeSection>
-          ))}
-        </div>
+              ))}
+
+              {/* End spacer */}
+              <div style={{ width: '16px', flexShrink: 0 }} />
+            </div>
+          </div>
+        </FadeSection>
+
+        {/* Dot Indicators */}
+        <FadeSection delay={200}>
+          <TeamDots total={teamMembers.length} />
+        </FadeSection>
       </section>
 
       {/* ── 6. CORE VALUES ── */}
