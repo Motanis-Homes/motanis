@@ -478,7 +478,7 @@ const Footer = ({ setActivePage }) => {
                   href="#"
                   onClick={(e) => {
                     e.preventDefault();
-                    if (item === 'FAQ','Credits') {
+                    if (item === 'FAQ'||'Credits') {
                       window.scrollTo({ top: 0, behavior: 'smooth' });
                       setTimeout(() => setActivePage('faq','credits'), 300);
                     }
