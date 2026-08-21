@@ -3,7 +3,7 @@ import React, { useEffect, useRef, useState } from 'react';
 const brands = [
   {
     name: 'Ferrari',
-    logo: 'https://drive.google.com/thumbnail?id=1LaHI7bTPAGE-r498Jg8iTZqsScLctfiM',
+    logo: 'https://drive.google.com/thumbnail?id=1sQfgcSOcN4_OocU-CpCPcrNjrqHmPMqD',
   },
   {
     name: 'BMW',
@@ -11,7 +11,7 @@ const brands = [
   },
   {
     name: 'Lamborghini',
-    logo: 'https://w7.pngwing.com/pngs/259/599/png-transparent-lamborghini-logo-lamborghini-sports-car-audi-logo-lamborghini-emblem-car-gold-thumbnail.png',
+    logo: 'https://drive.google.com/thumbnail?id=1lBI3kGiSPudjFQB8Oios2eO3lUQvOFu5',
   },
   {
     name: 'Audi',
