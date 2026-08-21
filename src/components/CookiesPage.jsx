@@ -6,7 +6,7 @@ import CTAButton from './CTAButton';
 const cookieTypes = [
   {
     type: 'Essential Cookies',
-    icon: '🔒',
+    icon: 'https://drive.google.com/thumbnail?id=1F_Xja-gxl2pKRmde2JplvwNEG4ARiKh8=w200',
     required: true,
     description: 'These cookies are strictly necessary for the Motanis platform to function. They enable core features such as page navigation and access to secure areas. The platform cannot function properly without these cookies.',
     examples: ['Session management', 'Security tokens', 'Load balancing'],

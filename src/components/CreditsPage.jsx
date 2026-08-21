@@ -27,14 +27,14 @@ const credits = [
         url: 'https://www.flaticon.com/free-animated-icons/innovation',
         license: 'Flaticon License — Free for use with attribution',
       },
-        {
+      {
         title: 'Verified Icon',
         author: 'Magnific',
         platform: 'Flaticon',
         url: 'https://www.flaticon.com/free-animated-icons/verified',
         license: 'Flaticon License — Free for use with attribution',
       },
-        {
+      {
         title: 'Team Icon',
         author: 'Magnific',
         platform: 'Flaticon',
@@ -48,11 +48,18 @@ const credits = [
         url: 'https://www.flaticon.com/free-animated-icons/customer-service',
         license: 'Flaticon License — Free for use with attribution',
       },
-        {
+      {
         title: 'Delivery Icon',
         author: 'Magnific',
         platform: 'Flaticon',
         url: 'https://www.flaticon.com/free-animated-icons/route',
+        license: 'Flaticon License — Free for use with attribution',
+      },
+      {
+        title: 'Lock Icon',
+        author: 'Magnific',
+        platform: 'Flaticon',
+        url: 'https://www.flaticon.com/free-animated-icons/padlock',
         license: 'Flaticon License — Free for use with attribution',
       },
     ],
