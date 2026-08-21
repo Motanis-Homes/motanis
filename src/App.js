@@ -11,6 +11,10 @@ import Brands from './components/Brands';
 import FAQ from './components/FAQ';
 import Footer from './components/Footer';
 import CreditsPage from './components/CreditsPage';
+import CookieConsent from './components/CookieConsent';
+import PrivacyPolicyPage from './components/PrivacyPolicyPage';
+import TermsPage from './components/TermsPage';
+import CookiesPage from './components/CookiesPage';
 import ComingSoon from './components/ComingSoon';
 
 function App() {
@@ -58,6 +62,8 @@ function App() {
           <Brands/>
           <FAQ/>
           <Footer setActivePage={setActivePage}/>
+          {/* Global Cookie Consent */}
+        <CookieConsent setActivePage={setActivePage} />
           </>
         )}
 
@@ -80,6 +86,15 @@ function App() {
             activePage={activePage}
             setActivePage={setActivePage}
           />
+        )}
+                {activePage === 'privacy-policy' && (
+          <PrivacyPolicyPage activePage={activePage} setActivePage={setActivePage} />
+        )}
+        {activePage === 'terms' && (
+          <TermsPage activePage={activePage} setActivePage={setActivePage} />
+        )}
+        {activePage === 'cookies-policy' && (
+          <CookiesPage activePage={activePage} setActivePage={setActivePage} />
         )}
         
 

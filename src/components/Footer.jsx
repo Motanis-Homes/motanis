@@ -478,16 +478,27 @@ const Footer = ({ setActivePage }) => {
                   href="#"
                   onClick={(e) => {
                     e.preventDefault();
-                    if (item === 'Credits') {
+                    const pageMap = {
+                      'Privacy Policy': 'privacy-policy',
+                      'Terms & Conditions': 'terms',
+                      'Cookies': 'cookies-policy',
+                      'Credits': 'credits',
+                    };
+                    if (item === 'FAQ') {
+                      setActivePage('autos');
+                      setTimeout(() => {
+                        document.getElementById('faq')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                      }, 400);
+                    } else if (pageMap[item]) {
                       window.scrollTo({ top: 0, behavior: 'smooth' });
-                      setTimeout(() => setActivePage('credits'), 300);
+                      setTimeout(() => setActivePage(pageMap[item]), 300);
                     } 
                   }}
                   className="text-motanis-muted uppercase tracking-widest"
                   style={{ 
-                    fontSize: '7px',
-                    cursor: item === 'Credits' ? 'pointer' : 'default',
-                    opacity: item === 'Credits' ? 1 : 0.6,
+                    fontSize: '7px', cursor: 'pointer'
+                    // cursor: item === 'Credits' ? 'pointer' : 'default',
+                    // opacity: item === 'Credits' ? 1 : 0.6,
                   }}
                 >
                   {item}
