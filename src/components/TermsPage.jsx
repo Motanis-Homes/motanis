@@ -37,7 +37,7 @@ const sections = [
   },
   {
     title: 'Contact',
-    content: `For any questions regarding these Terms and Conditions, please contact us via WhatsApp at +234 708 435 5630 or email us at hello@motanis.com.`,
+    content: `For any questions regarding these Terms and Conditions, please contact us via WhatsApp at +234 708 435 5630 or email us.`,
   },
 ];
 
@@ -116,7 +116,7 @@ const TermsPage = ({ activePage, setActivePage }) => {
           }}
         >
           <p className="font-cormorant text-motanis-muted" style={{ fontSize: '12px', fontStyle: 'italic', fontWeight: '500' }}>
-            © 2025 Motanis — OMMICANG. All rights reserved.
+            © 2025 Motanis. All rights reserved.
           </p>
         </div>
       </div>
