@@ -3,7 +3,7 @@ import React, { useEffect, useRef, useState } from 'react';
 const brands = [
   {
     name: 'Ferrari',
-    logo: 'https://drive.google.com/thumbnail?id=1sQfgcSOcN4_OocU-CpCPcrNjrqHmPMqD=w400',
+    logo: 'https://drive.google.com/thumbnail?id=1sQfgcSOcN4_OocU-CpCPcrNjrqHmPMqD',
   },
   {
     name: 'BMW',
