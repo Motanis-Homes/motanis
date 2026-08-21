@@ -62,6 +62,27 @@ const credits = [
         url: 'https://www.flaticon.com/free-animated-icons/padlock',
         license: 'Flaticon License — Free for use with attribution',
       },
+      {
+        title: 'Analytics Icon',
+        author: 'Magnific',
+        platform: 'Flaticon',
+        url: 'https://www.flaticon.com/free-animated-icons/graph',
+        license: 'Flaticon License — Free for use with attribution',
+      },
+            {
+        title: 'Marketing Icon',
+        author: 'Magnific',
+        platform: 'Flaticon',
+        url: 'https://www.flaticon.com/free-animated-icons/target',
+        license: 'Flaticon License — Free for use with attribution',
+      },
+      {
+        title: 'Network Icon',
+        author: 'Magnific',
+        platform: 'Flaticon',
+        url: 'https://www.flaticon.com/free-animated-icons/connectivity',
+        license: 'Flaticon License — Free for use with attribution',
+      },
     ],
   },
   {

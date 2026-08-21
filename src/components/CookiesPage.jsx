@@ -14,7 +14,7 @@ const cookieTypes = [
   },
   {
     type: 'Analytics Cookies',
-    icon: '📊',
+    icon: 'https://drive.google.com/thumbnail?id=13TIfYfNCj3ff3r2LPfPLncaWo8sCnmxI',
     title: 'Analytics Icon', 
     required: false,
     description: 'These cookies help us understand how visitors interact with our platform by collecting and reporting information anonymously. This helps us improve the overall user experience.',
@@ -22,7 +22,7 @@ const cookieTypes = [
   },
   {
     type: 'Marketing Cookies',
-    icon: '📣',
+    icon: 'https://drive.google.com/thumbnail?id=1SaXctI83gMJLR7zVx_aHkPICH2qKJf3A',
     title: 'Marketing Speaker Icon', 
     required: false,
     description: 'These cookies are used to track visitors across platforms and display relevant content based on your interests. They are set by us and our trusted marketing partners.',
@@ -30,7 +30,7 @@ const cookieTypes = [
   },
   {
     type: 'Third-Party Cookies',
-    icon: '🌐',
+    icon: 'https://drive.google.com/thumbnail?id=1KYR8vRfzKRxfki2tfsZHJvfFVCrZwd08',
     title: 'Internet Icon', 
     required: false,
     description: 'Some features on our platform are provided by third-party services including Google Drive for image delivery and WhatsApp for communication. These services may set their own cookies.',
@@ -119,8 +119,8 @@ const CookiesPage = ({ activePage, setActivePage }) => {
 
                     <div
                         style={{
-                            width: '20px',
-                            height: '20px',
+                            width: '30px',
+                            height: '30px',
                             marginBottom: '10px',
                             borderRadius: '12px',
                             overflow: 'hidden',
