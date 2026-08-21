@@ -15,7 +15,7 @@ const faqs = [
   {
     id: 3,
     question: 'Can I Negotiate The Price?',
-    answer: 'Yes, absolutely. Our team is always open to discussing pricing. We believe in fair deals and will work with you to find a price that suits both parties.',
+    answer: 'Yes, you can. Our team is always open to discussing pricing. We believe in fair deals and will work with you to find a price that suits both parties.',
   },
   {
     id: 4,
