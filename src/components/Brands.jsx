@@ -3,7 +3,7 @@ import React, { useEffect, useRef, useState } from 'react';
 const brands = [
   {
     name: 'Ferrari',
-    logo: 'https://w7.pngwing.com/pngs/1016/221/png-transparent-ferrari-458-car-sticker-decal-ferrari-logo-ferrari-logo-logo-fictional-character-signage-thumbnail.png',
+    logo: 'https://drive.google.com/thumbnail?id=1sQfgcSOcN4_OocU-CpCPcrNjrqHmPMqD=w400',
   },
   {
     name: 'BMW',
