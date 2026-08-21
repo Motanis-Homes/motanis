@@ -7,7 +7,7 @@ const brands = [
   },
   {
     name: 'BMW',
-    logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/BMW.svg/250px-BMW.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail',
+    logo: 'https://drive.google.com/thumbnail?id=1JBY3EH6Zy8OOpeTiLGIEHpbsrZRHCEsB',
   },
   {
     name: 'Lamborghini',
