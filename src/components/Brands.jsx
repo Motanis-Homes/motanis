@@ -3,35 +3,60 @@ import React, { useEffect, useRef, useState } from 'react';
 const brands = [
   {
     name: 'Ferrari',
-    logo: 'https://upload.wikimedia.org/wikipedia/en/d/d1/Ferrari-Logo.svg',
+    logo: 'https://w7.pngwing.com/pngs/1016/221/png-transparent-ferrari-458-car-sticker-decal-ferrari-logo-ferrari-logo-logo-fictional-character-signage-thumbnail.png',
   },
   {
     name: 'BMW',
-    logo: 'https://upload.wikimedia.org/wikipedia/commons/4/44/BMW.svg',
+    logo: 'https://w7.pngwing.com/pngs/995/480/png-transparent-bmw-car-logo-bmw-logo-trademark-logo-car-thumbnail.png',
   },
   {
     name: 'Lamborghini',
-    logo: 'https://upload.wikimedia.org/wikipedia/en/3/thirty/Lamborghini_Logo.svg',
+    logo: 'https://w7.pngwing.com/pngs/259/599/png-transparent-lamborghini-logo-lamborghini-sports-car-audi-logo-lamborghini-emblem-car-gold-thumbnail.png',
   },
   {
     name: 'Audi',
-    logo: 'https://upload.wikimedia.org/wikipedia/commons/9/92/Audi-Logo_2016.svg',
+    logo: 'https://w7.pngwing.com/pngs/665/220/png-transparent-audi-logo-audi-a3-car-emblem-logo-audi-car-logo-brand-text-candle-automobile-repair-shop-thumbnail.png',
   },
   {
     name: 'Ford',
-    logo: 'https://upload.wikimedia.org/wikipedia/commons/3/3e/Ford_logo_flat.svg',
+    logo: 'https://w7.pngwing.com/pngs/592/644/png-transparent-ford-logo-ford-motor-company-car-ford-mustang-chrysler-ford-logo-icon-miscellaneous-emblem-trademark-thumbnail.png',
   },
   {
     name: 'Mercedes',
-    logo: 'https://upload.wikimedia.org/wikipedia/commons/9/90/Mercedes-Logo.svg',
+    logo: 'https://w7.pngwing.com/pngs/409/855/png-transparent-mercedes-benz-logo-mercedes-benz-sprinter-car-mercedes-benz-s-class-mercedes-benz-a-class-mercedes-logo-angle-free-logo-design-template-png-graphics-thumbnail.png',
   },
   {
     name: 'Porsche',
-    logo: 'https://upload.wikimedia.org/wikipedia/de/9/9e/Porsche_logo.svg',
+    logo: 'https://w7.pngwing.com/pngs/650/400/png-transparent-porsche-911-car-porsche-944-porsche-car-logo-brand-emblem-label-candle-thumbnail.png',
   },
   {
     name: 'McLaren',
-    logo: 'https://upload.wikimedia.org/wikipedia/en/thumb/c/c9/McLaren_logo.svg/1200px-McLaren_logo.svg.png',
+    logo: 'https://w7.pngwing.com/pngs/676/841/png-transparent-2016-mclaren-570s-mclaren-automotive-car-mclaren-12c-mclaren-logo-class-text-mercedes-benz-thumbnail.png',
+  },
+
+    {
+    name: 'Toyota',
+    logo: 'https://w7.pngwing.com/pngs/186/0/png-transparent-toyota-logo-2017-toyota-camry-car-logo-toyota-car-logo-brand-emblem-company-text-thumbnail.png',
+  },
+      {
+    name: 'Volkswagen',
+    logo: 'https://w7.pngwing.com/pngs/509/532/png-transparent-volkswagen-group-car-logo-volkswagen-car-logo-brand-emblem-trademark-volkswagen-thumbnail.png',
+  },
+        {
+    name: 'Fiat',
+    logo: 'https://w7.pngwing.com/pngs/7/356/png-transparent-fiat-logo-fiat-car-logo-brand-emblem-trademark-candle-thumbnail.png',
+  },
+          {
+    name: 'Nissan',
+    logo: 'https://w7.pngwing.com/pngs/567/493/png-transparent-nissan-logo-nissan-altima-car-nissan-titan-nissan-quest-nissan-nissan-car-standard-logo-emblem-flag-free-logo-design-template-thumbnail.png',
+  },
+            {
+    name: 'Suzuki',
+    logo: 'https://w7.pngwing.com/pngs/188/538/png-transparent-red-suzuki-logo-suzuki-swift-car-maruti-suzuki-logo-suzuki-angle-emblem-text-thumbnail.png',
+  },
+              {
+    name: 'Honda',
+    logo: 'https://w7.pngwing.com/pngs/673/472/png-transparent-honda-logo-car-honda-s2000-honda-car-logo-brand-compact-car-angle-emblem-thumbnail.png',
   },
 ];
 

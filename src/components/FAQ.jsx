@@ -4,8 +4,8 @@ import CTAButton from './CTAButton';
 const faqs = [
   {
     id: 1,
-    question: 'Is Motanis A Trusted Dealership?',
-    answer: 'Absolutely. Motanis is a fully licensed and verified dealership with hundreds of satisfied customers. Every vehicle goes through rigorous inspection before listing.',
+    question: 'Is Motanis Autos A Trusted Dealership?',
+    answer: 'Absolutely. Motanis Autos is a fully licensed and verified dealership with hundreds of satisfied customers. Every vehicle goes through rigorous inspection before listing.',
   },
   {
     id: 2,
@@ -25,7 +25,7 @@ const faqs = [
   {
     id: 5,
     question: 'Do You Offer Financing Options?',
-    answer: 'Yes. Motanis partners with leading financial institutions to offer flexible financing plans tailored to your budget. Speak to our finance team for details.',
+    answer: 'Yes. Motanis Autos partners with leading financial institutions to offer flexible financing plans tailored to your budget. Speak to our finance team for details.',
   },
   {
     id: 6,
