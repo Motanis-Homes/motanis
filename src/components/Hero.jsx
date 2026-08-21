@@ -63,7 +63,7 @@ const Hero = () => {
         >
           <img
             src="https://images.pexels.com/photos/6817003/pexels-photo-6817003.jpeg"
-            alt="Featured Happy Customer Image"
+            alt="Happy Customer"
             className="object-cover flex-shrink-0"
             style={{ width: '72px', height: '50px', borderRadius: '8px' }}
           />
