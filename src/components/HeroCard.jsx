@@ -6,22 +6,22 @@ import { ChevronDown } from 'lucide-react';
 
 const carData = [
   {
-    image: 'https://drive.google.com/thumbnail?id=1UanrJY1LXt__b1ttS_-uHq_fqbu2NvH_=w800',
+    image: 'https://drive.google.com/thumbnail?id=1UanrJY1LXt__b1ttS_-uHq_fqbu2NvH_',
     hp: '187 HP',
     range: '536 mi',
   },
   {
-    image: 'https://drive.google.com/thumbnail?id=1Uu1QQOqCokoEAssUu4_BSKCB_25vv15e=w800',
+    image: 'https://drive.google.com/thumbnail?id=1Uu1QQOqCokoEAssUu4_BSKCB_25vv15e',
     hp: '227 HP',
     range: '390 mi',
   },
   {
-    image: 'https://drive.google.com/thumbnail?id=1qkqd8eupgtXidT2W1uSm6VjoFNSnw7-c=w800',
+    image: 'https://drive.google.com/thumbnail?id=1qkqd8eupgtXidT2W1uSm6VjoFNSnw7-c',
     hp: '200 HP',
     range: '675 mi',
   },
   {
-    image: 'https://drive.google.com/thumbnail?id=1bXsjYfu6ABTPGjYUI2yI88bEvKQsTs4m=w800',
+    image: 'https://drive.google.com/thumbnail?id=1bXsjYfu6ABTPGjYUI2yI88bEvKQsTs4m',
     hp: '178 HP',
     range: '510 mi',
   },
