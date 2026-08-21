@@ -128,8 +128,8 @@ const CookiesPage = ({ activePage, setActivePage }) => {
                         }}
                     >
                         <img
-                            src={value.icon}
-                            alt={value.title}
+                            src={cookie.icon}
+                            alt={cookie.title}
                             style={{
                                 width: '100%',
                                 height: '100%',
