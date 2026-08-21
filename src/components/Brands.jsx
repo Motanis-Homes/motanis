@@ -2,61 +2,92 @@ import React, { useEffect, useRef, useState } from 'react';
 
 const brands = [
   {
-    name: 'Ferrari',
-    logo: 'https://drive.google.com/thumbnail?id=1sQfgcSOcN4_OocU-CpCPcrNjrqHmPMqD',
+    name: 'Toyota',
+    logo: 'https://drive.google.com/thumbnail?id=1NDlV5SJ1f1FwtxyF48yuJS-qJSNg3bVi',
+  },
+  {
+    name: 'Volkswagen',
+    logo: 'https://drive.google.com/thumbnail?id=1hZIsKyXAJQsljh0zur0KijEMBmUAfpJe',
+  },
+  {
+    name: 'Honda',
+    logo: 'https://drive.google.com/thumbnail?id=1iMwjEhr19jJnWDeHz00pAmCwQ1ny2guw',
+  },
+  {
+    name: 'Ford',
+    logo: 'https://drive.google.com/thumbnail?id=1ve4uV2w140gs9zOmVBBpKHsXc88C-Tck',
+  },
+  {
+    name: 'Hyundai',
+    logo: 'https://drive.google.com/thumbnail?id=1bpLgeEAxntOOpwwheJ00ONz5l7yvr8No',
+  },
+  {
+    name: 'Kia',
+    logo: 'https://drive.google.com/thumbnail?id=1b8DK4bx8t9f-RA4IDYD7YtmSv04KY6zY',
+  },
+  {
+    name: 'BYD',
+    logo: 'https://drive.google.com/thumbnail?id=1NgrzLEff8FseAX7cvlrSqBwilKoNFyck',
+  },
+  {
+    name: 'Tesla',
+    logo: 'https://drive.google.com/thumbnail?id=1yML10bohp-FZu97pusS6naeYqBywVqK8',
+  },
+  {
+    name: 'Chevrolet',
+    logo: 'https://drive.google.com/thumbnail?id=1NcyIjYspo38frmlTArQtt16_9f2TZtZo',
+  },
+  {
+    name: 'Nissan',
+    logo: 'https://drive.google.com/thumbnail?id=1HqQhVEFSJXJeuWMduYr6d8kCqKe5aUT6',
+  },
+  {
+    name: 'Mercedes-Benz',
+    logo: 'https://drive.google.com/thumbnail?id=1zzRJ0DBWEzstnP9xjEcTBUWfgL9S4gQl',
   },
   {
     name: 'BMW',
     logo: 'https://drive.google.com/thumbnail?id=1JBY3EH6Zy8OOpeTiLGIEHpbsrZRHCEsB',
   },
   {
+    name: 'Audi',
+    logo: 'https://drive.google.com/thumbnail?id=1jAjNl95KsWPvJ2UTFa67cd1xwTpyf4kZ',
+  },
+  {
+    name: 'Mazda',
+    logo: 'https://drive.google.com/thumbnail?id=1sRQMzuWxtCR931A6fUJHxw42g5GDF3lw',
+  },
+  {
+    name: 'Subaru',
+    logo: 'https://drive.google.com/thumbnail?id=1jj43_65L9RfTZz6ppxFdtu8Ej8j1-Clt',
+  },
+  {
+    name: 'Renault',
+    logo: 'https://drive.google.com/thumbnail?id=1mTnMB4J6CyeZt4K1Dezltv-MaEnSC0tS',
+  },
+  {
+    name: 'Peugeot',
+    logo: 'https://drive.google.com/thumbnail?id=1jLWLWbxXZx2_GUtD_L604u_28fBp-fie',
+  },
+    {
+    name: 'Geely',
+    logo: 'https://drive.google.com/thumbnail?id=17fw24CMIacWMTgdPtIAIRxHseALJyjx8',
+  },
+  {
+    name: 'Suzuki',
+    logo: 'https://drive.google.com/thumbnail?id=1N6m9SzW-OJ402a3-Cad4AeBbD3jP8mOZ',
+  },
+  {
+    name: 'Lexus',
+    logo: 'https://drive.google.com/thumbnail?id=12VqAh5Kz6AVSniF-CQjYc2GKqa1_dSk_',
+  },
+  {
+    name: 'Ferrari',
+    logo: 'https://drive.google.com/thumbnail?id=1sQfgcSOcN4_OocU-CpCPcrNjrqHmPMqD',
+  },
+  {
     name: 'Lamborghini',
     logo: 'https://drive.google.com/thumbnail?id=1lBI3kGiSPudjFQB8Oios2eO3lUQvOFu5',
-  },
-  {
-    name: 'Audi',
-    logo: 'https://w7.pngwing.com/pngs/665/220/png-transparent-audi-logo-audi-a3-car-emblem-logo-audi-car-logo-brand-text-candle-automobile-repair-shop-thumbnail.png',
-  },
-  {
-    name: 'Ford',
-    logo: 'https://w7.pngwing.com/pngs/592/644/png-transparent-ford-logo-ford-motor-company-car-ford-mustang-chrysler-ford-logo-icon-miscellaneous-emblem-trademark-thumbnail.png',
-  },
-  {
-    name: 'Mercedes',
-    logo: 'https://w7.pngwing.com/pngs/409/855/png-transparent-mercedes-benz-logo-mercedes-benz-sprinter-car-mercedes-benz-s-class-mercedes-benz-a-class-mercedes-logo-angle-free-logo-design-template-png-graphics-thumbnail.png',
-  },
-  {
-    name: 'Porsche',
-    logo: 'https://w7.pngwing.com/pngs/650/400/png-transparent-porsche-911-car-porsche-944-porsche-car-logo-brand-emblem-label-candle-thumbnail.png',
-  },
-  {
-    name: 'McLaren',
-    logo: 'https://w7.pngwing.com/pngs/676/841/png-transparent-2016-mclaren-570s-mclaren-automotive-car-mclaren-12c-mclaren-logo-class-text-mercedes-benz-thumbnail.png',
-  },
-
-    {
-    name: 'Toyota',
-    logo: 'https://w7.pngwing.com/pngs/186/0/png-transparent-toyota-logo-2017-toyota-camry-car-logo-toyota-car-logo-brand-emblem-company-text-thumbnail.png',
-  },
-      {
-    name: 'Volkswagen',
-    logo: 'https://w7.pngwing.com/pngs/509/532/png-transparent-volkswagen-group-car-logo-volkswagen-car-logo-brand-emblem-trademark-volkswagen-thumbnail.png',
-  },
-        {
-    name: 'Fiat',
-    logo: 'https://w7.pngwing.com/pngs/7/356/png-transparent-fiat-logo-fiat-car-logo-brand-emblem-trademark-candle-thumbnail.png',
-  },
-          {
-    name: 'Nissan',
-    logo: 'https://w7.pngwing.com/pngs/567/493/png-transparent-nissan-logo-nissan-altima-car-nissan-titan-nissan-quest-nissan-nissan-car-standard-logo-emblem-flag-free-logo-design-template-thumbnail.png',
-  },
-            {
-    name: 'Suzuki',
-    logo: 'https://w7.pngwing.com/pngs/188/538/png-transparent-red-suzuki-logo-suzuki-swift-car-maruti-suzuki-logo-suzuki-angle-emblem-text-thumbnail.png',
-  },
-              {
-    name: 'Honda',
-    logo: 'https://w7.pngwing.com/pngs/673/472/png-transparent-honda-logo-car-honda-s2000-honda-car-logo-brand-compact-car-angle-emblem-thumbnail.png',
   },
 ];
 
