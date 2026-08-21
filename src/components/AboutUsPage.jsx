@@ -13,9 +13,9 @@ const carImages = [
 
 const teamMembers = [
   { id: 1, name: 'TOBI SAMUEL', role: 'CEO & Founder', bio: 'Visionary leader with over two decades of experience in luxury automotive and real estate markets across Africa.', avatar: 'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg' },
-  { id: 2, name: 'Segun Adekanye', role: 'Head of Operations', bio: 'Driving excellence in every process. Chidinma ensures every client interaction is seamless from start to finish.', avatar: 'https://images.pexels.com/photos/3785079/pexels-photo-3785079.jpeg' },
-  { id: 3, name: 'Munachi Anuakpado', role: 'Lead Auto Specialist', bio: 'A passionate car enthusiast with deep expertise in performance vehicles and luxury fleet management.', avatar: 'https://images.pexels.com/photos/6817003/pexels-photo-6817003.jpeg' },
-  { id: 4, name: 'OMMICANG', role: 'Real Estate Director', bio: 'Bridging the gap between premium property listings and discerning clients across Nigeria and beyond.', avatar: 'https://images.pexels.com/photos/3785079/pexels-photo-3785079.jpeg' },
+  { id: 2, name: 'Segun Adekanye', role: 'Human Resources', bio: 'HR professional with years of experience improving team culture, driving recruitment, and supporting staff growth.', avatar: 'https://images.pexels.com/photos/3785079/pexels-photo-3785079.jpeg' },
+  { id: 3, name: 'Munachi Anuakpado', role: 'Receptionist', bio: 'Organized and detail-oriented - with strong communication skills, manages tasks and schedules efficiently.', avatar: 'https://images.pexels.com/photos/6817003/pexels-photo-6817003.jpeg' },
+  { id: 4, name: 'OMMICANG', role: 'Wildcard', bio: '😎🤓...', avatar: 'https://images.pexels.com/photos/3785079/pexels-photo-3785079.jpeg' },
 ];
 
 const coreValues = [
