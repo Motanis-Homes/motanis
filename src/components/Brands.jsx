@@ -7,7 +7,7 @@ const brands = [
   },
   {
     name: 'BMW',
-    logo: 'https://w7.pngwing.com/pngs/995/480/png-transparent-bmw-car-logo-bmw-logo-trademark-logo-car-thumbnail.png',
+    logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/BMW.svg/250px-BMW.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail',
   },
   {
     name: 'Lamborghini',
