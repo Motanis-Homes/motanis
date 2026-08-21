@@ -478,10 +478,10 @@ const Footer = ({ setActivePage }) => {
                   href="#"
                   onClick={(e) => {
                     e.preventDefault();
-                    if (item === 'FAQ'||'Credits') {
+                    if (item === 'Credits') {
                       window.scrollTo({ top: 0, behavior: 'smooth' });
-                      setTimeout(() => setActivePage('faq','credits'), 300);
-                    }
+                      setTimeout(() => setActivePage('credits'), 300);
+                    } 
                   }}
                   className="text-motanis-muted uppercase tracking-widest"
                   style={{ 
