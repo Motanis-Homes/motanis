@@ -7,6 +7,7 @@ const cookieTypes = [
   {
     type: 'Essential Cookies',
     icon: 'https://drive.google.com/thumbnail?id=1F_Xja-gxl2pKRmde2JplvwNEG4ARiKh8=w200',
+    title: 'Locked Icon', 
     required: true,
     description: 'These cookies are strictly necessary for the Motanis platform to function. They enable core features such as page navigation and access to secure areas. The platform cannot function properly without these cookies.',
     examples: ['Session management', 'Security tokens', 'Load balancing'],
@@ -14,6 +15,7 @@ const cookieTypes = [
   {
     type: 'Analytics Cookies',
     icon: '📊',
+    title: 'Analytics Icon', 
     required: false,
     description: 'These cookies help us understand how visitors interact with our platform by collecting and reporting information anonymously. This helps us improve the overall user experience.',
     examples: ['Page view tracking', 'User journey analysis', 'Performance monitoring'],
@@ -21,6 +23,7 @@ const cookieTypes = [
   {
     type: 'Marketing Cookies',
     icon: '📣',
+    title: 'Marketing Speaker Icon', 
     required: false,
     description: 'These cookies are used to track visitors across platforms and display relevant content based on your interests. They are set by us and our trusted marketing partners.',
     examples: ['Campaign performance', 'Content personalisation', 'Retargeting'],
@@ -28,6 +31,7 @@ const cookieTypes = [
   {
     type: 'Third-Party Cookies',
     icon: '🌐',
+    title: 'Internet Icon', 
     required: false,
     description: 'Some features on our platform are provided by third-party services including Google Drive for image delivery and WhatsApp for communication. These services may set their own cookies.',
     examples: ['Google Drive image serving', 'WhatsApp redirect tracking', 'External media embedding'],
@@ -112,7 +116,28 @@ const CookiesPage = ({ activePage, setActivePage }) => {
               {/* Header row */}
               <div className="flex items-center justify-between mb-3">
                 <div className="flex items-center gap-2">
-                  <span style={{ fontSize: '1.2rem' }}>{cookie.icon}</span>
+
+                    <div
+                        style={{
+                            width: '20px',
+                            height: '20px',
+                            marginBottom: '10px',
+                            borderRadius: '12px',
+                            overflow: 'hidden',
+                            mixBlendMode: 'screen',
+                        }}
+                    >
+                        <img
+                            src={value.icon}
+                            alt={value.title}
+                            style={{
+                                width: '100%',
+                                height: '100%',
+                                objectFit: 'contain',
+                            }}
+                    />
+                </div>
+                  {/* <span style={{ fontSize: '1.2rem' }}>{cookie.icon}</span> */}
                   <p className="text-white font-black uppercase tracking-widest" style={{ fontSize: '9px' }}>{cookie.type}</p>
                 </div>
                 <div className="px-2 py-0.5 rounded-full"
