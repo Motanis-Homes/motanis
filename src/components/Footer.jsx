@@ -479,12 +479,12 @@ const Footer = ({ setActivePage }) => {
                   onClick={(e) => {
                     e.preventDefault();
                     const pageMap = {
-                      'Privacy Policy': 'privacy-policy',
-                      'Terms & Conditions': 'terms',
-                      'Cookies': 'cookies-policy',
+                      'Privacy Policy |': 'privacy-policy',
+                      'Terms & Conditions |': 'terms',
+                      'Cookies |': 'cookies-policy',
                       'Credits': 'credits',
                     };
-                    if (item === 'FAQ') {
+                    if (item === 'FAQ |') {
                       setActivePage('autos');
                       setTimeout(() => {
                         document.getElementById('faq')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
