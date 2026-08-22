@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
+import BlogPage from './components/BlogPage';
 import AboutUsPage from './components/AboutUsPage';
 import FindCar from './components/FindCar';
 import Inventory from './components/Inventory';
@@ -65,6 +66,13 @@ function App() {
           {/* Global Cookie Consent */}
         <CookieConsent setActivePage={setActivePage} />
           </>
+        )}
+
+        {activePage === 'blog' && (
+          <BlogPage
+            activePage={activePage}
+            setActivePage={setActivePage}
+          />
         )}
 
         {activePage === 'inventory-page' && (
