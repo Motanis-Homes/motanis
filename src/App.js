@@ -106,7 +106,7 @@ function App() {
         )}
         
 
-        {(activePage === 'homes' || activePage === 'blog') && (
+        {(activePage === 'homes') && (
           <ComingSoon
             page={activePage}
             onBack={() => setActivePage('autos')}
