@@ -5,9 +5,9 @@ import CTAButton from './CTAButton';
 const inventoryItems = [
   {
     id: '01',
-    name: 'BMW M4 Competition',
-    description: 'A masterpiece of performance engineering. Raw power meets everyday refinement.',
-    image: 'https://drive.google.com/thumbnail?id=1Gl-mN7cbf2WYbZrN7SnJRWguo7LG59iQ&sz=w800',
+    name: 'Mazda CX-9 Touring',
+    description: 'Three-row SUV | premium interior | strong fuel economy and a high-torque turbocharged engine.',
+    image: 'https://drive.google.com/thumbnail?id=1qSnctzX97NxHA9SNriiethf--D7sawgQ&sz=w800',
   },
   {
     id: '02',
