@@ -19,7 +19,7 @@ const inventoryItems = [
     id: '03',
     name: 'Toyota Highlander XSE [2021]',
     description: 'First highlander model designed with a sporty, aggressive look and performance-tuned suspension.',
-    image: 'https://drive.google.com/thumbnail?id=1xLMB5A2gUJ9hVwm7u2-1xs3HcOXUsHTq',
+    image: 'https://lh3.googleusercontent.com/d/1xLMB5A2gUJ9hVwm7u2-1xs3HcOXUsHTq',
   },
   {
     id: '04',
@@ -35,13 +35,13 @@ const inventoryItems = [
   },
   {
     id: '06',
-    name: 'Mercedes-Benz GLE350 4matic [2017]',
+    name: 'Mercedes-Benz GLE 350 4matic [2017]',
     description: 'Luxury | All weather confidence | Spacious comfort - OTF',
     image: 'https://drive.google.com/thumbnail?id=1t2bzt_BTPpv3PS1Go2Oq7iEPRqPORVGU',
   },
   {
     id: '07',
-    name: 'Mercedes-Benz GLE43 AMG [2019]',
+    name: 'Mercedes-Benz GLE 43 AMG [2019]',
     description: '385HP | 384 lb-ft of torque | Rapid Acceleration | Peak performance, high-end lucury SUV',
     image: 'https://drive.google.com/thumbnail?id=1pZHPcjxrtCWPmu3Qjf-HOhfiQm5VzOhV',
   },
