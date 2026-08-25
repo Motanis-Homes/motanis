@@ -7,13 +7,13 @@ const inventoryItems = [
     id: '01',
     name: 'Mazda CX-9 Touring [2016]',
     description: 'Three-row SUV | Premium interior | Strong fuel economy and a high-torque turbocharged engine.',
-    image: 'https://drive.google.com/thumbnail?id=1qSnctzX97NxHA9SNriiethf--D7sawgQ&sz=w800',
+    image: 'https://lh3.googleusercontent.com/d/1qSnctzX97NxHA9SNriiethf--D7sawgQ=s800',
   },
   {
     id: '02',
     name: 'Lexus Es300 Hybrid [2013]',
     description: 'Smooth and quiet ride | Outstanding fuel efficiency | Luxurious | Comfortable Interior - all in one',
-    image: 'https://drive.google.com/thumbnail?id=1Pfbf7hAumH_w_Jf0slsI0AZk0qomisK3&sz=w800',
+    image: 'https://lh3.googleusercontent.com/d/1Pfbf7hAumH_w_Jf0slsI0AZk0qomisK3=s800',
   },
   {
     id: '03',
@@ -31,19 +31,19 @@ const inventoryItems = [
     id: '05',
     name: 'Ford Edge SEL [2007]',
     description: 'Comfortable | Practical | Mid-size crossover Car - Going At A Discount!',
-    image: 'https://drive.google.com/thumbnail?id=10_uHxU2-DODQj0B_Z_POuQn8ZcwMYwmV',
+    image: 'https://lh3.googleusercontent.com/d/10_uHxU2-DODQj0B_Z_POuQn8ZcwMYwmV=s800',
   },
   {
     id: '06',
     name: 'Mercedes-Benz GLE 350 4matic [2017]',
     description: 'Luxury | All weather confidence | Spacious comfort - OTF',
-    image: 'https://drive.google.com/thumbnail?id=1t2bzt_BTPpv3PS1Go2Oq7iEPRqPORVGU',
+    image: 'https://lh3.googleusercontent.com/d/1t2bzt_BTPpv3PS1Go2Oq7iEPRqPORVGU=s800',
   },
   {
     id: '07',
     name: 'Mercedes-Benz GLE 43 AMG [2019]',
     description: '385HP | 384 lb-ft of torque | Rapid Acceleration | Peak performance, high-end lucury SUV',
-    image: 'https://drive.google.com/thumbnail?id=1pZHPcjxrtCWPmu3Qjf-HOhfiQm5VzOhV',
+    image: 'https://lh3.googleusercontent.com/d/1pZHPcjxrtCWPmu3Qjf-HOhfiQm5VzOhV=s800',
   },
 ];
 

@@ -6,7 +6,7 @@ import CounterNumber from './CounterNumber';
 
 const carImages = [
   'https://drive.google.com/thumbnail?id=1Gl-mN7cbf2WYbZrN7SnJRWguo7LG59iQ&sz=w800',
-  'https://drive.google.com/thumbnail?id=1vl6Fcsq0dKGIF5INIGg0yRxkkwSD1CV8',
+  'https://lh3.googleusercontent.com/d/1vl6Fcsq0dKGIF5INIGg0yRxkkwSD1CV8=s800',
   'https://drive.google.com/thumbnail?id=1Pfbf7hAumH_w_Jf0slsI0AZk0qomisK3&sz=w800',
   'https://drive.google.com/thumbnail?id=11Qd3FcPK-FCGBjZbbXzDsblVa88UOK0r&sz=w800',
 ];

@@ -3,10 +3,10 @@ import CTAButton from './CTAButton';
 import ImageCarousel from './ImageCarousel';
 
 const findCarImages = [
-  'https://drive.google.com/thumbnail?id=1Gl-mN7cbf2WYbZrN7SnJRWguo7LG59iQ&sz',
-  'https://drive.google.com/thumbnail?id=1qSnctzX97NxHA9SNriiethf--D7sawgQ&sz',
-  'https://drive.google.com/thumbnail?id=1Pfbf7hAumH_w_Jf0slsI0AZk0qomisK3&sz',
-  'https://drive.google.com/thumbnail?id=11Qd3FcPK-FCGBjZbbXzDsblVa88UOK0r&sz',
+  'https://lh3.googleusercontent.com/d/1Gl-mN7cbf2WYbZrN7SnJRWguo7LG59iQ=s800',
+  'https://lh3.googleusercontent.com/d/1qSnctzX97NxHA9SNriiethf--D7sawgQ=s800',
+  'https://lh3.googleusercontent.com/d/1Pfbf7hAumH_w_Jf0slsI0AZk0qomisK3=s800',
+  'https://lh3.googleusercontent.com/d/11Qd3FcPK-FCGBjZbbXzDsblVa88UOK0r=s800',
 ];
 
 const circleText = "• Let's Find Your Car • Motanis Autos ";
