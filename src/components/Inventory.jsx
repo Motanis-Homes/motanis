@@ -19,13 +19,13 @@ const inventoryItems = [
     id: '03',
     name: 'Toyota Highlander XSE [2021]',
     description: 'First highlander model designed with a sporty, aggressive look and performance-tuned suspension.',
-    image: 'https://lh3.googleusercontent.com/d/1xLMB5A2gUJ9hVwm7u2-1xs3HcOXUsHTq',
+    image: 'https://lh3.googleusercontent.com/d/1xLMB5A2gUJ9hVwm7u2-1xs3HcOXUsHTq=s800',
   },
   {
     id: '04',
     name: 'Toyota Camry LE [2008]',
     description: 'Excellent fuel economy | Smooth performance and very dependable',
-    image: 'https://drive.google.com/thumbnail?id=1kmmPQWPzKu1RAUmsLOhJCZDa5rSw9U-o',
+    image: 'https://lh3.googleusercontent.com/d/1kmmPQWPzKu1RAUmsLOhJCZDa5rSw9U-o=s800',
   },
   {
     id: '05',
