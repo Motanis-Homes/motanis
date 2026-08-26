@@ -3,43 +3,81 @@ import Navbar from './Navbar';
 import InventoryFilter from './InventoryFilter';
 import InventoryCard from './InventoryCard';
 
-const img1 = 'https://drive.google.com/thumbnail?id=1Gl-mN7cbf2WYbZrN7SnJRWguo7LG59iQ&sz=w800';
-const img2 = 'https://drive.google.com/thumbnail?id=1qSnctzX97NxHA9SNriiethf--D7sawgQ&sz=w800';
-const img3 = 'https://drive.google.com/thumbnail?id=1Pfbf7hAumH_w_Jf0slsI0AZk0qomisK3&sz=w800';
-const img4 = 'https://drive.google.com/thumbnail?id=11Qd3FcPK-FCGBjZbbXzDsblVa88UOK0r&sz=w800';
+const img1 = 'https://lh3.googleusercontent.com/d/1jbQORSTXbjqcbcktyucvNVtZr3wRKVlw=s800';
+const img2 = 'https://lh3.googleusercontent.com/d/1qSnctzX97NxHA9SNriiethf--D7sawgQ=s800';
+const img3 = 'https://lh3.googleusercontent.com/d/1vXcDBLHqN3jatGUcWUoZv8cZ1nZfOMy0=s800';
+const img4 = 'https://lh3.googleusercontent.com/d/1Pfbf7hAumH_w_Jf0slsI0AZk0qomisK3=s800';
+const img5 = 'https://lh3.googleusercontent.com/d/1p6Kf14eEdj1GI2eHkTFbMXNbrV0nMlC-=s800';
+const img6 = 'https://lh3.googleusercontent.com/d/15QFPLiRtdOeDXFp_475QaxQdhCNS-2Vw=s800';
+const img7 = 'https://lh3.googleusercontent.com/d/1t2bzt_BTPpv3PS1Go2Oq7iEPRqPORVGU=s800';
+const img8 = 'https://lh3.googleusercontent.com/d/1HddtCHgg8oArM1tTAH2F_Iv5u_hHwMjA=s800';
+const img9 = 'https://lh3.googleusercontent.com/d/1PyQJ2_a3I2ichq5o2Vjcqt8pxtWoMWME=s800';
+const img10 = 'https://lh3.googleusercontent.com/d/1xLMB5A2gUJ9hVwm7u2-1xs3HcOXUsHTq=s800';
+const img11 = 'https://lh3.googleusercontent.com/d/10_uHxU2-DODQj0B_Z_POuQn8ZcwMYwmV=s800';
+const img12 = 'https://lh3.googleusercontent.com/d/1nzrHCI-QEZZnkftleU7QIdJTlabb9F2N=s800';
+const img13 = 'https://lh3.googleusercontent.com/d/1tXARHeeAhJDzywkiqliItJfoYNZ3wMFj=s800';
+const img14 = 'https://lh3.googleusercontent.com/d/1MxmayEy9DRcFbawVSUSjdnBbJfgD8lDS=s800';
+const img15 = 'https://lh3.googleusercontent.com/d/1VGZXsWK2Vn512tR7blitb8rZBB9y6mlP=s800';
+const img16 = 'https://lh3.googleusercontent.com/d/1kmmPQWPzKu1RAUmsLOhJCZDa5rSw9U-o=s800';
+const img17 = 'https://lh3.googleusercontent.com/d/1oaj3pQiK2fOnT7l-8mBQvYmtCp8f5lKF=s800';
+const img18 = 'https://lh3.googleusercontent.com/d/1y5hd0qesvfZ5KBvHxibFDGh_JwUED2RX=s800';
+const img19 = 'https://lh3.googleusercontent.com/d/1D5Ig40vCh_CLjJjaYCxNn8WlR_g_qpSl=s800';
+const img20 = 'https://lh3.googleusercontent.com/d/1wb7pFPKygjvaGjoNakWQY4CFO8Vz4o9j=s800';
+const img21 = 'https://lh3.googleusercontent.com/d/1dt3HMYqqQkuKHpS2v1XlpKfTcI0frRfH=s800';
+const img22 = 'https://lh3.googleusercontent.com/d/1it3L0OjCRnTvK6mECBHqmsubGQJ6PUmW=s800';
+const img23 = 'https://lh3.googleusercontent.com/d/1ZR_b1mwL2oYB6_Af2z4kX9N0G1j3OdS4=s800';
+const img24 = 'https://lh3.googleusercontent.com/d/1h6lUcUeStBPVUth2U5Epo3DkHPDU_X0k=s800';
+const img25 = 'https://lh3.googleusercontent.com/d/1semEpnNYJLjxh46x1pXyWE5d-iEQkoXk=s800';
+const img26 = 'https://lh3.googleusercontent.com/d/1aoj47QYJmLfn6bNae2s52Jg4Y0NiBDAt=s800';
+const img27 = 'https://lh3.googleusercontent.com/d/12Ta3_LzcYQ4VY7lmK9stMQXzYvhrtK1f=s800';
+const img28 = 'https://lh3.googleusercontent.com/d/1MdRKeii48fVIWPcPv3J1WlP0uApVYuyp=s800';
+const img29 = 'https://lh3.googleusercontent.com/d/18QjWgSHKcegIl4a86wsCht2B41dTffiF=s800';
+const img30 = 'https://lh3.googleusercontent.com/d/1dLsPZGXmdVY4GELy59l_QPxAP0QDDiwx=s800';
+const img31 = 'https://lh3.googleusercontent.com/d/1TCyAGP3wdMpXvDOcXuxKjNgkoktZ8fud=s800';
+const img32 = 'https://lh3.googleusercontent.com/d/1UI_fbWxylhRc6IMvXSlF57UZJp7FvR-T=s800';
+const img33 = 'https://lh3.googleusercontent.com/d/19wwk2eYgasIUlnMUHAB4q6iWZILwNu1V=s800';
+const img34 = 'https://lh3.googleusercontent.com/d/1_4FfYodm3GilJhlEOaOZLKTvdWmiIcAL=s800';
+const img35 = 'https://lh3.googleusercontent.com/d/1VSTSzvS8XXfDsmf5IWM-B-2JpO5skfYx=s800';
+const img36 = 'https://lh3.googleusercontent.com/d/15SeWkQZeoIv-NzS142AWdqYsrlbaL7Z2=s800';
+const img37 = 'https://lh3.googleusercontent.com/d/10Yp3_OVqQlXD4eGGuzU4SvHfcjXADGMA=s800';
+const img38 = 'https://lh3.googleusercontent.com/d/1cpBeznZzOwQx_-Vx3Ki0uGTIhtilvYW1=s800';
 
 const inventorySections = [
   {
     label: '[ New Arrivals_ ]',
     dealTag: 'New Arrival',
     cars: [
-      { id: 1, name: 'BMW M4 Competition', year: 2023, color: 'Black Sapphire', type: 'Foreign', transmission: 'Automatic', yoe: '2023', registration: 'Registered', condition: 'Excellent Condition', price: '₦185,000,000', priceValue: 185000000, bodyType: 'Sedan', images: [img1, img2] },
-      { id: 2, name: 'Porsche 911 Turbo S', year: 2022, color: 'Arctic Silver', type: 'Local', transmission: 'Automatic', yoe: '2022', registration: 'Registered', condition: 'Excellent Condition', price: '₦320,000,000', priceValue: 320000000, bodyType: 'Coupe', images: [img2, img3] },
-      { id: 3, name: 'Mercedes-Benz AMG GT', year: 2023, color: 'Obsidian Black', type: 'Foreign', transmission: 'Automatic', yoe: '2023', registration: 'Unregistered', condition: 'Excellent Condition', price: '₦275,000,000', priceValue: 275000000, bodyType: 'Coupe', images: [img3, img4] },
-      { id: 4, name: 'Ferrari Roma Spider', year: 2023, color: 'Rosso Corsa', type: 'Foreign', transmission: 'Automatic', yoe: '2023', registration: 'Unregistered', condition: 'Excellent Condition', price: '₦480,000,000', priceValue: 480000000, bodyType: 'Coupe', images: [img4, img1] },
-      { id: 5, name: 'Aston Martin DB12', year: 2024, color: 'Iridescent Jade', type: 'Local', transmission: 'Automatic', yoe: '2024', registration: 'Unregistered', condition: 'Excellent Condition', price: '₦390,000,000', priceValue: 390000000, bodyType: 'Coupe', images: [img1, img3] },
+      { id: 34, name: 'Mazda CX-9 Touring', year: 2016, color: 'White', type: 'Foreign', transmission: 'Automatic', yoe: '2026', registration: 'Unregistered', condition: 'Excellent Condition', price: '₦25,500,000', priceValue: 25500000, bodyType: 'SUV', images: [img1, img2] },
+      { id: 32, name: 'Lexus Es300 Hybrid', year: 2013, color: 'Black', type: 'Foreign', transmission: 'Automatic', yoe: '2026', registration: 'Unregistered', condition: 'Excellent Condition', price: '₦17,500,000', priceValue: 17500000, bodyType: 'Sedan', images: [img3, img4] },
+      { id: 36, name: 'Lexus Rx350', year: 2011, color: 'White', type: 'Foreign', transmission: 'Automatic', yoe: '2026', registration: 'Unregistered', condition: 'Excellent Condition', price: '₦18,500,000', priceValue: 18500000, bodyType: 'SUV', images: [img5, img6] },
+      { id: 30, name: 'Mercedes-Benz GLE350 4matic', year: 2017, color: 'Black', type: 'Foreign', transmission: 'Automatic', yoe: '2026', registration: 'Unregistered', condition: 'Excellent Condition', price: '₦37,000,000', priceValue: 37000000, bodyType: 'SUV', images: [img7, img8] },
+      { id: 101, name: 'Toyota Highlander XSE', year: 2021, color: 'Blue', type: 'Foreign', transmission: 'Automatic', yoe: '2026', registration: 'Unregistered', condition: 'Excellent Condition', price: '₦70,500,000', priceValue: 70500000, bodyType: 'SUV', images: [img9, img10] },
     ],
   },
   {
     label: '[ Hot Deals_ ]',
     dealTag: 'Hot Deal',
     cars: [
-      { id: 6, name: 'Lamborghini Huracán', year: 2021, color: 'Giallo Orion', type: 'Foreign', transmission: 'Automatic', yoe: '2021', registration: 'Registered', condition: 'Excellent Condition', price: '₦410,000,000', priceValue: 410000000, bodyType: 'Coupe', images: [img2, img4] },
-      { id: 7, name: 'McLaren 720S', year: 2020, color: 'Papaya Spark', type: 'Local', transmission: 'Automatic', yoe: '2020', registration: 'Registered', condition: 'Excellent Condition', price: '₦295,000,000', priceValue: 295000000, bodyType: 'Coupe', images: [img3, img1] },
-      { id: 8, name: 'Bentley Continental GT', year: 2021, color: 'Beluga', type: 'Local', transmission: 'Automatic', yoe: '2021', registration: 'Registered', condition: 'Excellent Condition', price: '₦350,000,000', priceValue: 350000000, bodyType: 'Coupe', images: [img4, img2] },
-      { id: 9, name: 'Range Rover Autobiography', year: 2022, color: 'Santorini Black', type: 'Foreign', transmission: 'Automatic', yoe: '2022', registration: 'Registered', condition: 'Fixes', price: '₦145,000,000', priceValue: 145000000, bodyType: 'SUV', images: [img1, img4] },
-      { id: 10, name: 'Rolls-Royce Ghost', year: 2020, color: 'Arctic White', type: 'Local', transmission: 'Automatic', yoe: '2020', registration: 'Registered', condition: 'Excellent Condition', price: '₦680,000,000', priceValue: 680000000, bodyType: 'Sedan', images: [img2, img3] },
+      { id: 22, name: 'Hyundai Santafe Sport 2.0T', year: 2013, color: 'Gray', type: 'Local', transmission: 'Automatic', yoe: 'NIL', registration: 'Registered', condition: 'Fixes', price: '₦10,500,000', priceValue: 10500000, bodyType: 'SUV', images: [img19, img20] },
+      { id: 2, name: 'Hyundai Santafe Sport AWD', year: 2015, color: 'Gray', type: 'Foreign', transmission: 'Automatic', yoe: 'NIL', registration: 'Unregistered', condition: 'Excellent Condition', price: '₦13,750,000', priceValue: 13750000, bodyType: 'SUV', images: [img21, img22] },
+      { id: 9, name: 'Toyota Venza AWD', year: 2011, color: 'Black', type: 'Foreign', transmission: 'Automatic', yoe: 'NIL', registration: 'Unregistered', condition: 'Excellent Condition', price: '₦12,750,000', priceValue: 12750000, bodyType: 'SUV', images: [img23, img24] },
+      { id: 11, name: 'Toyota Highlander 4WD', year: 2011, color: 'White', type: 'Foreign', transmission: 'Automatic', yoe: 'NIL', registration: 'Unregistered', condition: 'Excellent Condition', price: '₦15,850,000', priceValue: 15850000, bodyType: 'SUV', images: [img25, img26] },
+      { id: 104, name: 'Mercedes-Benz GLE350 4Matic', year: 2016, color: 'Gray', type: 'Foreign', transmission: 'Automatic', yoe: '2026', registration: 'Unregistered', condition: 'Excellent Condition', price: '₦35,000,000', priceValue: 35000000, bodyType: 'SUV', images: [img27, img28] },
+      { id: 105, name: 'Lexus NX200T AWD', year: 2016, color: 'Silver', type: 'Foreign', transmission: 'Automatic', yoe: 'NIL', registration: 'Unregistered', condition: 'Excellent Condition', price: '₦29,000,000', priceValue: 29000000, bodyType: 'SUV', images: [img29, img30] },
+      { id: 12, name: 'Toyota Corolla', year: 2014, color: 'Red', type: 'Foreign', transmission: 'Automatic', yoe: 'NIL', registration: 'Unregistered', condition: 'Fixes', price: '₦13,850,000', priceValue: 13850000, bodyType: 'Sedan', images: [img31, img32] },
+      { id: 16, name: 'Toyota RAV4 4WD', year: 2009, color: 'Red', type: 'Foreign', transmission: 'Automatic', yoe: 'NIL', registration: 'Unregistered', condition: 'Excellent Condition', price: '₦12,000,000', priceValue: 12000000, bodyType: 'SUV', images: [img33, img34] },
+      { id: 106, name: 'Toyota Corolla LE', year: 2020, color: 'Gray', type: 'Foreign', transmission: 'Automatic', yoe: 'NIL', registration: 'Unregistered', condition: 'Excellent Condition', price: '₦22,950,000', priceValue: 22950000, bodyType: 'Sedan', images: [img35, img36] },
+      { id: 107, name: 'Honda CR-V Sport AWD', year: 2021, color: 'Gray', type: 'Foreign', transmission: 'Automatic', yoe: '2026', registration: 'Unregistered', condition: 'Excellent Condition', price: '₦36,000,000', priceValue: 36000000, bodyType: 'SUV', images: [img37, img38] },
     ],
   },
   {
     label: '[ Discount Sales_ ]',
     dealTag: 'Premium Pick',
     cars: [
-      { id: 11, name: 'Toyota Land Cruiser', year: 2019, color: 'Pearl White', type: 'Local', transmission: 'Automatic', yoe: '2019', registration: 'Registered', condition: 'Excellent Condition', price: '₦85,000,000', priceValue: 85000000, bodyType: 'SUV', images: [img3, img2] },
-      { id: 12, name: 'Ford Mustang GT500', year: 2020, color: 'Iconic Red', type: 'Local', transmission: 'Manual', yoe: '2020', registration: 'Registered', condition: 'Excellent Condition', price: '₦78,000,000', priceValue: 78000000, bodyType: 'Coupe', images: [img4, img3] },
-      { id: 13, name: 'Audi RS7 Sportback', year: 2021, color: 'Daytona Grey', type: 'Local', transmission: 'Automatic', yoe: '2021', registration: 'Registered', condition: 'Fixes', price: '₦92,000,000', priceValue: 92000000, bodyType: 'Sedan', images: [img1, img2] },
-      { id: 14, name: 'BMW X7 M Competition', year: 2020, color: 'Mineral White', type: 'Foreign', transmission: 'Automatic', yoe: '2020', registration: 'Registered', condition: 'Excellent Condition', price: '₦110,000,000', priceValue: 110000000, bodyType: 'SUV', images: [img2, img1] },
-      { id: 15, name: 'Chevrolet Corvette C8', year: 2021, color: 'Torch Red', type: 'Local', transmission: 'Automatic', yoe: '2021', registration: 'Unregistered', condition: 'Excellent Condition', price: '₦125,000,000', priceValue: 125000000, bodyType: 'Coupe', images: [img3, img4] },
+      { id: 28, name: 'Ford Edge SEL', year: 2007, color: 'Black', type: 'Local', transmission: 'Automatic', yoe: 'NIL', registration: 'Registered', condition: 'Fixes', price: '₦3,500,000', priceValue: 3500000, bodyType: 'SUV', images: [img11, img12] },
+      { id: 27, name: 'Toyota RAV4 AWD', year: 2008, color: 'Light-Blue', type: 'Local', transmission: 'Automatic', yoe: 'NIL', registration: 'Registered', condition: 'Excellent Condition', price: '₦6,500,000', priceValue: 6500000, bodyType: 'SUV', images: [img13, img14] },
+      { id: 102, name: 'Toyota Camry LE', year: 2008, color: 'Wine', type: 'Local', transmission: 'Automatic', yoe: 'NIL', registration: 'Registered', condition: 'Excellent Condition', price: '₦6,500,000', priceValue: 6500000, bodyType: 'Sedan', images: [img15, img16] },
+      { id: 103, name: 'Lexus Es350', year: 2010, color: 'Black', type: 'Local', transmission: 'Automatic', yoe: 'NIL', registration: 'Registered', condition: 'Fixes', price: '₦6,500,000', priceValue: 6500000, bodyType: 'Sedan', images: [img17, img18] },
     ],
   },
 ];
