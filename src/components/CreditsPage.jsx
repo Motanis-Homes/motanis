@@ -95,6 +95,14 @@ const credits = [
         url: 'https://unsplash.com',
         license: 'Unsplash & Pexels License — Free for commercial use',
       },
+
+            {
+        title: 'Review Image 1',
+        author: 'Prince Arkman',
+        platform: 'Unsplash',
+        url: 'https://unsplash.com/@princearkman?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText',
+        license: 'Unsplash & Pexels License — Free for commercial use',
+      },
     ],
   },
   {

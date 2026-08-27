@@ -41,6 +41,16 @@ const img35 = 'https://lh3.googleusercontent.com/d/1VSTSzvS8XXfDsmf5IWM-B-2JpO5s
 const img36 = 'https://lh3.googleusercontent.com/d/15SeWkQZeoIv-NzS142AWdqYsrlbaL7Z2=s800';
 const img37 = 'https://lh3.googleusercontent.com/d/10Yp3_OVqQlXD4eGGuzU4SvHfcjXADGMA=s800';
 const img38 = 'https://lh3.googleusercontent.com/d/1cpBeznZzOwQx_-Vx3Ki0uGTIhtilvYW1=s800';
+const img39 = 'https://lh3.googleusercontent.com/d/1hEEzLN4mClZ-r_sGoTMl5szjxfztWAb5=s800';
+const img40 = 'https://lh3.googleusercontent.com/d/1rvBmKa7a3ESDbPXg748MPw7p0qLZaMao=s800';
+const img41 = 'https://lh3.googleusercontent.com/d/1BBMUv_L3YTw1RHFjlbuX4GRpSh0dnk9i=s800';
+const img42 = 'https://lh3.googleusercontent.com/d/1FmqxiT3imYtOEYCnLjjenGLSoq190YRY=s800';
+const img43 = 'https://lh3.googleusercontent.com/d/1lYdLfj96b-1QFp-5308jEy-UQI40csgl=s800';
+const img44 = 'https://lh3.googleusercontent.com/d/1so-Tcvqlb_1Lw6y2VBJpULG3G8w3QgSI=s800';
+const img45 = 'https://lh3.googleusercontent.com/d/1Lh3dpazK7-aySfCmrb9fECJTC7DIj1I8=s800';
+const img46 = 'https://lh3.googleusercontent.com/d/1pAqlTh307NkS9oMqibyzn9UbZzv_ENfE=s800';
+const img47 = 'https://lh3.googleusercontent.com/d/1mFbOV3qKYEOv9NHdHpWv-uIIkZpBZJLi=s800';
+const img48 = 'https://lh3.googleusercontent.com/d/1a6WAB1JMdO7tjzouSQsSoIu_XRb7n2zG=s800';
 
 const inventorySections = [
   {
@@ -50,8 +60,13 @@ const inventorySections = [
       { id: 34, name: 'Mazda CX-9 Touring', year: 2016, color: 'White', type: 'Foreign', transmission: 'Automatic', yoe: '2026', registration: 'Unregistered', condition: 'Excellent Condition', price: '₦25,500,000', priceValue: 25500000, bodyType: 'SUV', images: [img1, img2] },
       { id: 32, name: 'Lexus Es300 Hybrid', year: 2013, color: 'Black', type: 'Foreign', transmission: 'Automatic', yoe: '2026', registration: 'Unregistered', condition: 'Excellent Condition', price: '₦17,500,000', priceValue: 17500000, bodyType: 'Sedan', images: [img3, img4] },
       { id: 36, name: 'Lexus Rx350', year: 2011, color: 'White', type: 'Foreign', transmission: 'Automatic', yoe: '2026', registration: 'Unregistered', condition: 'Excellent Condition', price: '₦18,500,000', priceValue: 18500000, bodyType: 'SUV', images: [img5, img6] },
+      { id: 37, name: 'Lexus RX350', year: 2010, color: 'Burgundy', type: 'Foreign', transmission: 'Automatic', yoe: '2026', registration: 'Unregistered', condition: 'Excellent Condition', price: '₦---', priceValue: 0, bodyType: 'SUV', images: [img39, img40] },
       { id: 30, name: 'Mercedes-Benz GLE350 4matic', year: 2017, color: 'Black', type: 'Foreign', transmission: 'Automatic', yoe: '2026', registration: 'Unregistered', condition: 'Excellent Condition', price: '₦37,000,000', priceValue: 37000000, bodyType: 'SUV', images: [img7, img8] },
       { id: 101, name: 'Toyota Highlander XSE', year: 2021, color: 'Blue', type: 'Foreign', transmission: 'Automatic', yoe: '2026', registration: 'Unregistered', condition: 'Excellent Condition', price: '₦70,500,000', priceValue: 70500000, bodyType: 'SUV', images: [img9, img10] },
+      { id: 108, name: 'Mercedes-Benz GLC300 4Matic', year: 2018, color: 'Blue', type: 'Foreign', transmission: 'Automatic', yoe: 'NIL', registration: 'Unregistered', condition: 'Excellent Condition', price: '₦---', priceValue: 0, bodyType: 'SUV', images: [img41, img42] },
+      { id: 109, name: 'Toyota Camry SE', year: 2012, color: 'Gray', type: 'Foreign', transmission: 'Automatic', yoe: 'NIL', registration: 'Unregistered', condition: 'Excellent Condition', price: '₦---', priceValue: 0, bodyType: 'Sedan', images: [img43, img44] },
+      { id: 110, name: 'Hyundai Sonata Sport', year: 2016, color: 'Gray', type: 'Foreign', transmission: 'Automatic', yoe: 'NIL', registration: 'Unregistered', condition: 'Excellent Condition', price: '₦---', priceValue: 0, bodyType: 'Sedan', images: [img45, img46] },
+      { id: 111, name: 'Toyota Tundra Crewmax', year: 2014, color: 'Black', type: 'Foreign', transmission: 'Automatic', yoe: 'NIL', registration: 'Unregistered', condition: 'Excellent Condition', price: '₦---', priceValue: 0, bodyType: 'Sedan', images: [img47, img48] },
     ],
   },
   {
