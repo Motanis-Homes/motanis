@@ -95,14 +95,56 @@ const credits = [
         url: 'https://unsplash.com',
         license: 'Unsplash & Pexels License — Free for commercial use',
       },
-
-            {
+      {
         title: 'Review Image 1',
-        author: 'Prince Arkman',
+        author: 'Prince Akachi',
         platform: 'Unsplash',
         url: 'https://unsplash.com/@princearkman?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText',
-        license: 'Unsplash & Pexels License — Free for commercial use',
+        license: 'Unsplash License — Free for commercial use',
       },
+      {
+        title: 'Review Image 2',
+        author: 'Blessing Olarewaju',
+        platform: 'Unsplash',
+        url: 'https://unsplash.com/@olarewajub?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText',
+        license: 'Unsplash License — Free for commercial use',
+      },
+      {
+        title: 'Review Image 3',
+        author: 'Jeff Kweba',
+        platform: 'Unsplash',
+        url: 'https://unsplash.com/@lucentstreet?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText',
+        license: 'Unsplash License — Free for commercial use',
+      },
+      {
+        title: 'Review Image 4',
+        author: 'Shedrack Salami',
+        platform: 'Unsplash',
+        url: 'https://unsplash.com/@xtrovarts?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText',
+        license: 'Unsplash License — Free for commercial use',
+      },
+      {
+        title: 'Review Image 5',
+        author: 'Blessing Olarewaju',
+        platform: 'Unsplash',
+        url: 'https://unsplash.com/@olarewajub?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText',
+        license: 'Unsplash License — Free for commercial use',
+      },
+      {
+        title: 'Review Image 6',
+        author: 'Oluwaferanmi Caleb',
+        platform: 'Unsplash',
+        url: 'https://unsplash.com/@oasisbrown?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText',
+        license: 'Unsplash License — Free for commercial use',
+      },
+      {
+        title: 'Review Image 7',
+        author: 'Michael Ogungbe',
+        platform: 'Unsplash',
+        url: 'https://unsplash.com/photos/a-man-with-a-beard-and-glasses-holding-a-cell-phone-to-his-ear-BbcYuLpSO98?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText',
+        license: 'Unsplash License — Free for commercial use',
+      },
+
     ],
   },
   {

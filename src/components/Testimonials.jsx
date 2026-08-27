@@ -19,15 +19,15 @@ const testimonials = [
     profession: 'Banker',
     review: 'Motanis Is A Reliable And Trustworthy Brand I Can Vouch For',
     rating: 4.9,
-    image: 'https://drive.google.com/thumbnail?id=1qSnctzX97NxHA9SNriiethf--D7sawgQ&sz=w800',
+    image: 'https://lh3.googleusercontent.com/d/1YTrRGl-TTDh6jYtrZIFwh2sWwj8yM3zI=s800',
   },
   {
     id: 3,
     name: 'Mrs Sandra Ekezie',
     profession: 'Businessowner',
-    review: 'Best car buying experience I have ever had. The team was completely professional from start to finish.',
+    review: 'Very Welcoming People With Good Service. Best Car Experience I Ever Had.',
     rating: 5.0,
-    image: 'https://drive.google.com/thumbnail?id=1Pfbf7hAumH_w_Jf0slsI0AZk0qomisK3&sz=w800',
+    image: 'https://lh3.googleusercontent.com/d/1a-dmt058hhQn0YQYIy_vE_9596Q0TE2h=s800',
   },
   {
     id: 4,
@@ -35,7 +35,7 @@ const testimonials = [
     profession: 'Entrepreneur',
     review: 'I Mean, Try Their Service And You Will Testify Too',
     rating: 5.0,
-    image: 'https://drive.google.com/thumbnail?id=11Qd3FcPK-FCGBjZbbXzDsblVa88UOK0r&sz=w800',
+    image: 'https://lh3.googleusercontent.com/d/1fwaEg00KYGks07QFcwBCgytIMr9JK4fE=s800',
   },
   {
     id: 5,
@@ -43,7 +43,7 @@ const testimonials = [
     profession: 'Engineer',
     review: 'Motanis For Me Is A Very Reliable Brand. They Have Good Cars.',
     rating: 4.8,
-    image: 'https://drive.google.com/thumbnail?id=1Gl-mN7cbf2WYbZrN7SnJRWguo7LG59iQ&sz=w800',
+    image: 'https://lh3.googleusercontent.com/d/15CrfuJ4wMDiQo0OZ0JfG64eNmk1BwVc9=s800',
   },
   {
     id: 6,
@@ -51,7 +51,7 @@ const testimonials = [
     profession: 'Lawyer',
     review: 'I was skeptical at first but Motanis completely won me over. I Sincerely Did Not Expect The Service I Got.',
     rating: 4.9,
-    image: 'https://drive.google.com/thumbnail?id=1qSnctzX97NxHA9SNriiethf--D7sawgQ&sz=w800',
+    image: 'https://lh3.googleusercontent.com/d/1zn8oiGIqwnOuRIfaQU6RPH5aQsAAlL__=s800',
   },
   {
     id: 7,
@@ -59,7 +59,7 @@ const testimonials = [
     profession: 'Trader',
     review: 'Buying My Second Car From Them.',
     rating: 5.0,
-    image: 'https://drive.google.com/thumbnail?id=1Pfbf7hAumH_w_Jf0slsI0AZk0qomisK3&sz=w800',
+    image: 'https://lh3.googleusercontent.com/d/1JMYLR3OyvJnvDtw0_JaKbTgQKI-b5QBU=s800',
   },
 ];
 
