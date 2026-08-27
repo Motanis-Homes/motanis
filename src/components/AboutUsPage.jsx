@@ -7,8 +7,11 @@ import CounterNumber from './CounterNumber';
 const carImages = [
   'https://drive.google.com/thumbnail?id=1Gl-mN7cbf2WYbZrN7SnJRWguo7LG59iQ&sz=w800',
   'https://lh3.googleusercontent.com/d/1vl6Fcsq0dKGIF5INIGg0yRxkkwSD1CV8=s800',
+  'https://lh3.googleusercontent.com/d/1bA03zSA8U1sjhdo1HIe4wp4d6WyfBRFC=s800',
   'https://drive.google.com/thumbnail?id=1Pfbf7hAumH_w_Jf0slsI0AZk0qomisK3&sz=w800',
   'https://drive.google.com/thumbnail?id=11Qd3FcPK-FCGBjZbbXzDsblVa88UOK0r&sz=w800',
+  'https://lh3.googleusercontent.com/d/1ih6OCFCJ1A1CSAFBSWz9d3w2wb8pR_me=s800',
+
 ];
 
 const teamMembers = [
@@ -398,7 +401,7 @@ const AboutUsPage = ({ activePage, setActivePage }) => {
             style={{ background: 'linear-gradient(135deg, #0d1a2e 0%, #111111 100%)', border: '1px solid rgba(255,255,255,0.07)' }}
           >
             <div style={{ height: '180px', overflow: 'hidden' }}>
-              <img src={carImages[0]} alt="Our Story" className="w-full h-full object-cover" style={{ opacity: 0.8 }} />
+              <img src={carImages[1]} alt="Our Story" className="w-full h-full object-cover" style={{ opacity: 0.8 }} />
             </div>
             <div className="px-4 py-4">
               <h3 className="text-white font-black uppercase leading-tight mb-2" style={{ fontSize: '1.1rem' }}>
@@ -429,7 +432,7 @@ const AboutUsPage = ({ activePage, setActivePage }) => {
               </p>
             </div>
             <div style={{ height: '180px', overflow: 'hidden' }}>
-              <img src={carImages[1]} alt="Our Journey" className="w-full h-full object-cover" style={{ opacity: 0.8 }} />
+              <img src={carImages[2]} alt="Our Journey" className="w-full h-full object-cover" style={{ opacity: 0.8 }} />
             </div>
           </div>
         </FadeSection>
@@ -440,7 +443,7 @@ const AboutUsPage = ({ activePage, setActivePage }) => {
             style={{ background: 'linear-gradient(135deg, #0d1a2e 0%, #111111 100%)', border: '1px solid rgba(255,255,255,0.07)' }}
           >
             <div style={{ height: '180px', overflow: 'hidden' }}>
-              <img src={carImages[2]} alt="Our Vision" className="w-full h-full object-cover" style={{ opacity: 0.8 }} />
+              <img src={carImages[5]} alt="Our Vision" className="w-full h-full object-cover" style={{ opacity: 0.8 }} />
             </div>
             <div className="px-4 py-4">
               <h3 className="text-white font-black uppercase leading-tight mb-2" style={{ fontSize: '1.1rem' }}>
