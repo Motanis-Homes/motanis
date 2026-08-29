@@ -180,7 +180,7 @@ const ArticleCard = ({ article, wide = false }) => (
       />
 
       {/* Category pill */}
-      <div className="absolute top-3 left-3 px-2 py-1 rounded-full"
+      <div className="absolute top-3 left-3 flex items-center px-2 py-3 rounded-full"
         style={{ background: categoryColors[article.category] || '#2A6FDB', opacity: 0.92 }}
       >
         <span className="text-white font-black uppercase tracking-widest" style={{ fontSize: '6px' }}>
@@ -201,7 +201,7 @@ const ArticleCard = ({ article, wide = false }) => (
       )}
 
       {/* Read time */}
-      <div className="absolute bottom-3 right-3 px-2 py-0.5 rounded-full"
+      <div className="absolute bottom-3 right-3 flex items-center px-2 py-2 rounded-full"
         style={{ background: 'rgba(0,0,0,0.6)', backdropFilter: 'blur(8px)' }}
       >
         <span className="text-white/70 uppercase tracking-widest" style={{ fontSize: '6px' }}>
@@ -264,7 +264,7 @@ const FeaturedCard = ({ article }) => (
 
     {/* Top badges */}
     <div className="absolute top-4 left-4 flex items-center gap-2">
-      <div className="px-2 py-1 rounded-full"
+      <div className=" flex item-center px-2 py-3 rounded-full"
         style={{ background: categoryColors[article.category] || '#2A6FDB' }}
       >
         <span className="text-white font-black uppercase tracking-widest" style={{ fontSize: '6px' }}>
@@ -284,7 +284,7 @@ const FeaturedCard = ({ article }) => (
     </div>
 
     {/* Read time top right */}
-    <div className="absolute top-4 right-4 px-2 py-1 rounded-full"
+    <div className="absolute top-10 right-4 flex items-center px-2 py-2 rounded-full"
       style={{ background: 'rgba(0,0,0,0.6)', backdropFilter: 'blur(8px)' }}
     >
       <span className="text-white/70 uppercase tracking-widest" style={{ fontSize: '6px' }}>{article.readTime}</span>

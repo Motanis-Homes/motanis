@@ -17,8 +17,6 @@ const img11 = 'https://lh3.googleusercontent.com/d/10_uHxU2-DODQj0B_Z_POuQn8ZcwM
 const img12 = 'https://lh3.googleusercontent.com/d/1nzrHCI-QEZZnkftleU7QIdJTlabb9F2N=s800';
 const img13 = 'https://lh3.googleusercontent.com/d/1tXARHeeAhJDzywkiqliItJfoYNZ3wMFj=s800';
 const img14 = 'https://lh3.googleusercontent.com/d/1MxmayEy9DRcFbawVSUSjdnBbJfgD8lDS=s800';
-const img17 = 'https://lh3.googleusercontent.com/d/1oaj3pQiK2fOnT7l-8mBQvYmtCp8f5lKF=s800';
-const img18 = 'https://lh3.googleusercontent.com/d/1y5hd0qesvfZ5KBvHxibFDGh_JwUED2RX=s800';
 const img19 = 'https://lh3.googleusercontent.com/d/1D5Ig40vCh_CLjJjaYCxNn8WlR_g_qpSl=s800';
 const img20 = 'https://lh3.googleusercontent.com/d/1wb7pFPKygjvaGjoNakWQY4CFO8Vz4o9j=s800';
 const img21 = 'https://lh3.googleusercontent.com/d/1dt3HMYqqQkuKHpS2v1XlpKfTcI0frRfH=s800';
@@ -91,7 +89,6 @@ const inventorySections = [
     cars: [
       { id: 28, name: 'Ford Edge SEL', year: 2007, color: 'Black', type: 'Local', transmission: 'Automatic', yoe: 'NIL', registration: 'Registered', condition: 'Fixes', price: '₦3,500,000', priceValue: 3500000, bodyType: 'SUV', images: [img11, img12] },
       { id: 27, name: 'Toyota RAV4 AWD', year: 2008, color: 'Light-Blue', type: 'Local', transmission: 'Automatic', yoe: 'NIL', registration: 'Registered', condition: 'Excellent Condition', price: '₦6,500,000', priceValue: 6500000, bodyType: 'SUV', images: [img13, img14] },
-      { id: 103, name: 'Lexus Es 350', year: 2010, color: 'Black', type: 'Local', transmission: 'Automatic', yoe: 'NIL', registration: 'Registered', condition: 'Fixes', price: '₦6,500,000', priceValue: 6500000, bodyType: 'Sedan', images: [img17, img18] },
       { id: 37, name: 'Lexus RX 350', year: 2010, color: 'Burgundy', type: 'Foreign', transmission: 'Automatic', yoe: '2026', registration: 'Unregistered', condition: 'Excellent Condition', price: '₦18,200,000', priceValue: 18200000, bodyType: 'SUV', images: [img39, img40] },
     ],
   },
