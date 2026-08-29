@@ -11,7 +11,7 @@ const inventoryItems = [
   },
   {
     id: '02',
-    name: 'Lexus Es300 Hybrid [2013]',
+    name: 'Lexus Es 300 Hybrid [2013]',
     description: 'Smooth and quiet ride | Outstanding fuel efficiency | Luxurious | Comfortable Interior - all in one',
     image: 'https://lh3.googleusercontent.com/d/1Pfbf7hAumH_w_Jf0slsI0AZk0qomisK3=s800',
   },

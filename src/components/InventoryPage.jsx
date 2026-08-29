@@ -51,6 +51,8 @@ const img45 = 'https://lh3.googleusercontent.com/d/1Lh3dpazK7-aySfCmrb9fECJTC7DI
 const img46 = 'https://lh3.googleusercontent.com/d/1pAqlTh307NkS9oMqibyzn9UbZzv_ENfE=s800';
 const img47 = 'https://lh3.googleusercontent.com/d/1mFbOV3qKYEOv9NHdHpWv-uIIkZpBZJLi=s800';
 const img48 = 'https://lh3.googleusercontent.com/d/1a6WAB1JMdO7tjzouSQsSoIu_XRb7n2zG=s800';
+const img49 = 'https://lh3.googleusercontent.com/d/1WaL9Wycmldm3IhsXwQ-iyh0uH2NcTp41=s800';
+const img50 = 'https://lh3.googleusercontent.com/d/19V5tIAM3rb-v2dLZFQOJ5pNYtvyUBHbI=s800';
 
 const inventorySections = [
   {
@@ -58,15 +60,15 @@ const inventorySections = [
     dealTag: 'New Arrival',
     cars: [
       { id: 34, name: 'Mazda CX-9 Touring', year: 2016, color: 'White', type: 'Foreign', transmission: 'Automatic', yoe: '2026', registration: 'Unregistered', condition: 'Excellent Condition', price: '₦25,500,000', priceValue: 25500000, bodyType: 'SUV', images: [img1, img2] },
-      { id: 32, name: 'Lexus Es300 Hybrid', year: 2013, color: 'Black', type: 'Foreign', transmission: 'Automatic', yoe: '2026', registration: 'Unregistered', condition: 'Excellent Condition', price: '₦17,500,000', priceValue: 17500000, bodyType: 'Sedan', images: [img3, img4] },
-      { id: 36, name: 'Lexus Rx350', year: 2011, color: 'White', type: 'Foreign', transmission: 'Automatic', yoe: '2026', registration: 'Unregistered', condition: 'Excellent Condition', price: '₦18,500,000', priceValue: 18500000, bodyType: 'SUV', images: [img5, img6] },
-      { id: 37, name: 'Lexus RX350', year: 2010, color: 'Burgundy', type: 'Foreign', transmission: 'Automatic', yoe: '2026', registration: 'Unregistered', condition: 'Excellent Condition', price: '₦---', priceValue: 0, bodyType: 'SUV', images: [img39, img40] },
-      { id: 30, name: 'Mercedes-Benz GLE350 4matic', year: 2017, color: 'Black', type: 'Foreign', transmission: 'Automatic', yoe: '2026', registration: 'Unregistered', condition: 'Excellent Condition', price: '₦37,000,000', priceValue: 37000000, bodyType: 'SUV', images: [img7, img8] },
+      { id: 32, name: 'Lexus Es 300 Hybrid', year: 2013, color: 'Black', type: 'Foreign', transmission: 'Automatic', yoe: '2026', registration: 'Unregistered', condition: 'Excellent Condition', price: '₦17,500,000', priceValue: 17500000, bodyType: 'Sedan', images: [img3, img4] },
+      { id: 36, name: 'Lexus Rx 350', year: 2011, color: 'White', type: 'Foreign', transmission: 'Automatic', yoe: '2026', registration: 'Unregistered', condition: 'Excellent Condition', price: '₦18,500,000', priceValue: 18500000, bodyType: 'SUV', images: [img5, img6] },
+      { id: 30, name: 'Mercedes-Benz GLE 350 4matic', year: 2017, color: 'Black', type: 'Foreign', transmission: 'Automatic', yoe: '2026', registration: 'Unregistered', condition: 'Excellent Condition', price: '₦37,000,000', priceValue: 37000000, bodyType: 'SUV', images: [img7, img8] },
       { id: 101, name: 'Toyota Highlander XSE', year: 2021, color: 'Blue', type: 'Foreign', transmission: 'Automatic', yoe: '2026', registration: 'Unregistered', condition: 'Excellent Condition', price: '₦70,500,000', priceValue: 70500000, bodyType: 'SUV', images: [img9, img10] },
-      { id: 108, name: 'Mercedes-Benz GLC300 4Matic', year: 2018, color: 'Blue', type: 'Foreign', transmission: 'Automatic', yoe: 'NIL', registration: 'Unregistered', condition: 'Excellent Condition', price: '₦---', priceValue: 0, bodyType: 'SUV', images: [img41, img42] },
-      { id: 109, name: 'Toyota Camry SE', year: 2012, color: 'Gray', type: 'Foreign', transmission: 'Automatic', yoe: 'NIL', registration: 'Unregistered', condition: 'Excellent Condition', price: '₦---', priceValue: 0, bodyType: 'Sedan', images: [img43, img44] },
-      { id: 110, name: 'Hyundai Sonata Sport', year: 2016, color: 'Gray', type: 'Foreign', transmission: 'Automatic', yoe: 'NIL', registration: 'Unregistered', condition: 'Excellent Condition', price: '₦---', priceValue: 0, bodyType: 'Sedan', images: [img45, img46] },
-      { id: 111, name: 'Toyota Tundra Crewmax', year: 2014, color: 'Black', type: 'Foreign', transmission: 'Automatic', yoe: 'NIL', registration: 'Unregistered', condition: 'Excellent Condition', price: '₦---', priceValue: 0, bodyType: 'Sedan', images: [img47, img48] },
+      { id: 108, name: 'Mercedes-Benz GLC 300 4Matic', year: 2018, color: 'Blue', type: 'Foreign', transmission: 'Automatic', yoe: 'NIL', registration: 'Unregistered', condition: 'Excellent Condition', price: '₦---', priceValue: 0, bodyType: 'SUV', images: [img41, img42] },
+      { id: 109, name: 'Toyota Camry SE', year: 2012, color: 'Gray', type: 'Foreign', transmission: 'Automatic', yoe: 'NIL', registration: 'Unregistered', condition: 'Excellent Condition', price: '₦14,500,000', priceValue: 14500000, bodyType: 'Sedan', images: [img43, img44] },
+      { id: 110, name: 'Hyundai Sonata Sport', year: 2016, color: 'Gray', type: 'Foreign', transmission: 'Automatic', yoe: 'NIL', registration: 'Unregistered', condition: 'Excellent Condition', price: '₦14,200,000', priceValue: 14200000, bodyType: 'Sedan', images: [img45, img46] },
+      { id: 111, name: 'Toyota Tundra Crewmax', year: 2014, color: 'Black', type: 'Local', transmission: 'Automatic', yoe: 'NIL', registration: 'Registered', condition: 'Excellent Condition', price: '₦16,500,000', priceValue: 16500000, bodyType: 'SUV', images: [img47, img48] },
+      { id: 112, name: 'Hyundai Sonata', year: 2015, color: 'Blue', type: 'Foreign', transmission: 'Automatic', yoe: 'NIL', registration: 'Unregistered', condition: 'Excellent Condition', price: '₦10,500,000', priceValue: 10500000, bodyType: 'Sedan', images: [img49, img50] },
     ],
   },
   {
@@ -77,8 +79,8 @@ const inventorySections = [
       { id: 2, name: 'Hyundai Santafe Sport AWD', year: 2015, color: 'Gray', type: 'Foreign', transmission: 'Automatic', yoe: 'NIL', registration: 'Unregistered', condition: 'Excellent Condition', price: '₦13,750,000', priceValue: 13750000, bodyType: 'SUV', images: [img21, img22] },
       { id: 9, name: 'Toyota Venza AWD', year: 2011, color: 'Black', type: 'Foreign', transmission: 'Automatic', yoe: 'NIL', registration: 'Unregistered', condition: 'Excellent Condition', price: '₦12,750,000', priceValue: 12750000, bodyType: 'SUV', images: [img23, img24] },
       { id: 11, name: 'Toyota Highlander 4WD', year: 2011, color: 'White', type: 'Foreign', transmission: 'Automatic', yoe: 'NIL', registration: 'Unregistered', condition: 'Excellent Condition', price: '₦15,850,000', priceValue: 15850000, bodyType: 'SUV', images: [img25, img26] },
-      { id: 104, name: 'Mercedes-Benz GLE350 4Matic', year: 2016, color: 'Gray', type: 'Foreign', transmission: 'Automatic', yoe: '2026', registration: 'Unregistered', condition: 'Excellent Condition', price: '₦35,000,000', priceValue: 35000000, bodyType: 'SUV', images: [img27, img28] },
-      { id: 105, name: 'Lexus NX200T AWD', year: 2016, color: 'Silver', type: 'Foreign', transmission: 'Automatic', yoe: 'NIL', registration: 'Unregistered', condition: 'Excellent Condition', price: '₦29,000,000', priceValue: 29000000, bodyType: 'SUV', images: [img29, img30] },
+      { id: 104, name: 'Mercedes-Benz GLE 350 4Matic', year: 2016, color: 'Gray', type: 'Foreign', transmission: 'Automatic', yoe: '2026', registration: 'Unregistered', condition: 'Excellent Condition', price: '₦35,000,000', priceValue: 35000000, bodyType: 'SUV', images: [img27, img28] },
+      { id: 105, name: 'Lexus NX 200T AWD', year: 2016, color: 'Silver', type: 'Foreign', transmission: 'Automatic', yoe: 'NIL', registration: 'Unregistered', condition: 'Excellent Condition', price: '₦29,000,000', priceValue: 29000000, bodyType: 'SUV', images: [img29, img30] },
       { id: 12, name: 'Toyota Corolla', year: 2014, color: 'Red', type: 'Foreign', transmission: 'Automatic', yoe: 'NIL', registration: 'Unregistered', condition: 'Fixes', price: '₦13,850,000', priceValue: 13850000, bodyType: 'Sedan', images: [img31, img32] },
       { id: 16, name: 'Toyota RAV4 4WD', year: 2009, color: 'Red', type: 'Foreign', transmission: 'Automatic', yoe: 'NIL', registration: 'Unregistered', condition: 'Excellent Condition', price: '₦12,000,000', priceValue: 12000000, bodyType: 'SUV', images: [img33, img34] },
       { id: 106, name: 'Toyota Corolla LE', year: 2020, color: 'Gray', type: 'Foreign', transmission: 'Automatic', yoe: 'NIL', registration: 'Unregistered', condition: 'Excellent Condition', price: '₦22,950,000', priceValue: 22950000, bodyType: 'Sedan', images: [img35, img36] },
@@ -92,7 +94,8 @@ const inventorySections = [
       { id: 28, name: 'Ford Edge SEL', year: 2007, color: 'Black', type: 'Local', transmission: 'Automatic', yoe: 'NIL', registration: 'Registered', condition: 'Fixes', price: '₦3,500,000', priceValue: 3500000, bodyType: 'SUV', images: [img11, img12] },
       { id: 27, name: 'Toyota RAV4 AWD', year: 2008, color: 'Light-Blue', type: 'Local', transmission: 'Automatic', yoe: 'NIL', registration: 'Registered', condition: 'Excellent Condition', price: '₦6,500,000', priceValue: 6500000, bodyType: 'SUV', images: [img13, img14] },
       { id: 102, name: 'Toyota Camry LE', year: 2008, color: 'Wine', type: 'Local', transmission: 'Automatic', yoe: 'NIL', registration: 'Registered', condition: 'Excellent Condition', price: '₦6,500,000', priceValue: 6500000, bodyType: 'Sedan', images: [img15, img16] },
-      { id: 103, name: 'Lexus Es350', year: 2010, color: 'Black', type: 'Local', transmission: 'Automatic', yoe: 'NIL', registration: 'Registered', condition: 'Fixes', price: '₦6,500,000', priceValue: 6500000, bodyType: 'Sedan', images: [img17, img18] },
+      { id: 103, name: 'Lexus Es 350', year: 2010, color: 'Black', type: 'Local', transmission: 'Automatic', yoe: 'NIL', registration: 'Registered', condition: 'Fixes', price: '₦6,500,000', priceValue: 6500000, bodyType: 'Sedan', images: [img17, img18] },
+      { id: 37, name: 'Lexus RX 350', year: 2010, color: 'Burgundy', type: 'Foreign', transmission: 'Automatic', yoe: '2026', registration: 'Unregistered', condition: 'Excellent Condition', price: '₦18,200,000', priceValue: 18200000, bodyType: 'SUV', images: [img39, img40] },
     ],
   },
 ];
