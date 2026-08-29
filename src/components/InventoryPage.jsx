@@ -17,8 +17,6 @@ const img11 = 'https://lh3.googleusercontent.com/d/10_uHxU2-DODQj0B_Z_POuQn8ZcwM
 const img12 = 'https://lh3.googleusercontent.com/d/1nzrHCI-QEZZnkftleU7QIdJTlabb9F2N=s800';
 const img13 = 'https://lh3.googleusercontent.com/d/1tXARHeeAhJDzywkiqliItJfoYNZ3wMFj=s800';
 const img14 = 'https://lh3.googleusercontent.com/d/1MxmayEy9DRcFbawVSUSjdnBbJfgD8lDS=s800';
-const img15 = 'https://lh3.googleusercontent.com/d/1VGZXsWK2Vn512tR7blitb8rZBB9y6mlP=s800';
-const img16 = 'https://lh3.googleusercontent.com/d/1kmmPQWPzKu1RAUmsLOhJCZDa5rSw9U-o=s800';
 const img17 = 'https://lh3.googleusercontent.com/d/1oaj3pQiK2fOnT7l-8mBQvYmtCp8f5lKF=s800';
 const img18 = 'https://lh3.googleusercontent.com/d/1y5hd0qesvfZ5KBvHxibFDGh_JwUED2RX=s800';
 const img19 = 'https://lh3.googleusercontent.com/d/1D5Ig40vCh_CLjJjaYCxNn8WlR_g_qpSl=s800';
