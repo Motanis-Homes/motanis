@@ -16,7 +16,27 @@ const articles = [
     authorAvatar: 'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg',
     date: 'Aug 12, 2025',
     readTime: '5 min read',
-    featured: true,
+    featured: false,
+    content: {
+      intro: 'When BMW unveiled the M4 Competition in 2021, the automotive world held its breath. The controversial kidney grille aside, what emerged was arguably the most complete performance sedan BMW had ever produced. Three years on, with newer rivals entering the arena, we spent a week with one to answer the question everyone is still asking — does it still reign supreme?',
+      sections: [
+        {
+          heading: 'Performance That Defies Logic',
+          body: 'The S58 straight-six engine produces 503 horsepower and 479 lb-ft of torque in Competition trim. But raw numbers only tell half the story. The way this engine delivers its power — with a linear surge that builds relentlessly to the redline — is something that has to be experienced to be believed. Zero to 100 km/h in 3.9 seconds feels almost conservative. It feels faster.',
+        },
+        {
+          heading: 'The Chassis — A Masterclass In Balance',
+          body: 'BMW\'s M Division has always excelled at building cars that feel alive beneath you, and the M4 Competition is the finest expression of that philosophy yet. The adaptive M suspension reads the road with almost supernatural awareness, smoothing out imperfections on the daily commute while tightening up with surgical precision when you push it through a corner.',
+        },
+        {
+          heading: 'Inside — Where Sport Meets Sanctuary',
+          body: 'Climb inside and the M4 wraps you in a cockpit that manages to feel both purposeful and luxurious simultaneously. The M Sport seats grip you firmly without ever becoming uncomfortable on longer journeys. The iDrive 8 infotainment system is the best in the business — intuitive, fast and beautifully integrated.',
+        },
+      ],
+      pullQuote: 'Three years on and no rival has quite managed to replicate what the M4 Competition does — that rare ability to be genuinely exciting every single time you drive it.',
+      conclusion: 'The BMW M4 Competition remains the definitive performance sedan of its generation. Yes, newer rivals have arrived. Yes, the grille is still divisive. But nothing else on sale today delivers this combination of everyday usability, mechanical theatre and outright performance at this price point. It still reigns. Emphatically.',
+      tags: ['BMW', 'Performance Sedans', 'Cars', 'Review'],
+    },
   },
   {
     id: 2,
@@ -30,6 +50,26 @@ const articles = [
     date: 'Aug 8, 2025',
     readTime: '4 min read',
     featured: false,
+    content: {
+      intro: 'Psychologists have long argued that our possessions are extensions of our identity. Nowhere is this more true than with the cars we drive. Whether you have consciously chosen your vehicle for its performance figures, its prestige or simply because it fits your lifestyle — your car is saying something about you to the world. The question is: what exactly is it saying?',
+      sections: [
+        {
+          heading: 'The Porsche Driver — Precision Over Everything',
+          body: 'Porsche owners tend to be detail-oriented, quietly ambitious individuals who appreciate engineering for its own sake. They are not trying to impress anyone — the car impresses on its own terms. Studies consistently show Porsche owners rank among the most satisfied car owners globally, suggesting a personality type that does thorough research before committing to any major decision.',
+        },
+        {
+          heading: 'The Range Rover Owner — Command And Comfort',
+          body: 'Range Rover drivers value status, but more importantly, they value capability. The choice of a luxury SUV communicates a desire for versatility — the ability to attend a boardroom meeting and then drive off-road without changing vehicles. In Nigeria particularly, the Range Rover has become the definitive symbol of professional success.',
+        },
+        {
+          heading: 'The Ferrari Owner — Life Is Too Short For Slow Cars',
+          body: 'Ferrari ownership is a statement that defies subtlety. These are individuals who have decided that life is for living at maximum intensity. Interestingly, research shows Ferrari owners are often serial entrepreneurs — people with high risk tolerance and an appetite for reward that extends far beyond their choice of automobile.',
+        },
+      ],
+      pullQuote: 'Your car is not just transportation. It is a declaration — of your values, your aspirations and the version of yourself you choose to present to the world.',
+      conclusion: 'None of this is absolute, of course. People buy cars for a thousand different reasons. But the next time you are sitting in traffic, take a moment to observe the vehicles around you. You might find that you can read the story of each driver before they have said a single word.',
+      tags: ['Lifestyle', 'Psychology', 'Cars', 'Culture'],
+    },
   },
   {
     id: 3,
@@ -86,15 +126,39 @@ const articles = [
   {
     id: 7,
     category: 'Tips & Guides',
-    tag: null,
+    tag: "Editor's Pick",
     title: 'How To Finance Your Dream Car Without Breaking The Bank',
     excerpt: 'Smart financing strategies that make luxury vehicle ownership a reality for more Nigerians every year.',
-    image: 'https://drive.google.com/thumbnail?id=1Pfbf7hAumH_w_Jf0slsI0AZk0qomisK3&sz=w800',
+    image: 'https://drive.google.com/thumbnail?id=1Gl-mN7cbf2WYbZrN7SnJRWguo7LG59iQ&sz=w800',
     author: 'OMMICANG',
     authorAvatar: 'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg',
     date: 'Jul 15, 2025',
     readTime: '6 min read',
-    featured: false,
+    featured: true,
+    content: {
+      intro: 'Owning a luxury vehicle in Nigeria has historically been the preserve of the ultra-wealthy. But a quiet revolution is underway. A growing number of financial products, creative ownership structures and savvy purchasing strategies are making it possible for more Nigerians than ever to drive their dream car — without decimating their savings or compromising their financial future.',
+      sections: [
+        {
+          heading: 'Understand The Total Cost of Ownership First',
+          body: 'Before you fall in love with a price tag, understand what you are truly committing to. The purchase price is only the beginning. Factor in insurance — which can range from 3% to 5% of the vehicle\'s value annually for comprehensive cover — routine maintenance, fuel costs and the inevitable customs duties if you are importing. A car that seems affordable at the point of purchase can become financially burdensome if these secondary costs are not accounted for.',
+        },
+        {
+          heading: 'Explore Vehicle Financing Options',
+          body: 'Several Nigerian banks and fintech platforms now offer competitive vehicle financing products. The key is to negotiate the interest rate aggressively and ensure the loan tenure aligns with the vehicle\'s expected depreciation curve. As a general rule, never finance a depreciating asset for longer than 48 months. The goal is to always owe less on the vehicle than it is worth.',
+        },
+        {
+          heading: 'Consider The Foreign Used (Tokunbo) Market Strategically',
+          body: 'The tokunbo market offers extraordinary value for buyers who know what they are looking for. A 2021 Mercedes-Benz C-Class with 20,000 miles can be acquired for significantly less than its brand-new equivalent while offering comparable reliability and a nearly identical ownership experience. The key is thorough pre-purchase inspection — always engage a qualified mechanic before committing.',
+        },
+        {
+          heading: 'Leverage Trade-In Value',
+          body: 'If you currently own a vehicle, its trade-in value can form a substantial deposit against your dream car purchase. At Motanis, we assess trade-in vehicles fairly and transparently, ensuring you receive maximum value that directly reduces your financial outlay on your next acquisition.',
+        },
+      ],
+      pullQuote: 'Financial intelligence is what separates those who dream about luxury vehicles and those who actually drive them. The gap is smaller than most people think.',
+      conclusion: 'The path to your dream car is rarely a single straight line. But with the right financial strategy, a clear understanding of the market and the right dealership partnership, it is a journey that is entirely achievable. At Motanis, we are not just here to sell you a car — we are here to help you acquire it wisely, on terms that work for your life.',
+      tags: ['Finance', 'Tips & Guides', 'Car Buying', 'Nigeria'],
+    },
   },
   {
     id: 8,
@@ -110,6 +174,8 @@ const articles = [
     featured: false,
   },
 ];
+
+export { articles };
 
 const categories = ['All', 'Cars', 'Lifestyle', 'Real Estate', 'Tips & Guides'];
 
@@ -153,7 +219,7 @@ const FadeSection = ({ children, delay = 0 }) => {
 };
 
 // ── Article Card — Standard ──
-const ArticleCard = ({ article, wide = false }) => (
+const ArticleCard = ({ article, wide = false, onRead }) => (
   <div
     className="flex-shrink-0 flex flex-col overflow-hidden"
     style={{
@@ -241,7 +307,13 @@ const ArticleCard = ({ article, wide = false }) => (
 
         {/* Arrow */}
         <div className="flex items-center justify-center rounded-full flex-shrink-0"
-          style={{ width: '24px', height: '24px', background: 'rgba(42,111,219,0.15)', border: '1px solid rgba(42,111,219,0.3)' }}
+        onClick={onRead}
+          style={{ 
+            width: '24px', 
+            height: '24px', 
+            background: 'rgba(42,111,219,0.15)', 
+            border: '1px solid rgba(42,111,219,0.3)' 
+          }}
         >
           <span className="text-motanis-blue font-black" style={{ fontSize: '10px' }}>›</span>
         </div>
@@ -251,7 +323,7 @@ const ArticleCard = ({ article, wide = false }) => (
 );
 
 // ── Featured Article Card ──
-const FeaturedCard = ({ article }) => (
+const FeaturedCard = ({ article, onRead }) => (
   <div className="relative overflow-hidden rounded-2xl"
     style={{ height: '320px', border: '1px solid rgba(255,255,255,0.08)' }}
   >
@@ -314,14 +386,16 @@ const FeaturedCard = ({ article }) => (
             <span className="text-white/40" style={{ fontSize: '7px' }}>{article.date}</span>
           </div>
         </div>
+        <div onClick={onRead} style={{ cursor: 'pointer' }}>
         <CTAButton label="Read Article" href="#" />
+        </div>
       </div>
     </div>
   </div>
 );
 
 // ── Category Row ──
-const CategoryRow = ({ category, articles }) => {
+const CategoryRow = ({ category, articles, onRead }) => {
   const ref = useRef(null);
   const [visible, setVisible] = useState(false);
 
@@ -387,7 +461,11 @@ const CategoryRow = ({ category, articles }) => {
       >
         <style>{`.blog-row::-webkit-scrollbar { display: none; }`}</style>
         {articles.map((article) => (
-          <ArticleCard key={article.id} article={article} />
+          <ArticleCard
+            key={article.id}
+            article={article}
+            onRead={() => onRead(article.id)}
+          />
         ))}
         <div style={{ width: '16px', flexShrink: 0 }} />
       </div>
@@ -396,7 +474,7 @@ const CategoryRow = ({ category, articles }) => {
 };
 
 // ── Main Blog Page ──
-const BlogPage = ({ activePage, setActivePage }) => {
+const BlogPage = ({ activePage, setActivePage, setActiveArticle }) => {
   const [activeCategory, setActiveCategory] = useState('All');
   const [email, setEmail] = useState('');
   const [subscribed, setSubscribed] = useState(false);
@@ -454,7 +532,14 @@ const BlogPage = ({ activePage, setActivePage }) => {
         {featuredArticle && (
           <div className="px-5 mb-6">
             <FadeSection delay={200}>
-              <FeaturedCard article={featuredArticle} />
+              <FeaturedCard
+                article={featuredArticle}
+                onRead={() => {
+                  setActiveArticle(featuredArticle.id);
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                  setTimeout(() => setActivePage('article'), 300);
+                }}
+               />
             </FadeSection>
           </div>
         )}
@@ -498,6 +583,11 @@ const BlogPage = ({ activePage, setActivePage }) => {
             key={category}
             category={category}
             articles={filteredByCategory(category)}
+            onRead={(id) => {
+              setActiveArticle(id);
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+              setTimeout(() => setActivePage('article'), 300);
+            }}
           />
         ))}
 

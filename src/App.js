@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
 import BlogPage from './components/BlogPage';
+import ArticlePage from './components/ArticlePage';
 import AboutUsPage from './components/AboutUsPage';
 import FindCar from './components/FindCar';
 import Inventory from './components/Inventory';
@@ -20,6 +21,7 @@ import ComingSoon from './components/ComingSoon';
 
 function App() {
   const [activePage, setActivePage] = useState('autos');
+  const [activeArticle, setActiveArticle] = useState(null);
 
   return (
     <>
@@ -72,6 +74,15 @@ function App() {
           <BlogPage
             activePage={activePage}
             setActivePage={setActivePage}
+            setActiveArticle={setActiveArticle}
+          />
+        )}
+
+        {activePage === 'article' && (
+          <ArticlePage
+            articleId={activeArticle}
+            setActivePage={setActivePage}
+            setActiveArticle={setActiveArticle}
           />
         )}
 
@@ -95,7 +106,7 @@ function App() {
             setActivePage={setActivePage}
           />
         )}
-                {activePage === 'privacy-policy' && (
+        {activePage === 'privacy-policy' && (
           <PrivacyPolicyPage activePage={activePage} setActivePage={setActivePage} />
         )}
         {activePage === 'terms' && (
