@@ -54,7 +54,7 @@ function App() {
 
       {/* Mobile App */}
       <div className="md:hidden bg-motanis-black min-h-screen text-white">
-        <InstallPrompt />
+        <InstallPrompt/>
         <Navbar activePage={activePage} setActivePage={setActivePage} />
 
         {activePage === 'autos' && (
