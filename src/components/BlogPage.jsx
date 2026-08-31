@@ -9,7 +9,7 @@ const articles = [
     id: 1,
     category: 'Cars',
     tag: "Editor's Pick",
-    title: 'The BMW M4 Competition — Why It Still Reigns Supreme In 2024',
+    title: 'The BMW M4 Competition — Why It Still Reigns Supreme',
     excerpt: 'Three years since its debut, the M4 Competition continues to set the benchmark for performance sedans. We drove one for a week to find out why.',
     image: 'https://drive.google.com/thumbnail?id=1Gl-mN7cbf2WYbZrN7SnJRWguo7LG59iQ&sz=w800',
     author: 'OMMICANG',

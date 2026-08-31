@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
+import InstallPrompt from './components/InstallPrompt';
 import BlogPage from './components/BlogPage';
 import ArticlePage from './components/ArticlePage';
 import AboutUsPage from './components/AboutUsPage';
@@ -53,6 +54,7 @@ function App() {
 
       {/* Mobile App */}
       <div className="md:hidden bg-motanis-black min-h-screen text-white">
+        <InstallPrompt />
         <Navbar activePage={activePage} setActivePage={setActivePage} />
 
         {activePage === 'autos' && (
