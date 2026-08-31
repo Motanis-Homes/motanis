@@ -23,24 +23,18 @@ const inventoryItems = [
   },
   {
     id: '04',
-    name: 'Toyota Camry LE [2008]',
-    description: 'Excellent fuel economy | Smooth performance and very dependable',
-    image: 'https://lh3.googleusercontent.com/d/1kmmPQWPzKu1RAUmsLOhJCZDa5rSw9U-o=s800',
-  },
-  {
-    id: '05',
     name: 'Ford Edge SEL [2007]',
     description: 'Comfortable | Practical | Mid-size crossover Car - Going At A Discount!',
     image: 'https://lh3.googleusercontent.com/d/10_uHxU2-DODQj0B_Z_POuQn8ZcwMYwmV=s800',
   },
   {
-    id: '06',
+    id: '05',
     name: 'Mercedes-Benz GLE 350 4matic [2017]',
     description: 'Luxury | All weather confidence | Spacious comfort - OTF',
     image: 'https://lh3.googleusercontent.com/d/1t2bzt_BTPpv3PS1Go2Oq7iEPRqPORVGU=s800',
   },
   {
-    id: '07',
+    id: '06',
     name: 'Mercedes-Benz GLE 43 AMG [2019]',
     description: '385HP | 384 lb-ft of torque | Rapid Acceleration | Peak performance, high-end lucury SUV',
     image: 'https://lh3.googleusercontent.com/d/1pZHPcjxrtCWPmu3Qjf-HOhfiQm5VzOhV=s800',

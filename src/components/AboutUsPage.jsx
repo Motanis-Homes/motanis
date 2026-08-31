@@ -410,7 +410,7 @@ const AboutUsPage = ({ activePage, setActivePage }) => {
               <p className="font-cormorant text-motanis-muted leading-relaxed"
                 style={{ fontSize: '14px', fontStyle: 'italic', fontWeight: '700' }}
               >
-                Motanis Was Birth From A Simple But Powerful Belief — That Every Nigerian Deserves Access To Premium Vehicles And Properties Without The Hassle, Uncertainty Or Compromise That Often Comes With It.
+                Motanis Was Birth From A Simple Yet Powerful Belief — That Every Nigerian Deserves Access To Premium Vehicles And Properties Without The Hassle, Uncertainty Or Compromise That Often Comes With It.
               </p>
             </div>
           </div>

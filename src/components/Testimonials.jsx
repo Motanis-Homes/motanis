@@ -324,6 +324,11 @@ const Testimonials = () => {
           <div
             ref={scrollRef}
             className="flex gap-3 pb-3"
+            onScroll={(e) => {
+              const cardWidth = e.target.offsetWidth * 0.78 + 12;
+              const index = Math.round(e.target.scrollLeft / cardWidth);
+              setActiveIndex(Math.min(index, testimonials.length - 1));
+            }}
             style={{
               overflowX: 'scroll',
               scrollbarWidth: 'none',
