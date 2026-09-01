@@ -86,7 +86,7 @@ const InstallPrompt = () => {
           }}
         >
           <img
-            src="/icon-512.png"
+            src="favicon/icon-512.png"
             alt="Motanis"
             className="w-full h-full object-contain"
           />
