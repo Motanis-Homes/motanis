@@ -15,10 +15,10 @@ const carImages = [
 ];
 
 const teamMembers = [
-  { id: 1, name: 'TOBI SAMUEL', role: 'CEO & Founder', bio: 'Visionary leader with over two decades of experience in luxury automotive and real estate markets across Africa.', avatar: 'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg' },
-  { id: 2, name: 'Segun Adekanye', role: 'Human Resources', bio: 'HR professional with years of experience improving team culture, driving recruitment, and supporting staff growth.', avatar: 'https://images.pexels.com/photos/3785079/pexels-photo-3785079.jpeg' },
-  { id: 3, name: 'Munachi Anuakpado', role: 'Receptionist', bio: 'Organized and detail-oriented - with strong communication skills. Manages tasks and schedules efficiently.', avatar: 'https://images.pexels.com/photos/6817003/pexels-photo-6817003.jpeg' },
-  { id: 4, name: 'OMMICANG', role: 'Wildcard', bio: '...', avatar: 'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg' },
+  { id: 1, name: 'TOBI SAMUEL', role: 'CEO & Founder', bio: 'Visionary leader with over two decades of experience in luxury automotive and real estate markets across Africa.', avatar: 'https://lh3.googleusercontent.com/d/1V2Zvq98d0JXGdAKJ-KJwtgkvKYiyAtuv=s800' },
+  { id: 2, name: 'Segun Adekanye', role: 'Human Resources', bio: 'HR professional with years of experience improving team culture, driving recruitment, and supporting staff growth.', avatar: 'https://lh3.googleusercontent.com/d/1HNyF1zJq0qQ4jJ7p-J5E1SBoQKZ5JuAF=s800' },
+  { id: 3, name: 'Munachi Anuakpado', role: 'Receptionist', bio: 'Organized and detail-oriented - with strong communication skills. Manages tasks and schedules efficiently.', avatar: 'https://lh3.googleusercontent.com/d/1YTKShbl8gyXov3RXzrjpXYY-DLe4FirC=s800' },
+  { id: 4, name: 'OMMICANG', role: 'Wildcard', bio: '...', avatar: 'https://lh3.googleusercontent.com/d/1WdNsWPLqwu20MsSi9zPdMu2htpLZ4qtU=s800' },
 ];
 
 const coreValues = [
