@@ -3,10 +3,10 @@ import CTAButton from './CTAButton';
 import ImageCarousel from './ImageCarousel';
 
 const aboutImages = [
-  'https://lh3.googleusercontent.com/d/1f8MACpiqsavlGS0MEJ0EyWTZtACfcB_0=w800',
-  'https://lh3.googleusercontent.com/d/1CidlUaysKY-2pI2P7ibGYVSku-61XNOg',
-  'https://lh3.googleusercontent.com/d/1WblP55yEuODkdP6jG7SranfepQKi-oMs=w800',
-  'https://drive.google.com/thumbnail?id=11Qd3FcPK-FCGBjZbbXzDsblVa88UOK0r&sz=w800',
+  'https://lh3.googleusercontent.com/d/14yNV4wMDSdzWwbo6YQHINzY7Pbzx4W3l=s800',
+  'https://lh3.googleusercontent.com/d/1Mtit81eMKKnUGzTHgIvOSSobNGFeBNug',
+  'https://lh3.googleusercontent.com/d/1Jka0ocgYqd-MfT0xkW8hv1nUwirquzke=s800',
+  'https://lh3.googleusercontent.com/d/1bXsjYfu6ABTPGjYUI2yI88bEvKQsTs4m=s800',
 ];
 
 const fullText = "Built For Those Who Want The Best";

@@ -7,7 +7,7 @@ const inventoryItems = [
     id: '01',
     name: 'Mazda CX-9 Touring [2016]',
     description: 'Three-row SUV | Premium interior | Strong fuel economy and a high-torque turbocharged engine.',
-    image: 'https://lh3.googleusercontent.com/d/1qSnctzX97NxHA9SNriiethf--D7sawgQ=s800',
+    image: 'https://lh3.googleusercontent.com/d/1l-cWif3KereO6xFwNisrw1dPptgaX4Qh=s800',
   },
   {
     id: '02',
@@ -19,25 +19,25 @@ const inventoryItems = [
     id: '03',
     name: 'Toyota Highlander XSE [2021]',
     description: 'First highlander model designed with a sporty, aggressive look and performance-tuned suspension.',
-    image: 'https://lh3.googleusercontent.com/d/1xLMB5A2gUJ9hVwm7u2-1xs3HcOXUsHTq=s800',
+    image: 'https://lh3.googleusercontent.com/d/138jtx2DikX5LcrSd5crHe5G-b2tPpCGv=s800',
   },
   {
     id: '04',
     name: 'Ford Edge SEL [2007]',
     description: 'Comfortable | Practical | Mid-size crossover Car - Going At A Discount!',
-    image: 'https://lh3.googleusercontent.com/d/10_uHxU2-DODQj0B_Z_POuQn8ZcwMYwmV=s800',
+    image: 'https://lh3.googleusercontent.com/d/11cOOm9UCmRkzmXlsey-Sw8W7AvgTtZ4b=s800',
   },
   {
     id: '05',
     name: 'Mercedes-Benz GLE 350 4matic [2017]',
     description: 'Luxury | All weather confidence | Spacious comfort - OTF',
-    image: 'https://lh3.googleusercontent.com/d/1t2bzt_BTPpv3PS1Go2Oq7iEPRqPORVGU=s800',
+    image: 'https://lh3.googleusercontent.com/d/11oHKvL7_oZVqK01LL3ZLaG3WZEl8-doe=s800',
   },
   {
     id: '06',
     name: 'Mercedes-Benz GLE 43 AMG [2019]',
     description: '385HP | 384 lb-ft of torque | Rapid Acceleration | Peak performance, high-end lucury SUV',
-    image: 'https://lh3.googleusercontent.com/d/1pZHPcjxrtCWPmu3Qjf-HOhfiQm5VzOhV=s800',
+    image: 'https://lh3.googleusercontent.com/d/14ZPsgCpKyzbe1c7HlXdPA5X_iA0hLnfN=s800',
   },
 ];
 

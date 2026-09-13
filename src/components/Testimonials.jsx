@@ -11,7 +11,7 @@ const testimonials = [
     profession: 'Businessowner',
     review: 'If You Are Looking For Genuine Transaction, Kindness And Transparency. Motanis Is The Answer. I Can Recommend Him 99%. Thanks',
     rating: 4.9,
-    image: 'https://lh3.googleusercontent.com/d/15vVnqC64PWOuOotyhfFZAQQ7kKr34N8o=s800',
+    image: 'https://lh3.googleusercontent.com/d/1D1F3xqx1uYZKVLdhhVKct-v2GOz-lQkL=s800',
   },
   {
     id: 2,
@@ -19,7 +19,7 @@ const testimonials = [
     profession: 'Banker',
     review: 'Motanis Is A Reliable And Trustworthy Brand I Can Vouch For',
     rating: 4.9,
-    image: 'https://lh3.googleusercontent.com/d/1YTrRGl-TTDh6jYtrZIFwh2sWwj8yM3zI=s800',
+    image: 'https://lh3.googleusercontent.com/d/11Z68ZZ_RnOhR55nmdVf-ojCRkMBSSdRB=s800',
   },
   {
     id: 3,
@@ -27,7 +27,7 @@ const testimonials = [
     profession: 'Businessowner',
     review: 'Very Welcoming People With Good Service. Best Car Experience I Ever Had.',
     rating: 5.0,
-    image: 'https://lh3.googleusercontent.com/d/1a-dmt058hhQn0YQYIy_vE_9596Q0TE2h=s800',
+    image: 'https://lh3.googleusercontent.com/d/1_SKt7aBOfYUnCAGlFNtiRQx2-U5NKVTo=s800',
   },
   {
     id: 4,
@@ -35,7 +35,7 @@ const testimonials = [
     profession: 'Entrepreneur',
     review: 'I Mean, Try Their Service And You Will Testify Too',
     rating: 5.0,
-    image: 'https://lh3.googleusercontent.com/d/1fwaEg00KYGks07QFcwBCgytIMr9JK4fE=s800',
+    image: 'https://lh3.googleusercontent.com/d/1vGoN_CNRibsmS5kU0KVbNTYa8KAQFFYl=s800',
   },
   {
     id: 5,
@@ -43,7 +43,7 @@ const testimonials = [
     profession: 'Engineer',
     review: 'Motanis For Me Is A Very Reliable Brand. They Have Good Cars.',
     rating: 4.8,
-    image: 'https://lh3.googleusercontent.com/d/15CrfuJ4wMDiQo0OZ0JfG64eNmk1BwVc9=s800',
+    image: 'https://lh3.googleusercontent.com/d/1HBCVjXCdGxh3WtOxNFyds8IoV3hW5fHP=s800',
   },
   {
     id: 6,
@@ -51,7 +51,7 @@ const testimonials = [
     profession: 'Lawyer',
     review: 'I was skeptical at first but Motanis completely won me over. I Sincerely Did Not Expect The Service I Got.',
     rating: 4.9,
-    image: 'https://lh3.googleusercontent.com/d/1zn8oiGIqwnOuRIfaQU6RPH5aQsAAlL__=s800',
+    image: 'https://lh3.googleusercontent.com/d/1_Bt1iJve9xmmFe4nCQPeN4rEhTdqIsab=s800',
   },
   {
     id: 7,
@@ -59,7 +59,7 @@ const testimonials = [
     profession: 'Trader',
     review: 'Buying My Second Car From Them.',
     rating: 5.0,
-    image: 'https://lh3.googleusercontent.com/d/1JMYLR3OyvJnvDtw0_JaKbTgQKI-b5QBU=s800',
+    image: 'https://lh3.googleusercontent.com/d/15R_iJawUY-eDSuNALHOX22bYDrHrSIjA=s800',
   },
 ];
 

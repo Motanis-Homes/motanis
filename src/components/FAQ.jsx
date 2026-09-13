@@ -325,9 +325,9 @@ const FAQ = () => {
               {/* Overlapping Avatars */}
               <div className="flex -space-x-2 flex-shrink-0">
                 {[
-                  'https://images.pexels.com/photos/6817003/pexels-photo-6817003.jpeg',
-                  'https://images.pexels.com/photos/3785079/pexels-photo-3785079.jpeg',
-                  'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg',
+                  'https://lh3.googleusercontent.com/d/1YTKShbl8gyXov3RXzrjpXYY-DLe4FirC=s800',
+                  'https://lh3.googleusercontent.com/d/1WdNsWPLqwu20MsSi9zPdMu2htpLZ4qtU=s800',
+                  'https://lh3.googleusercontent.com/d/1V2Zvq98d0JXGdAKJ-KJwtgkvKYiyAtuv=s800',
                 ].map((src, i) => (
                   <div
                     key={i}

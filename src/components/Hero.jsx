@@ -4,10 +4,10 @@ import ImageCarousel from './ImageCarousel';
 import CounterNumber from './CounterNumber';
 
 const thumbnailImages = [
-  'https://drive.google.com/thumbnail?id=1ESMQcpoYr8mr1HlVMjTxaIkCaej9NHGL&sz=w400',
-  'https://drive.google.com/thumbnail?id=1Gl-mN7cbf2WYbZrN7SnJRWguo7LG59iQ&sz=w400',
-  'https://drive.google.com/thumbnail?id=1qSnctzX97NxHA9SNriiethf--D7sawgQ&sz=w400',
-  'https://drive.google.com/thumbnail?id=1Pfbf7hAumH_w_Jf0slsI0AZk0qomisK3&sz=w400',
+  'https://lh3.googleusercontent.com/d/1UanrJY1LXt__b1ttS_-uHq_fqbu2NvH_=s800',
+  'https://lh3.googleusercontent.com/d/1Uu1QQOqCokoEAssUu4_BSKCB_25vv15e=s800',
+  'https://lh3.googleusercontent.com/d/1qkqd8eupgtXidT2W1uSm6VjoFNSnw7-c=s800',
+  'https://lh3.googleusercontent.com/d/1bXsjYfu6ABTPGjYUI2yI88bEvKQsTs4m=s800',
 ];
 
 const Hero = () => {

@@ -5,12 +5,12 @@ import CTAButton from './CTAButton';
 import CounterNumber from './CounterNumber';
 
 const carImages = [
-  'https://drive.google.com/thumbnail?id=1Gl-mN7cbf2WYbZrN7SnJRWguo7LG59iQ&sz=w800',
-  'https://lh3.googleusercontent.com/d/1vl6Fcsq0dKGIF5INIGg0yRxkkwSD1CV8=s800',
-  'https://lh3.googleusercontent.com/d/1bA03zSA8U1sjhdo1HIe4wp4d6WyfBRFC=s800',
-  'https://drive.google.com/thumbnail?id=1Pfbf7hAumH_w_Jf0slsI0AZk0qomisK3&sz=w800',
-  'https://drive.google.com/thumbnail?id=11Qd3FcPK-FCGBjZbbXzDsblVa88UOK0r&sz=w800',
-  'https://lh3.googleusercontent.com/d/1ih6OCFCJ1A1CSAFBSWz9d3w2wb8pR_me=s800',
+  'https://lh3.googleusercontent.com/d/1UanrJY1LXt__b1ttS_-uHq_fqbu2NvH_=s800',
+  'https://lh3.googleusercontent.com/d/14yNV4wMDSdzWwbo6YQHINzY7Pbzx4W3l=s800',
+  'https://lh3.googleusercontent.com/d/1CFvoVBaTDLySidC_e-h1n78ANuU9jcma=s800',
+  'https://lh3.googleusercontent.com/d/1qkqd8eupgtXidT2W1uSm6VjoFNSnw7-c=s800',
+  'https://lh3.googleusercontent.com/d/1bXsjYfu6ABTPGjYUI2yI88bEvKQsTs4m=s800',
+  'https://lh3.googleusercontent.com/d/1Pv7LGl_e6tHiM0xhQ3nXUqcgom6Ghty5=s800',
 
 ];
 
